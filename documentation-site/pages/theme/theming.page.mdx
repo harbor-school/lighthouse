@@ -1,0 +1,71 @@
+import { DocumentationLayout } from '../../components/documentation-layout'
+
+export default DocumentationLayout
+
+# Theming
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+In this section, the Basic token structure of the theme is described below.
+
+Theme data is a simple .json format, and each token could be used one by one as a property of the JSON file.
+
+## Colors
+
+Colors in Lighthouse has three token kinds. Scale / Foundational / Semantic tokens are that. The kinds of tokens are linked rigidly for system balances of strictness and flexibility.
+<br/>
+
+It is fully customizable (edit, remove, add) using the [Theme Generator](/theme/theme-generator).
+
+### Color Scale
+
+The color scale is a base palette of the color system
+<br/>
+
+Lighthouse used [ColorBox](https://colorbox.io/) from Kevyn Arnott to generate the default color scale. It enables considering hue, saturation, brightness in an acceptable human manner at the same time.
+
+### Foundational Colors
+
+The color foundation is the base of the system UI colors.
+
+It includes five kinds that are mostly used in the standard UI system.
+<br/>
+
+*primary / negative / warning / positive / mono*
+<br/>
+
+(These tokens are only composed of Color Scale.)
+
+### Semantic Colors
+
+Color semantic are colors of application UI that has semantic names.
+<br/>
+
+(These tokens are only composed of Color Scale or Foundational Colors.)
+
+## Lighting
+
+Lightings are uses for box-shadows and overlay to highlight which element could be focused more on the user.
+
+## Typography
+
+You can add your custom typography styles
+<br/>
+
+(Font files are not included in the system. Include it manually in your app.)
+
+## Sizings
+
+Essential sizing scales for spacings.
+
+## Breakpoints
+
+Breakpoints are the point for responding to user's device sizes.
+
+## Z-Index
+
+Z-Indexes are used to define layer orders of elements.

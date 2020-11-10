@@ -1,0 +1,103 @@
+{
+  "name": "@harborschool/lighthouse",
+  "version": "0.106.54",
+  "description": "",
+  "keywords": [
+    "react",
+    "design-system",
+    "framer"
+  ],
+  "main": "dist/lighthouse.umd.js",
+  "module": "dist/lighthouse.es5.js",
+  "typings": "dist/types/lighthouse.d.ts",
+  "files": [
+    "dist"
+  ],
+  "author": "ruucm <ruucm.a@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/harbor-school/lighthouse"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "lint": "eslint '{src,documentation-site,examples,lighthouse-gallery.framerfx/code}/**/*.{js,ts,tsx}' --quiet --fix",
+    "prebuild": "rimraf dist",
+    "build": "tsc --module commonjs && rollup -=c rollup.config.ts",
+    "start": "rollup -c rollup.config.ts -w",
+    "framer": "cd lighthouse-gallery.framerfx && component-importer generate --force && rm code/withHOC.tsx && cd .. && eslint '{src,lighthouse-gallery.framerfx/code}/**/*.{js,ts,tsx}' --quiet --fix",
+    "precommit": "lint-staged",
+    "docs:dev": "next documentation-site",
+    "docs:build": "next build documentation-site",
+    "docs:export": "next export documentation-site",
+    "docs:deploy": "npm run docs:build && npm run docs:export && cp -r .vercel documentation-site/out/.vercel && vercel --prod ./documentation-site/out"
+  },
+  "lint-staged": {
+    "{src,lighthouse-gallery.framerfx/code}/**/*.{js,ts,tsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.10.5",
+    "@framerjs/component-importer": "^0.0.32",
+    "@mdx-js/loader": "^1.6.18",
+    "@microsoft/tsdoc": "^0.12.21",
+    "@next/mdx": "^9.5.3",
+    "@types/node": "^10.11.0",
+    "@types/react": "^16.9.43",
+    "@types/styletron-engine-atomic": "^1.1.0",
+    "@types/styletron-react": "^5.0.2",
+    "@types/styletron-standard": "^2.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.1.0",
+    "@typescript-eslint/parser": "^4.1.0",
+    "copy-to-clipboard": "^3.3.1",
+    "cross-env": "^5.2.0",
+    "eslint": "^7.8.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.6",
+    "framer-motion": "2.9.4",
+    "husky": "^1.0.1",
+    "lint-staged": "^10.3.0",
+    "lodash.camelcase": "^4.3.0",
+    "next": "9.5.3",
+    "next-seo": "^4.11.0",
+    "next-transpile-modules": "^4.1.0",
+    "prettier": "^2.1.1",
+    "prism-react-renderer": "^1.1.1",
+    "prompt": "^1.0.0",
+    "raw-loader": "^4.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-shadow-picker": "^1.0.5",
+    "react-view": "^2.3.2",
+    "recoil": "^0.0.13",
+    "remark": "^12.0.0",
+    "remark-html": "^12.0.0",
+    "replace-in-file": "^3.4.2",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.67.0",
+    "rollup-plugin-commonjs": "^9.1.8",
+    "rollup-plugin-json": "^3.1.0",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-sourcemaps": "^0.4.2",
+    "rollup-plugin-typescript2": "^0.27.1",
+    "rollup-plugin-visualizer": "^4.1.1",
+    "shelljs": "^0.8.3",
+    "styletron-engine-atomic": "^1.4.6",
+    "styletron-react": "^5.2.7",
+    "ts-node": "^7.0.1",
+    "typescript": "^4.0.2"
+  },
+  "peerDependencies": {
+    "framer-motion": "^2.1.0",
+    "react": "^16.13.1"
+  },
+  "dependencies": {
+    "react-hook-form": "^6.3.0",
+    "react-is": "^16.13.1"
+  }
+}

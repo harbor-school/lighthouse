@@ -1,0 +1,37 @@
+---
+on:
+  push:
+    branches: master
+
+name: Build and publish Framer Package
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2.1.0
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 10
+
+      - name: Find and Replace
+        uses: jacobtomlinson/gha-find-replace@master
+        with:
+          find: '(?:..\/..\/..\/..\/lighthouse|..\/..\/..\/lighthouse)'
+          replace: '@harborschool/lighthouse'
+
+      - name: Install Dependancies (@harborschool/lighthouse@latest, styletron-react@^5.2.7, styletron-engine-atomic@^1.4.6)
+        run: cd lighthouse-gallery.framerfx && npm i --save @harborschool/lighthouse styletron-react@^5.2.7 styletron-engine-atomic@^1.4.6
+
+      - name: Build
+        uses: framer/bridge@master
+        env:
+          FRAMER_TOKEN: ${{ secrets.FRAMER_TOKEN }}
+        with:
+          args: build lighthouse-gallery.framerfx
+
+      - name: Publish
+        uses: framer/bridge@master
+        env:
+          FRAMER_TOKEN: ${{ secrets.FRAMER_TOKEN }}
+        with:
+          args: publish lighthouse-gallery.framerfx --yes --public

@@ -1,0 +1,33 @@
+import { DocumentationLayout } from '../../components/documentation-layout'
+import * as System from '../../../../lighthouse'
+import { framerNewProjectWithLighthouseUrl } from '../../constants'
+import Link from "next/link"
+
+export default DocumentationLayout
+
+# Getting Started
+
+## Start Design
+
+Design and Prototype your next project using Lighthouse Design System on Framer.
+<br />
+
+Framer not just displays components but let us drag and drop REAL components to make new designs and prototypes.
+
+Lighthouse Design System provides a fully compatible Framer package using the same origins.
+<br />
+
+Start to Design with Lighthouse Design System or View all components on Lighthouse Gallery.
+
+<System.FlexBox columnGap="scale400" marginTop="scale1600">
+  <System.FlexItem>
+    <System.Button as="a" href={framerNewProjectWithLighthouseUrl} target="_blank" rel="noreferrer">
+      Start Design
+    </System.Button>
+  </System.FlexItem>
+  <System.FlexItem>
+    <Link href="/getting-started/lighthouse-gallery" passHref>
+      <System.Button as="a" kind="secondary">Lighthouse Gallery</System.Button>
+    </Link>
+  </System.FlexItem>
+</System.FlexBox>

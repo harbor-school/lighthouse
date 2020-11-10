@@ -1,0 +1,23 @@
+docs: CONTRIBUTING
+
+
+# Allowed <type>
+#   feat (feature)
+#   pub (publishing)
+#   fix (bug fix)
+#   docs (documentation)
+#   fmt (formatting, wmissing semi colons, …)
+#   refactor
+#   test (when adding missing tests)
+#   chore (maintain)
+#   qa (quality assurance)
+
+# Examples
+#   feat($browser): onUrlChange event (popstate/hashchange/polling)
+
+#   Added new event to $browser:
+#   - forward popstate event if available
+#   - forward hashchange event if popstate not available
+#   - do polling when neither popstate nor hashchange available
+
+#   Breaks $browser.onHashChange, which was removed (use onUrlChange instead)

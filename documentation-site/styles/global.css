@@ -1,0 +1,18 @@
+@import './reset-css-in-web.css';
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: rgba(0, 93, 250, 0.99);
+}
+
+::selection {
+  color: white;
+  background: rgba(0, 93, 250, 0.99);
+}
+
+
+/* react-shadow-picker */
+.shadow-picker {
+  box-sizing: content-box;
+}

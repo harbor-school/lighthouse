@@ -1,0 +1,70 @@
+import { DocumentationLayout } from '../../components/documentation-layout'
+
+export default DocumentationLayout
+
+# Getting Started
+
+
+## Start Code
+
+Lighthouse initially starts as a React UI Library.
+
+You can use the pure power of it as an npm package like others.
+
+## Installing Lighthouse
+
+Install Lighthouse package with peer dependencies.
+
+```bash
+yarn add @harborschool/lighthouse styletron-engine-atomic styletron-react framer-motion
+```
+
+if you use TypeScript add external TypeScript declarations:
+
+```bash
+yarn add @types/styletron-standard @types/styletron-react @types/styletron-engine-atomic
+```
+
+## Adding Lighthouse to Your Application
+
+In order to use Lighthouse, you need to do a small setup and wrap the root of your application with StyletronProvider and LighthouseProvider components:
+
+```jsx
+import React from "react";
+import ReactDOM from "react-dom";
+import { Client as Styletron } from "styletron-engine-atomic";
+import { Provider as StyletronProvider } from "styletron-react";
+import { LightTheme, LighthouseProvider } from "@harborschool/lighthouse";
+import * as System from "@harborschool/lighthouse";
+
+const engine = new Styletron();
+function App() {
+  return (
+    <StyletronProvider value={engine}>
+      <LighthouseProvider theme={LightTheme}>
+        <System.Button>Hello Lighthouse</System.Button>
+      </LighthouseProvider>
+    </StyletronProvider>
+  );
+}
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  rootElement
+);
+```
+
+## Examples
+
+There are starter examples for the following frameworks.
+
+[With Create React App](/examples/with-cra)
+
+[With Gatsby](/examples/with-gatsby)
+
+[With Next.js](/examples/with-nextjs)
+
+

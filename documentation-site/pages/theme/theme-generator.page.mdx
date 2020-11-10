@@ -1,0 +1,132 @@
+import { useState, useEffect } from 'react'
+import { DocumentationLayout } from '../../components/documentation-layout'
+import { ColorTokenEditor, LightingTokenEditor, ImportExportTheme, UsingWithCode, KIND } from '../../components/theme-generator'
+
+export default DocumentationLayout
+
+# Theme Generator
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+Use the Theme Generator to customize your theme.
+Make changes and copy the final output from the bottom of the page.
+
+## Colors
+
+Color Scale
+
+<ColorTokenEditor colorTokenKind={KIND.colorScale} />
+
+Override Foundational Colors
+
+<ColorTokenEditor colorTokenKind={KIND.colorFoundation} />
+
+Override Semantic Colors
+
+<ColorTokenEditor colorTokenKind={KIND.colorSemantic} />
+
+New Semantic Colors
+
+<ColorTokenEditor colorTokenKind={KIND.newColorSemantic} />
+
+## Lighting
+
+<LightingTokenEditor />
+
+## Import and Export Theme
+
+Simply copy and save it as "my-theme.json".
+
+(It only saves Colors and Lighting data. Others will be added.)
+
+<ImportExportTheme />
+
+## Typography
+
+Pass custom values to primitives as the first parameter of the createTheme function.
+
+Then, import web font files to your app. Lighthouse doesn't include any font files.
+
+(Dynamic Generator feature of these values is work in progress.)
+
+```jsx
+const primitives = {
+  primaryFontFamily: "system-ui, Helvetica, Arial, sans-serif",
+}
+```
+
+## Sizings / Breakpoints / Z-Index
+
+Pass custom values to overrides as the second parameter of the createTheme function.
+
+Below are the default theme values for each kind.
+
+(Dynamic Generator feature of these values is work in progress.)
+
+```jsx
+const overrides = {
+  sizings: {
+    // 2px scale
+    scale0: "2px",
+    scale100: "4px",
+    scale200: "6px",
+    scale300: "8px",
+    scale400: "10px",
+    scale500: "12px",
+    // 4px scale
+    scale550: "14px",
+    scale600: "16px",
+    scale650: "18px",
+    scale700: "20px",
+    scale750: "22px",
+    scale800: "24px",
+    // 8px scale
+    scale900: "32px",
+    scale1000: "40px",
+    // 4px scale
+    scale1200: "48px",
+    scale1400: "56px",
+    scale1600: "64px",
+    scale2400: "96px",
+    scale3200: "128px",
+    scale4800: "192px",
+  },
+  breakpoints: {
+    small: 320,
+    medium: 600,
+    large: 1080,
+    xLarge: 1200,
+  },
+  zIndex: {
+    drawer: 100,
+    header: 100,
+    overlay: 100,
+    modal: 200,
+    select: 200,
+    alert: 300,
+  },
+}
+
+```
+
+## Using with Design
+
+Change ThemeSwitcher component's Theme property as "Custom" and Upload "my-theme.json" file to "Theme File" Property.
+<br/>
+
+More information in [Start Design](/getting-started/start-design).
+
+## Using with Code
+
+Locate the "my-theme.json" file to your App's root.
+
+(The below example wrote for next.js, and you can customize it.)
+<br/>
+
+More information in [Start Code](/getting-started/start-code).
+
+<UsingWithCode />

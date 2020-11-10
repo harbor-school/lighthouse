@@ -1,0 +1,57 @@
+import { DocumentationLayout } from '../../components/documentation-layout'
+
+export default DocumentationLayout
+
+# Background
+
+## Story
+
+From last 2019 July, Lighthouse is initially started to develop for the Design System of [Harbor School](https://harbor.school). But I found it could be used to solve common problems in Web UI.
+<br />
+
+Here are the points that I share Lighthouse Design System as an open-source project.
+
+## Design & Developing in Same place and matter (Source of truth)
+
+It was time-consuming tasks moving designs to real development codes. Sometimes it has different shapes or sizes between development and design.
+
+ And designers don't have a perfect solution for responsive design; after 10years, responsive concepts appear.
+ <br />
+
+Lighthouse removes this big gap between design and development with the power of [Framer](http://www.framer.com/). (Framer is React based Design tool you can code and design.)
+<br />
+
+Anyone who uses Lighthouse Design System could design on Framer and directly develop it the same manner. As a result, you can design (or prototype) and develop without messy translator between ✌️
+
+## Flexibility
+
+When I started to develop the system in 2019, I don't have enough experience with the design system. It results in a system that has stringent component rules and hard to use. We always had to make new components for every new design.
+<br />
+
+So I decide to make a system that involves our characters and flexibility at the same time.
+<br />
+
+The fundamental point is to split the base unit of your design into smaller tokens, not components. Finally, I can make many variants using base units of the system, and here are the applied principles.
+
+### 1. Atomic Design with Styletron
+
+Lighthouse's base Flexibility is mainly composed of [Styletron](https://www.styletron.org) and Inspired by [Base Web](https://github.com/uber/baseweb).
+
+Styletron enables us to merge and divide styles by tiny tokens.
+<br/>
+
+As a result, Lighthouse has a flexible theme system that starts with tiny reusable tokens, not components.
+
+### 2. Theming
+
+Lighthouse provides a [Theme Generator](/theme/theme-generator) to customize this system to your taste.
+
+It's a simple .json format you can simply import & export it to your project.
+
+### 3. Overrides
+
+Even though after theming your system, you could find some limit to express your ideas.
+In these cases, Overrides helps resolve this gap to make custom styles for each component level.
+<br/>
+
+Lighthouse offers overriding props enable us to make changes for each component detail.

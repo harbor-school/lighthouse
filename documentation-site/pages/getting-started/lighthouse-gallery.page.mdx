@@ -1,0 +1,37 @@
+import { DocumentationLayout } from '../../components/documentation-layout'
+import * as System from '../../../../lighthouse'
+import { lighthouseGalleryUrl, lighthouseGalleryDuplicateUrl } from '../../constants'
+
+export default DocumentationLayout
+
+# Lighthouse Gallery
+
+## Lighthouse Gallery with Framer
+
+
+Lighthouse Design System provides components overview gallery using Framer Web.
+
+It collects all components available in the System.
+
+<br/>
+
+Switching themes are available. (Light / Dark / Custom)
+
+Duplicate this Gallery if you want to change themes or make changes more details.
+
+Upload .json file generated from [Theme Generator](/theme/theme-generator) for Custom Theme.
+
+
+<System.FlexBox columnGap="scale400" marginTop="scale1600">
+  <System.FlexItem>
+    <System.Button as="a" href={lighthouseGalleryUrl} target="_blank" rel="noreferrer">
+      View
+    </System.Button>
+  </System.FlexItem>
+  <System.FlexItem>
+    <System.Button as="a" href={lighthouseGalleryDuplicateUrl} target="_blank" rel="noreferrer" kind="secondary">
+      Duplicate
+    </System.Button>
+  </System.FlexItem>
+</System.FlexBox>
+

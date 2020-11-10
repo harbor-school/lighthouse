@@ -1,0 +1,25 @@
+import { DocumentationLayout } from '../../components/documentation-layout'
+
+export default DocumentationLayout
+
+# useTheme
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+useTheme is a simple hook to get theme data of current as an object.
+
+```jsx
+import * as React from "react"
+import * as System from "@harborschool/lighthouse"
+import { useTheme } from "@harborschool/lighthouse"
+
+export function Example() {
+  const theme = useTheme()
+  
+  return <System.Block backgroundColor={theme.colors.primary}>Comp</System.Block>;
+}
+```

@@ -1,0 +1,45 @@
+.card-children-wrap > div {
+  position: relative !important;
+  width: 100% !important;
+}
+
+.flex-children-wrap > div {
+  position: relative !important;
+}
+.flex-children-wrap [data-framer-component-type='Frame'] {
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.list-item-children-wrap {
+  width: 100% !important;
+}
+.list-item-children-wrap > div {
+  position: relative !important;
+  width: 100% !important;
+}
+
+.modal-children-wrap > div {
+  position: relative !important;
+  width: 100% !important;
+}
+.modal-loading-wrap [data-framer-component-type='Frame'] {
+  position: relative !important;
+}
+
+.form-body-wrap > div {
+  position: relative !important;
+}
+.form-footer-wrap > div {
+  position: relative !important;
+}
+
+.alert-body-wrap > div {
+  position: relative !important;
+  margin: 0 auto;
+}
+
+.header-navigation-logo-wrap > div {
+  position: relative !important;
+}
