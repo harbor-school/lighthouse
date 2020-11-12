@@ -1,5 +1,5 @@
 /**
- * Typography components used to display contents.
+ * Typography components are used to display contents.
  *
  *```tsx
  * import * as React from "react"

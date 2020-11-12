@@ -10,9 +10,9 @@ import { githubUrl } from "../../constants"
 import { DesktopView, MobileView, sizeBg } from "../../utils"
 import { Heading } from "./styled-components"
 
-const headingText = `Lighthouse is a continuous Design System for the Design and Development of both workflows. You can design with REAL components and develop the same way using the power of Framer.
+const headingText = `Lighthouse is a continuous design system for the design and development workflows. You can design with REAL components and develop the same way using the power of Framer.
 
-It also provides a fully customizable theme system.`
+It also provides fully customizable theme.`
 
 export default function HomePage() {
   const theme = useTheme()

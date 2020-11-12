@@ -1,5 +1,5 @@
 /**
- * The Alert component is used to notify important messages to the user. It is recommended, use it with an overlay or overridden shadows.
+ * The Alert component is used to notify important messages to the user. It is recommended to use it with overlay or overridden shadows.
  *
  *```tsx
  * import * as React from "react"
