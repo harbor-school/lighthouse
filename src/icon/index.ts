@@ -1,5 +1,5 @@
 /**
- * The Icon component. Add paths as children.
+ * The Icon component is used to display icons. Add paths as children cause the default wrapper of the Icon component is the "SVG" tag.
  *
  *```tsx
  * import * as React from "react"

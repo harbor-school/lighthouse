@@ -1,5 +1,5 @@
 /**
- * The Breadcrumbs component.
+ * The Breadcrumbs component is used to show detail where the user is located in the application.
  *
  *```tsx
  * import * as React from "react"

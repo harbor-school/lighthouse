@@ -1,5 +1,5 @@
 /**
- * The Modal component is used to get specific attentions from user. It is recommended, use it with an overlay or overridden shadows.
+ * The Modal component is used to get specific attentions from user. It is recommended to use it with overlay or overridden shadows.
  *
  *```tsx
  * import * as React from "react"

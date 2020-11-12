@@ -1,5 +1,5 @@
 /**
- * The Table component for large amounts of information or structured data.
+ * The Table component is used for large amounts of information or structured data.
  *
  *```tsx
  * import * as React from "react"

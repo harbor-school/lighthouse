@@ -1,5 +1,5 @@
 /**
- * The Button component for actions and events.
+ * The Button component is used for actions and events.
  *
  *```tsx
  * import * as React from "react"

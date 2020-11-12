@@ -1,5 +1,5 @@
 /**
- * Like its name, the Block component is a base Lego block to build whole layouts. It accepts common layout CSS properties and could be added with mediaQuery using override. A responsive Grid layout could be made with Block components like the below example.
+ * Like its name, the Block component is a base Lego block to build whole layouts. It accepts common layout CSS properties and could be added with media query using override. A responsive grid layout could be made with Block components like the below example.
  *
  *```tsx
  * import * as React from "react"

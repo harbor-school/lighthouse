@@ -1,5 +1,5 @@
 /**
- * The FlexBox component uses CSS flex power as default. It gives convenient methods to align child elements with a gap that supports scale. The Main Different usage between Block Component is FlexBox respects child element size (width, height).
+ * The FlexBox component uses CSS flex power as default. It gives convenient methods to align child elements with a gap that supports scale. The main different usage between Block component is FlexBox respects child element size (width, height).
  *
  *```tsx
  * import * as React from "react"

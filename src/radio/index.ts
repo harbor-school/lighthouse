@@ -1,5 +1,5 @@
 /**
- * The Radio component.
+ * The Radio component is used to let users select only one option from the choices.
  *
  *```tsx
  * import * as React from "react"

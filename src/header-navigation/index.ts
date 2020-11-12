@@ -1,5 +1,5 @@
 /**
- * The HeaderNavigation component.
+ * The HeaderNavigation component is used to display the main menus. The component has default padding and a gap between the logo block and the menu area.
  *
  *```tsx
  * import * as React from "react"
