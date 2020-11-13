@@ -22,7 +22,7 @@ const InnerHeadingXLarge = (props) => {
 export const HeadingXLarge = withHOC(InnerHeadingXLarge)
 
 HeadingXLarge.defaultProps = {
-  width: 278,
+  width: 290,
   height: 47,
 }
 

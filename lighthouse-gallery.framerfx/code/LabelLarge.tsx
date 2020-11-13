@@ -22,7 +22,7 @@ const InnerLabelLarge = (props) => {
 export const LabelLarge = withHOC(InnerLabelLarge)
 
 LabelLarge.defaultProps = {
-  width: 150,
+  width: 99,
   height: 24,
 }
 

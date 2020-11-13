@@ -22,7 +22,7 @@ const InnerDisplaySmall = (props) => {
 export const DisplaySmall = withHOC(InnerDisplaySmall)
 
 DisplaySmall.defaultProps = {
-  width: 289,
+  width: 304,
   height: 56,
 }
 

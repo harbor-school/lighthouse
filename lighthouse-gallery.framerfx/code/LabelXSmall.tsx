@@ -22,7 +22,7 @@ const InnerLabelXSmall = (props) => {
 export const LabelXSmall = withHOC(InnerLabelXSmall)
 
 LabelXSmall.defaultProps = {
-  width: 150,
+  width: 75,
   height: 16,
 }
 

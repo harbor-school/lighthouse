@@ -22,7 +22,7 @@ const InnerDisplayMedium = (props) => {
 export const DisplayMedium = withHOC(InnerDisplayMedium)
 
 DisplayMedium.defaultProps = {
-  width: 408,
+  width: 428,
   height: 68,
 }
 

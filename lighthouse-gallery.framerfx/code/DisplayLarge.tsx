@@ -22,7 +22,7 @@ const InnerDisplayLarge = (props) => {
 export const DisplayLarge = withHOC(InnerDisplayLarge)
 
 DisplayLarge.defaultProps = {
-  width: 625,
+  width: 657,
   height: 123,
 }
 

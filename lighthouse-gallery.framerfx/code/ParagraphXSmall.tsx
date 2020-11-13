@@ -22,8 +22,8 @@ const InnerParagraphXSmall = (props) => {
 export const ParagraphXSmall = withHOC(InnerParagraphXSmall)
 
 ParagraphXSmall.defaultProps = {
-  width: 150,
-  height: 20,
+  width: 106,
+  height: 18,
 }
 
 addPropertyControls(ParagraphXSmall, {

@@ -23,7 +23,7 @@ export const ParagraphMedium = withHOC(InnerParagraphMedium)
 
 ParagraphMedium.defaultProps = {
   width: 151,
-  height: 24,
+  height: 23,
 }
 
 addPropertyControls(ParagraphMedium, {

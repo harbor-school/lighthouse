@@ -22,8 +22,8 @@ const InnerParagraphLarge = (props) => {
 export const ParagraphLarge = withHOC(InnerParagraphLarge)
 
 ParagraphLarge.defaultProps = {
-  width: 150,
-  height: 28,
+  width: 147,
+  height: 26,
 }
 
 addPropertyControls(ParagraphLarge, {

@@ -22,7 +22,7 @@ const InnerParagraphSmall = (props) => {
 export const ParagraphSmall = withHOC(InnerParagraphSmall)
 
 ParagraphSmall.defaultProps = {
-  width: 150,
+  width: 114,
   height: 20,
 }
 
