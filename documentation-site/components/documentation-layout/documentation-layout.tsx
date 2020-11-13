@@ -1,62 +1,15 @@
 import * as React from "react"
-import { styled } from "styletron-react"
-import { SideNavigation } from "./side-navigation"
-import { useTheme } from "../../../lighthouse"
-import { DesktopView, MobileView, Extendtable } from "../utils"
-import * as System from "../../../lighthouse"
-import { mobileMenuState, selectState } from "../store"
+import { SideNavigation } from "../side-navigation"
+import { useTheme } from "../../../../lighthouse"
+import { DesktopView, MobileView } from "../../utils"
+import * as System from "../../../../lighthouse"
+import { mobileMenuState, selectState } from "../../store"
 import { useRecoilState, useRecoilValue } from "recoil"
-import { AnimatePresence, motion } from "framer-motion"
+import { AnimatePresence } from "framer-motion"
 import { MDXProvider } from "@mdx-js/react"
-import MarkdownElements from "./markdown-elements"
-import Layout from "./layout"
-
-type Props<U = Record<string, unknown>> = { $theme: System.ThemeT } & Extendtable<U>
-
-const Grid = styled("div", ({ $theme }: Props) => {
-  return {
-    display: "grid",
-    gridTemplateColumns: "2fr 10fr",
-    [$theme.mediaQuery.large]: {
-      gridTemplateColumns: "0fr 1fr",
-    },
-  }
-})
-
-const ColumnRight = styled("div", ({ $theme }: Props) => {
-  return {
-    padding: `${$theme.sizing.scale2400} 0`,
-    maxWidth: "720px",
-    width: "100%",
-    margin: "0 auto",
-    [$theme.mediaQuery.large]: {
-      maxWidth: "100vw",
-      padding: `${$theme.sizing.scale2400} ${$theme.sizing.scale700}`,
-    },
-  }
-})
-
-const Overlay = styled(motion.div, ({ $theme }: Props) => {
-  return {
-    boxShadow: $theme.lighting.overlay500,
-    position: "fixed",
-    width: "100vw",
-    height: "100vh",
-    top: "0px",
-    zIndex: $theme.zIndex.overlay,
-  }
-})
-
-const OverlayLight = styled(motion.div, ({ $theme }: Props) => {
-  return {
-    boxShadow: $theme.lighting.overlay200,
-    position: "fixed",
-    width: "100vw",
-    height: "100vh",
-    top: "0px",
-    zIndex: $theme.zIndex.overlay,
-  }
-})
+import MarkdownElements from "../markdown-elements"
+import Layout from "../layout"
+import { Grid, Overlay, OverlayLight, ColumnRight } from "./styled-components"
 
 export function DocumentationLayout({ children }) {
   const theme = useTheme()
