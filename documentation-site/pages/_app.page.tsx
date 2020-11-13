@@ -45,6 +45,8 @@ function StyledApp(props) {
     },
   }
   const appTheme = createTheme(primitives, overrides)
+
+  // Detect prefers-color and change Site Theme
   if (isClient && window.matchMedia("(prefers-color-scheme: dark)").addEventListener)
     // Safari (Mac) doesn't have addEventListener yet. https://stackoverflow.com/questions/56466261/matchmedia-addlistener-marked-as-deprecated-addeventlistener-equivalent
     window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (e) => {
