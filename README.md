@@ -11,9 +11,9 @@
 </p>
 <br />
 
-Lighthouse is a continuous Design System for the Design and Development of both workflows. You can design with REAL components and develop the same way using the power of Framer.
+Lighthouse is a continuous design system for integrating design with development workflows.
 
-It also provides a fully customizable theme system.
+Designing just got easier as you can directely import coded components, use the exact same layouts and measurments, and publish in no matter of time. Lighthouse Design System also provides fully customizable themes.
 
 ## Getting Started
 
