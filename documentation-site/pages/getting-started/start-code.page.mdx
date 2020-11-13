@@ -30,14 +30,14 @@ yarn add @types/styletron-standard @types/styletron-react @types/styletron-engin
 In order to use Lighthouse, you need to do a small setup and wrap the root of your application with StyletronProvider and LighthouseProvider components:
 
 ```jsx
-import React from "react";
-import ReactDOM from "react-dom";
-import { Client as Styletron } from "styletron-engine-atomic";
-import { Provider as StyletronProvider } from "styletron-react";
-import { LightTheme, LighthouseProvider } from "@harborschool/lighthouse";
-import * as System from "@harborschool/lighthouse";
+import React from "react"
+import ReactDOM from "react-dom"
+import { Client as Styletron } from "styletron-engine-atomic"
+import { Provider as StyletronProvider } from "styletron-react"
+import { LightTheme, LighthouseProvider } from "@harborschool/lighthouse"
+import * as System from "@harborschool/lighthouse"
 
-const engine = new Styletron();
+const engine = new Styletron()
 function App() {
   return (
     <StyletronProvider value={engine}>
@@ -45,16 +45,16 @@ function App() {
         <System.Button>Hello Lighthouse</System.Button>
       </LighthouseProvider>
     </StyletronProvider>
-  );
+  )
 }
 
-const rootElement = document.getElementById("root");
+const rootElement = document.getElementById("root")
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
   rootElement
-);
+)
 ```
 
 ## Examples
