@@ -49,3 +49,23 @@ export const OverlayLight = styled(motion.div, ({ $theme }: Props) => {
     zIndex: $theme.zIndex.overlay,
   }
 })
+
+export const ThemeToggle = styled(motion.div, ({ $theme }: Props) => {
+  return {
+    position: "fixed",
+    width: "36px",
+    height: "36px",
+    right: "80px",
+    bottom: "60px",
+    background: $theme.colors.primary,
+    zIndex: $theme.zIndex.overlay,
+    borderRadius: "100%",
+    overflow: "hidden",
+    cursor: "pointer",
+    filter: "grayscale(1)",
+    [$theme.mediaQuery.large]: {
+      bottom: "5%",
+      right: "5%",
+    },
+  }
+})

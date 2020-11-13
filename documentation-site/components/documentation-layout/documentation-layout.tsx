@@ -1,21 +1,25 @@
 import * as React from "react"
 import { SideNavigation } from "../side-navigation"
 import { useTheme } from "../../../../lighthouse"
-import { DesktopView, MobileView } from "../../utils"
+import { DesktopView, isDarkTheme, MobileView } from "../../utils"
 import * as System from "../../../../lighthouse"
-import { mobileMenuState, selectState } from "../../store"
-import { useRecoilState, useRecoilValue } from "recoil"
+import { mobileMenuState, selectState, themeEditorState } from "../../store"
+import { useRecoilState, useRecoilValue, useSetRecoilState } from "recoil"
 import { AnimatePresence } from "framer-motion"
 import { MDXProvider } from "@mdx-js/react"
 import MarkdownElements from "../markdown-elements"
 import Layout from "../layout"
-import { Grid, Overlay, OverlayLight, ColumnRight } from "./styled-components"
+import { Grid, Overlay, OverlayLight, ColumnRight, ThemeToggle } from "./styled-components"
+import * as lightThemeData from "../../store/light-theme.json"
+import * as darkThemeData from "../../store/dark-theme.json"
 
 export function DocumentationLayout({ children }) {
   const theme = useTheme()
   const sharedProps = { $theme: theme }
   const [mobileMenu, setMobileMenu] = useRecoilState(mobileMenuState)
   const select = useRecoilValue(selectState)
+  const setThemeEditor = useSetRecoilState(themeEditorState)
+  const $isDarkTheme = isDarkTheme({ theme })
   const motionProps = {
     initial: {
       opacity: 0,
@@ -73,6 +77,27 @@ export function DocumentationLayout({ children }) {
           </System.LabelSmall>
         </ColumnRight>
       </Grid>
+      <ThemeToggle
+        onClick={() =>
+          setThemeEditor($isDarkTheme ? lightThemeData["default"] : darkThemeData["default"])
+        }
+        initial={{
+          rotate: $isDarkTheme ? 0 : 180,
+        }}
+        animate={{
+          rotate: $isDarkTheme ? 0 : 180,
+        }}
+        transition={{
+          ease: theme.animation.easeInCurve,
+          duration: theme.animation.timing300,
+        }}
+        {...sharedProps}
+      >
+        <System.Icon viewBox="0 0 24 24" width="100%">
+          <path d="M 24 0 L 0 0 L 0 24 Z" fill={theme.colors.primary}></path>
+          <path d="M 0 24 L 24 0 L 24 24 Z" fill={theme.colors.mono300}></path>
+        </System.Icon>
+      </ThemeToggle>
     </Layout>
   )
 }
