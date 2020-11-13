@@ -1,5 +1,4 @@
 import { motion } from "framer-motion"
-import { NextSeo } from "next-seo"
 import Link from "next/link"
 import * as React from "react"
 import * as System from "../../../../lighthouse"
@@ -7,7 +6,7 @@ import { useTheme } from "../../../../lighthouse"
 import * as Asset from "../../assets"
 import Layout from "../../components/layout"
 import { githubUrl } from "../../constants"
-import { DesktopView, MobileView, sizeBg } from "../../utils"
+import { DesktopView, isDarkTheme, MobileView, sizeBg } from "../../utils"
 import { Heading } from "./styled-components"
 
 const headingText = `Lighthouse is a continuous design system for integrating design with development workflows.\n Designing just got easier as you can directely import coded components, use the exact same layouts and measurments, and publish in no matter of time. Lighthouse Design System also provides fully customizable themes.`
@@ -15,6 +14,10 @@ const headingText = `Lighthouse is a continuous design system for integrating de
 export default function HomePage() {
   const theme = useTheme()
   const sharedProps = { $theme: theme }
+  const secondButtonContentColor = isDarkTheme({ theme })
+    ? theme.colors.contentPrimary
+    : theme.colors.primary
+
   return (
     <Layout home>
       <Heading {...sharedProps}>
@@ -53,11 +56,11 @@ export default function HomePage() {
               href={githubUrl}
               target="_blank"
               rel="noreferrer"
-              startEnhancer={<Asset.Github height={20} color={theme.colors.primary} />}
+              startEnhancer={<Asset.Github height={20} color={secondButtonContentColor} />}
               overrides={{
                 BaseButton: {
-                  color: theme.colors.primary,
-                  WebkitTextFillColor: theme.colors.primary,
+                  color: secondButtonContentColor,
+                  WebkitTextFillColor: secondButtonContentColor,
                 },
               }}
             >
