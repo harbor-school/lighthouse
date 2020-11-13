@@ -6,7 +6,7 @@ import prismThemeDark from "prism-react-renderer/themes/nightOwl"
 import { useTheme } from "../../../lighthouse"
 import { useValueDebounce, TEditorProps } from "react-view"
 import { TokenLine } from "./markdown-elements"
-import { isDarkMode } from "../utils"
+import { isDarkTheme } from "../utils"
 
 export const CodeEditor: React.FC<TEditorProps> = ({ code: globalCode, onChange, placeholder }) => {
   const theme = useTheme()
@@ -44,7 +44,7 @@ export const CodeEditor: React.FC<TEditorProps> = ({ code: globalCode, onChange,
 const highlightCode = (code: string, theme) => (
   <Highlight
     {...defaultProps}
-    theme={isDarkMode() ? prismThemeDark : prismThemeLight}
+    theme={isDarkTheme({ theme }) ? prismThemeDark : prismThemeLight}
     code={code}
     language="jsx"
   >

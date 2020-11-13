@@ -6,7 +6,7 @@ import * as React from "react"
 import { styled } from "styletron-react"
 import * as System from "../../../lighthouse"
 import { useTheme } from "../../../lighthouse"
-import { Extendtable, isDarkMode, sizeBg } from "../utils"
+import { Extendtable, isDarkTheme, sizeBg } from "../utils"
 import { NextSeo } from "next-seo"
 import { siteBaseUrl } from "../constants"
 import { useRouter } from "next/router"
@@ -76,7 +76,7 @@ const Code = ({ children, className }) => {
     <System.ParagraphLarge as="div">
       <Highlight
         {...defaultProps}
-        theme={isDarkMode() ? prismThemeDark : prismThemeLight}
+        theme={isDarkTheme({ theme }) ? prismThemeDark : prismThemeLight}
         code={codeString}
         language={language}
       >

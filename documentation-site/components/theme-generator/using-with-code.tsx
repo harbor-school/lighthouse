@@ -8,7 +8,7 @@ import prismThemeLight from "prism-react-renderer/themes/nightOwlLight"
 import prismThemeDark from "prism-react-renderer/themes/nightOwl"
 import { Pre } from "../../components/markdown-elements"
 import { useClipboard } from "../../hooks"
-import { isDarkMode } from "../../utils"
+import { isDarkTheme } from "../../utils"
 
 export function UsingWithCode() {
   const theme = useTheme()
@@ -76,7 +76,7 @@ function trimStringValues(obj) {
     <System.Block position="relative" font="ParagraphLarge">
       <Highlight
         {...defaultProps}
-        theme={isDarkMode() ? prismThemeDark : prismThemeLight}
+        theme={isDarkTheme({ theme }) ? prismThemeDark : prismThemeLight}
         code={baseCodeString}
         language="jsx"
       >
