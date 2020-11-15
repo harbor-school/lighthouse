@@ -64,8 +64,8 @@ export const ThemeToggle = styled(motion.div, ({ $theme }: Props) => {
     cursor: "pointer",
     filter: "grayscale(1)",
     [$theme.mediaQuery.large]: {
-      bottom: "5%",
-      right: "5%",
+      right: "5vw",
+      bottom: "5vw",
     },
   }
 })
