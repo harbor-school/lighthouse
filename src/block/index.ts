@@ -24,7 +24,7 @@
  *         },
  *       }}
  *     >
- *       <System.Block backgroundColor="backgroundPrimary" // Accepts all themeable color properties
+ *       <System.Block backgroundColor="backgroundPrimary" // Accepts all semantic color properties from the theme
  *       >
  *         <System.DisplayXSmall>Account</System.DisplayXSmall>
  *         <System.Spacing height="scale400" />
@@ -37,7 +37,7 @@
  *       <System.Block display="flex" alignItems="center" backgroundColor="backgroundPrimary">
  *         <System.Block font="font700" color="contentPrimary">
  *           <System.StyledLink>
- *             <System.Block font="font700" color={theme.colors.primary}>
+ *             <System.Block font="font700" color="primary">
  *               Become a member
  *             </System.Block>
  *           </System.StyledLink>{" "}

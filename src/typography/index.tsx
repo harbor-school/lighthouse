@@ -1,5 +1,5 @@
 /**
- * Typography components are used to display contents.
+ * Typography components are used to display content. It accepts themeable properties for color and font property.
  *
  *```tsx
  * import * as React from "react"
