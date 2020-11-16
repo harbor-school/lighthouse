@@ -31,7 +31,7 @@
  *       <System.Alert
  *         show={show}
  *         title="Title"
- *         message="Message"
+ *         message="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porta tincidunt iaculis. Aenean sit amet augue eros. Duis rhoncus ex sit amet felis venenatis fringilla."
  *         kind="negative"
  *         closeOnClick={() => setShow(false)}
  *       />
