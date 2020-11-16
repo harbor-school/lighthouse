@@ -1,5 +1,5 @@
 /**
- * Like its name, the Block component is a base Lego block to build whole layouts. It accepts common layout CSS properties and could be added with media query using override. A responsive grid layout could be made with Block components like the below example.
+ * Like its name, the Block component is a base Lego block to build whole layouts. It accepts common layout CSS properties and could be added with media query using override. A responsive grid layout could be made with Block components like the below example. (Resize browser to view.)
  *
  *```tsx
  * import * as React from "react"
@@ -17,7 +17,7 @@
  *         Block: {
  *           gridTemplateColumns: "1fr 3fr",
  *           padding: theme.sizing.scale900,
- *           [theme.mediaQuery.large]: { // responsive mediaQuery Usage (resize browser to view)
+ *           [theme.mediaQuery.large]: { // responsive mediaQuery Usage
  *             gridTemplateColumns: "1fr",
  *             padding: `0 ${theme.sizing.scale800}`,
  *           },
