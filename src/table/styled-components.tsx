@@ -44,6 +44,7 @@ export const DataCell = styled(
       padding: `${$theme.sizing.scale300} ${$theme.sizing.scale600}`,
       overflow: "hidden",
       textOverflow: "ellipsis",
+      boxSizing: "border-box",
       color: $theme.colors.contentPrimary,
       ...$theme.typography.ParagraphSmall,
     }

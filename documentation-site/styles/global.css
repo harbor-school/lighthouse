@@ -1,4 +1,12 @@
-@import './reset-css-in-web.css';
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 ::-moz-selection {
   /* Code for Firefox */
