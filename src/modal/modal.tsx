@@ -8,7 +8,7 @@ import { useOnClickOutside } from "../hooks"
 import { Spinner } from "../spinner"
 import { ROLE } from "./constants"
 import { ModalContent } from "./modal-content"
-import { ChildrenWrap, Loading, Wrap } from "./styled-components"
+import { ChildrenWrap, Loading, ModalBoxInner, Wrap } from "./styled-components"
 import { ModalPropsT } from "./types"
 
 export const Modal: React.FC<ModalPropsT> = ({
@@ -65,24 +65,26 @@ export const Modal: React.FC<ModalPropsT> = ({
             {...sharedProps}
             {...motionProps}
           >
-            {loading ? (
-              <Loading $style={overrides.Loading}>{loadingSpinner}</Loading>
-            ) : (
-              <ModalContent
-                role={role}
-                closeOnClick={closeOnClick}
-                desc={desc}
-                onSubmit={onSubmit}
-                title={title}
-                confirmText={confirmText}
-                cancelText={cancelText}
-                confirmOnClick={confirmOnClick}
-                overrides={overrides}
-                {...sharedProps}
-              >
-                {children && <ChildrenWrap {...sharedProps}>{children}</ChildrenWrap>}
-              </ModalContent>
-            )}
+            <ModalBoxInner>
+              {loading ? (
+                <Loading $style={overrides.Loading}>{loadingSpinner}</Loading>
+              ) : (
+                <ModalContent
+                  role={role}
+                  closeOnClick={closeOnClick}
+                  desc={desc}
+                  onSubmit={onSubmit}
+                  title={title}
+                  confirmText={confirmText}
+                  cancelText={cancelText}
+                  confirmOnClick={confirmOnClick}
+                  overrides={overrides}
+                  {...sharedProps}
+                >
+                  {children && <ChildrenWrap {...sharedProps}>{children}</ChildrenWrap>}
+                </ModalContent>
+              )}
+            </ModalBoxInner>
           </Wrap>
         </FormContext.Provider>
       )}
