@@ -12,6 +12,8 @@
  * }
  * ```
  * @param children - React.ReactNode
+ * @param color - ResponsiveT\<string\>
+ * @param font - ResponsiveT\<string\>
  * @param overrides - \{ Block?: StyleObject }
  */
 export * from "./types"
