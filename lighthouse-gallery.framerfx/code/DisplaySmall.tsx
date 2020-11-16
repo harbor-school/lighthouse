@@ -43,24 +43,9 @@ addPropertyControls(DisplaySmall, {
     type: ControlType.SegmentedEnum,
     optionTitles: ["Left", "Center", "Right"],
     options: ["left", "center", "right"],
-  },
-  padding: {
-    title: "Padding",
-    type: ControlType.FusedNumber,
-    toggleKey: "paddingPerSide",
-    toggleTitles: ["Padding", "Padding per side"],
-    valueKeys: ["paddingTop", "paddingRight", "paddingBottom", "paddingLeft"],
-    valueLabels: ["T", "R", "B", "L"],
-    min: 0,
-  },
-  margin: {
-    title: "Margin",
-    type: ControlType.FusedNumber,
-    toggleKey: "marginPerSide",
-    toggleTitles: ["Margin", "Margin per side"],
-    valueKeys: ["marginTop", "marginRight", "marginBottom", "marginLeft"],
-    valueLabels: ["T", "R", "B", "L"],
-    min: 0,
+    hidden(props) {
+      return props.as === "span"
+    },
   },
   as: {
     title: "As",
