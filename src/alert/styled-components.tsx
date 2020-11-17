@@ -63,6 +63,8 @@ export const AlertMessage = styled("p", ({ $theme }: Props) => {
     color: `${$theme.colors.contentInversePrimary}`,
     textAlign: "center",
     overflow: "scroll",
+    margin: "0px",
+    padding: "0px",
     ...$theme.typography.ParagraphSmall,
   }
 })
