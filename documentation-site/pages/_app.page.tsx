@@ -19,6 +19,7 @@ import * as darkThemeData from "../store/dark-theme.json"
 import * as lightThemeData from "../store/light-theme.json"
 import { getColorfromString, isClient } from "../utils"
 import { useState, useEffect } from "react"
+import { GAScript } from "../components/ga-script"
 
 function StyledApp(props) {
   const { Component, pageProps } = props
@@ -68,6 +69,7 @@ function StyledApp(props) {
           <meta content="#ffffff" name="theme-color" />
           <meta content="#ffffff" name="msapplication-TileColor" />
           <meta content="/static/favicons/browserconfig.xml" name="msapplication-config" />
+          <GAScript />
         </Head>
         <DefaultSeo {...SEO} />
         <Component {...pageProps} />

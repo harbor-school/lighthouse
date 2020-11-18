@@ -1,7 +1,6 @@
 const title = "Lighthouse Design System"
-const description = `Lighthouse Design System is a flexible Design System based on atomic design principles.
-You can design and develop beautiful React Applications at the same time using the same
-sources of components.`
+const description = `Lighthouse is a continuous design system for integrating design with development workflows.
+Designing just got easier as you can directely import coded components, use the exact same layouts and measurments, and publish in no matter of time. Lighthouse Design System also provides fully customizable themes.`
 
 const SEO = {
   title,

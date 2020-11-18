@@ -1,3 +1,4 @@
+require("dotenv").config()
 const withMDX = require("@next/mdx")({
   extension: /\.(md|mdx)$/,
 })
@@ -13,5 +14,8 @@ module.exports = withTM(
     },
     exportTrailingSlash: true,
     pageExtensions: ["page.ts", "page.tsx", "api.ts", "api.tsx", "page.mdx"],
+    env: {
+      GA_TRACKING_ID: process.env.GA_TRACKING_ID,
+    },
   })
 )

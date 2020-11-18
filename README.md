@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://lighthouse.harbor.school/">
-    <img src="https://github.com/harbor-school/lighthouse/blob/master/documentation-site/public/static/images/brand/logo.png?raw=true" width="350px" alt="Lighthouse logo">
+    <img src="https://lighthouse.harbor.school/static/images/brand/logo.png" width="350px" alt="Lighthouse logo">
   </a>
 </p>
 <br />
