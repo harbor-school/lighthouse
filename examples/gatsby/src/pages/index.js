@@ -16,12 +16,9 @@ const IndexPage = () => (
       <Image />
     </System.Block>
     <System.Button onClick={() => navigate("/page-2/")}>Go to page 2</System.Button>
-    <br />
-    <Link to="/using-typescript/">
-      <System.StyledLink as="span" highlight>
-        Go to "Using TypeScript"
-      </System.StyledLink>
-    </Link>
+    <System.Button kind="secondary" onClick={() => navigate("/using-typescript/")}>
+      Go to "Using TypeScript"
+    </System.Button>
   </Layout>
 )
 
