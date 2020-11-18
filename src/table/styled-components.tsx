@@ -25,6 +25,7 @@ export const HeaderCell = styled(
       padding: `${$theme.sizing.scale500} ${$theme.sizing.scale600}`,
       overflow: "hidden",
       textOverflow: "ellipsis",
+      boxSizing: "border-box",
       color: $theme.colors.contentPrimary,
       ...$theme.typography.LabelMedium,
     }
