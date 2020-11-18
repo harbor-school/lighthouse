@@ -8,6 +8,7 @@ import {
   codeSandboxNewProjectWithLighthouseUrl,
   framerNewProjectWithLighthouseUrl,
   githubUrl,
+  lighthouseGalleryUrl,
 } from "../../constants"
 import * as Asset from "../../assets"
 import { mobileMenuState } from "../../store"
@@ -70,6 +71,13 @@ export function Header({ home }) {
                     <Arrowupright height={18} color={theme.colors.contentInversePrimary} />
                   </System.FlexItem>
                 </System.FlexBox>
+              </System.FlexItem>
+              <System.FlexItem>
+                <a href={lighthouseGalleryUrl} target="_blank" rel="noreferrer">
+                  <System.ParagraphSmall color={theme.colors.contentInversePrimary}>
+                    View All Components
+                  </System.ParagraphSmall>
+                </a>
               </System.FlexItem>
               <System.FlexItem>
                 <a href={githubUrl} target="_blank" rel="noreferrer">
