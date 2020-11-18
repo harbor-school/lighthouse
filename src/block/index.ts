@@ -48,22 +48,22 @@
  *   )
  * }
  * ```
- * @param as - ElementType
- * @param display - ElementType
- * @param color - ResponsiveT\<string\>
- * @param backgroundColor - ResponsiveT\<string\>
- * @param font - ResponsiveT\<string\>
- * @param width - ResponsiveT\<ScaleT\>
- * @param height - ResponsiveT\<ScaleT\>
- * @param paddingTop - ResponsiveT\<ScaleT\>
- * @param paddingRight - ResponsiveT\<ScaleT\>
- * @param paddingBottom - ResponsiveT\<ScaleT\>
- * @param paddingLeft - ResponsiveT\<ScaleT\>
- * @param marginTop - ResponsiveT\<ScaleT\>
- * @param marginRight - ResponsiveT\<ScaleT\>
- * @param marginBottom - ResponsiveT\<ScaleT\>
- * @param marginLeft - ResponsiveT\<ScaleT\>
- * @param overrides - \{ Block?: StyleObject }
+ * @param as - React.ElementType
+ * @param display - React.ElementType
+ * @param color - string | Array\<string\>
+ * @param backgroundColor - string | Array\<string\>
+ * @param font - string | Array\<string\>
+ * @param width - 0 | string | Array\<string\>
+ * @param height - 0 | string | Array\<string\>
+ * @param paddingTop - 0 | string | Array\<string\>
+ * @param paddingRight - 0 | string | Array\<string\>
+ * @param paddingBottom - 0 | string | Array\<string\>
+ * @param paddingLeft - 0 | string | Array\<string\>
+ * @param marginTop - 0 | string | Array\<string\>
+ * @param marginRight - 0 | string | Array\<string\>
+ * @param marginBottom - 0 | string | Array\<string\>
+ * @param marginLeft - 0 | string | Array\<string\>
+ * @param overrides - \{ Block?: StyletronReact.StyleObject }
  */
 export const Block: React.FC<BlockPropsT> = BlockComp
 export * from "./types"

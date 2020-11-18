@@ -22,7 +22,7 @@
  * @param pattern - string
  * @param onChange - (event: React.FocusEvent<HTMLInputElement>) => void
  * @param onBlur - (event: React.FocusEvent<HTMLInputElement>) => void
- * @param overrides - \{ Wrap?: StyleObject; LabelText?: StyleObject; Caption?: StyleObject; FocusBar?: StyleObject; BaseInput?: StyleObject }
+ * @param overrides - \{ Wrap?: StyletronReact.StyleObject; LabelText?: StyletronReact.StyleObject; Caption?: StyletronReact.StyleObject; FocusBar?: StyletronReact.StyleObject; BaseInput?: StyletronReact.StyleObject }
  */
 export const Input: React.FC<InputPropsT> = InputComp
 export * from "./types"

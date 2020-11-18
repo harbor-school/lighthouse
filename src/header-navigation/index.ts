@@ -64,7 +64,7 @@
  * }
  * ```
  * @param children - React.ReactNode
- * @param overrides - \{ Header?: StyleObject }
+ * @param overrides - \{ Header?: StyletronReact.StyleObject }
  */
 export const HeaderNavigation: React.FC<HeaderNavigationPropsT> = HeaderNavigationComp
 export { HeaderNavigationItem } from "./header-navigation-item"

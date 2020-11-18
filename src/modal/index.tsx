@@ -63,7 +63,7 @@
  * @param closeOnClick - (event: React.MouseEvent<HTMLButtonElement>) => void
  * @param confirmOnClick - (event: React.MouseEvent<HTMLButtonElement>) => void
  * @param onSubmit - SubmitHandler<Record<string, any>>
- * @param overrides - \{ Wrap?: StyleObject; Loading?: StyleObject; ModalHeader?: StyleObject; Title?: StyleObject; ModalBody?: StyleObject; Description?: StyleObject; ModalFooter?: StyleObject }
+ * @param overrides - \{ Wrap?: StyletronReact.StyleObject; Loading?: StyletronReact.StyleObject; ModalHeader?: StyletronReact.StyleObject; Title?: StyletronReact.StyleObject; ModalBody?: StyletronReact.StyleObject; Description?: StyletronReact.StyleObject; ModalFooter?: StyletronReact.StyleObject }
  */
 export const Modal: React.FC<ModalPropsT> = ModalComp
 export * from "./types"

@@ -13,7 +13,7 @@
  * ```
  * @param value - number
  * @param infinite - boolean
- * @param overrides - \{ Wrap?: StyleObject; Bar?: StyleObject }
+ * @param overrides - \{ Wrap?: StyletronReact.StyleObject; Bar?: StyletronReact.StyleObject }
  */
 export const ProgressBar: React.FC<ProgressBarPropsT> = ProgressBarComp
 export * from "./types"

@@ -12,9 +12,9 @@
  * }
  * ```
  * @param children - React.ReactNode
- * @param color - ResponsiveT\<string\>
- * @param font - ResponsiveT\<string\>
- * @param overrides - \{ Block?: StyleObject }
+ * @param color - string | Array\<string\>
+ * @param font - string | Array\<string\>
+ * @param overrides - \{ Block?: StyletronReact.StyleObject }
  */
 export * from "./types"
 export * from "./typography"

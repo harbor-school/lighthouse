@@ -45,7 +45,7 @@
  * @param kind - "positive" | "negative"
  * @param show - boolean
  * @param closeOnClick - (event: React.MouseEvent<HTMLButtonElement>) => void
- * @param overrides - \{ Wrap?: StyleObject; AlertHeader?: StyleObject; AlertBody?: StyleObject }
+ * @param overrides - \{ Wrap?: StyletronReact.StyleObject; AlertHeader?: StyletronReact.StyleObject; AlertBody?: StyletronReact.StyleObject }
  */
 export const Alert: React.FC<AlertPropsT> = AlertComp
 export * from "./types"

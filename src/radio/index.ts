@@ -35,7 +35,7 @@
  * @param name - string
  * @param required - boolean
  * @param onChange - (event: React.FocusEvent<HTMLInputElement>) => void
- * @param overrides - \{ Wrap?: StyleObject }
+ * @param overrides - \{ Wrap?: StyletronReact.StyleObject }
  */
 export const Radio: React.FC<RadioPropsT> = RadioComp
 export * from "./types"

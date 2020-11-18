@@ -31,7 +31,7 @@
  * @param formBody - React.ReactNode
  * @param formFooter - React.ReactNode
  * @param onSubmit - SubmitHandler<Record<string, any>>
- * @param overrides - \{ FormWrap?: StyleObject }
+ * @param overrides - \{ FormWrap?: StyletronReact.StyleObject }
  */
 export const Form: React.FC<FormPropsT> = FormComp
 export * from "./types"

@@ -17,7 +17,7 @@
  * @param children - React.ReactNode
  * @param startEnhancer - React.ReactNode
  * @param onClick - (event: React.MouseEvent<HTMLButtonElement>) => void
- * @param overrides - \{ BaseButton?: StyleObject; StartEnhancer?: StyleObject; ButtonText?: StyleObject }
+ * @param overrides - \{ BaseButton?: StyletronReact.StyleObject; StartEnhancer?: StyletronReact.StyleObject; ButtonText?: StyletronReact.StyleObject }
  * ```tsx
  * export default () => {
  *   return (

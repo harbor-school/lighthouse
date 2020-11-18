@@ -22,7 +22,7 @@
  * @param label - string
  * @param children - React.ReactNode
  * @param onClick - (event: React.MouseEvent<HTMLButtonElement>) => void
- * @param overrides - \{ Wrap?: StyleObject }
+ * @param overrides - \{ Wrap?: StyletronReact.StyleObject }
  */
 export const Card: React.FC<CardPropsT> = CardComp
 export { CardAction } from "./card-action"

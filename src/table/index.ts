@@ -22,7 +22,7 @@
  * @param headerCells - Array<string | number>
  * @param dataCells - Array<Array<string | number>>
  * @param columnRatio - Array<number>
- * @param overrides - \{ Wrap?: StyleObject; Headers?: StyleObject; HeaderCell?: StyleObject; Datas?: StyleObject; DataCell?: StyleObject }
+ * @param overrides - \{ Wrap?: StyletronReact.StyleObject; Headers?: StyletronReact.StyleObject; HeaderCell?: StyletronReact.StyleObject; Datas?: StyletronReact.StyleObject; DataCell?: StyletronReact.StyleObject }
  */
 export const Table: React.FC<TablePropsT> = TableComp
 export * from "./types"

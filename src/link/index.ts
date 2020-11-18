@@ -19,7 +19,7 @@
  * @param highlight - boolean
  * @param as - React.ElementType
  * @param onClick - (event: React.MouseEvent<HTMLElement>) => void
- * @param overrides - \{ Link?: StyleObject }
+ * @param overrides - \{ Link?: StyletronReact.StyleObject }
  */
 export const StyledLink: React.FC<StyledLinkPropsT> = StyledLinkComp
 export * from "./types"

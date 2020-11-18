@@ -11,7 +11,7 @@
  *   )
  * }
  * ```
- * @param overrides - \{ Round?: StyleObject; }
+ * @param overrides - \{ Round?: StyletronReact.StyleObject; }
  */
 export const Spinner: React.FC<SpinnerPropsT> = SpinnerComp
 export * from "./types"

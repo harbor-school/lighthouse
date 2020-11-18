@@ -45,7 +45,7 @@
  * @param placement - "top" | "right" | "bottom" | "left"
  * @param children - React.ReactNode
  * @param onClickOutside - (event: React.MouseEvent<HTMLElement>) => void
- * @param overrides - \{ Wrap?: StyleObject }
+ * @param overrides - \{ Wrap?: StyletronReact.StyleObject }
  */
 export const Drawer: React.FC<DrawerPropsT> = DrawerComp
 export * from "./types"

@@ -21,7 +21,7 @@
  * }
  * ```
  * @param children - React.ReactNode
- * @param overrides - \{ Wrap?: StyleObject; Item?: StyleObject }
+ * @param overrides - \{ Wrap?: StyletronReact.StyleObject; Item?: StyletronReact.StyleObject }
  */
 export const Breadcrumbs: React.FC<BreadcrumbsPropsT> = BreadcrumbsComp
 export * from "./types"

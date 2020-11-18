@@ -27,7 +27,7 @@
  * @param children - React.ReactNode
  * @param endEnhancer - React.ReactNode
  * @param onClick - (event: React.MouseEvent<HTMLButtonElement>) => void
- * @param overrides - \{ Wrap?: StyleObject; EndEnhancer?: StyleObject }
+ * @param overrides - \{ Wrap?: StyletronReact.StyleObject; EndEnhancer?: StyletronReact.StyleObject }
  */
 export const ListItem: React.FC<ListItemPropsT> = ListItemComp
 export const ListItemLabel: React.FC<ListItemLabelPropsT> = ListItemLabelComp

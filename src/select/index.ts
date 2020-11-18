@@ -55,7 +55,7 @@
  *   )
  * }
  * ```
- * @param options - Array<SelectOption>
+ * @param options - Array\<SelectOption\>
  * @param placeholder - string
  * @param active - number
  * @param isOpen - boolean
@@ -63,7 +63,7 @@
  * @param onClick - (event: React.MouseEvent<HTMLElement>) => void
  * @param onChange - (newValue: number) => void
  * @param onClickOutside - (event?: React.MouseEvent<HTMLElement>) => void
- * @param overrides - \{ Wrap?: StyleObject; OptionList?: StyleObject; Option?: StyleObject; OptionLabel?: StyleObject }
+ * @param overrides - \{ Wrap?: StyletronReact.StyleObject; OptionList?: StyletronReact.StyleObject; Option?: StyletronReact.StyleObject; OptionLabel?: StyletronReact.StyleObject }
  */
 export const Select: React.FC<SelectPropsT> = SelectComp
 export * from "./types"
