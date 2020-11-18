@@ -18,9 +18,9 @@ Designing just got easier as you can directely import coded components, use the 
 
 ## Getting Started
 
-Visit <a aria-label="lighthouse getting started" href="https://lighthouse.harbor.school/getting-started/start-design">Start Design</a> to get started design with Lighthouse Design System.
+Visit <a aria-label="lighthouse getting started" href="https://lighthouse.harbor.school/getting-started/start-design/">Start Design</a> to get started design with Lighthouse Design System.
 
-Visit <a aria-label="lighthouse getting started" href="https://lighthouse.harbor.school/getting-started/start-code">Start Code</a> to get started code with Lighthouse Design System.
+Visit <a aria-label="lighthouse getting started" href="https://lighthouse.harbor.school/getting-started/start-code/">Start Code</a> to get started code with Lighthouse Design System.
 
 ## Documentation
 
