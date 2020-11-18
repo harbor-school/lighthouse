@@ -8,6 +8,7 @@
 <p align="center">
   <img alt="Bundle Size" src="https://badgen.net/bundlephobia/minzip/@harborschool/lighthouse"/>
   <img alt="NPM Downloads" src="https://img.shields.io/npm/dm/@harborschool/lighthouse.svg?style=flat"/>
+  <img alt="MIT License" src="https://img.shields.io/github/license/harbor-school/lighthouse"/>
 </p>
 <br />
 
@@ -17,11 +18,13 @@ Designing just got easier as you can directely import coded components, use the 
 
 ## Getting Started
 
-Visit <a aria-label="lighthouse getting started" href="https://lighthouse.harbor.school/getting-started/start-design">https://lighthouse.harbor.school/getting-started/start-design</a> to get started with Lighthouse Design System.
+Visit <a aria-label="lighthouse getting started" href="https://lighthouse.harbor.school/getting-started/start-design">Start Design</a> to get started design with Lighthouse Design System.
+
+Visit <a aria-label="lighthouse getting started" href="https://lighthouse.harbor.school/getting-started/start-code">Start Code</a> to get started code with Lighthouse Design System.
 
 ## Documentation
 
-Visit [https://lighthouse.harbor.school](https://lighthouse.harbor.school) to view the full documentation.
+Visit [lighthouse.harbor.school](https://lighthouse.harbor.school) to view the full documentation.
 
 ## Contributing
 
