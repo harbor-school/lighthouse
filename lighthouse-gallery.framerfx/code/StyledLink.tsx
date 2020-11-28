@@ -10,8 +10,8 @@ const InnerStyledLink = (props) => {
 export const StyledLink = withHOC(InnerStyledLink)
 
 StyledLink.defaultProps = {
-  width: 150,
-  height: 50,
+  width: 27,
+  height: 18,
 }
 
 addPropertyControls(StyledLink, {
@@ -23,11 +23,12 @@ addPropertyControls(StyledLink, {
   content: {
     title: "Children",
     type: ControlType.String,
+    defaultValue: "Link",
   },
   highlight: {
     title: "Highlight",
     type: ControlType.Boolean,
-    defaultValue: false,
+    defaultValue: true,
   },
   target: {
     title: "Target",
