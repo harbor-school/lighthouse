@@ -16,7 +16,7 @@
   "dependencies": {
     "@framer/framer.default": "^1.71.0",
     "@framer/maximedegreve.tinyfaces": "^1.4.0",
-    "@framer/ruucm-h.enhanced-lottie": "1.49.0",
+    "@framer/ruucm-h.enhanced-lottie": "1.51.0",
     "framer-motion": "^2.9.4",
     "module-alias": "^2.2.2"
   },

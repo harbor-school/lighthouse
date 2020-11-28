@@ -33,10 +33,10 @@
   resolved "https://registry.framer.com/@framer/maximedegreve.tinyfaces/-/@framer/maximedegreve.tinyfaces-1.4.0.tgz#1dc72e2f5f564f77f95f22cf1a586b2a060b0590"
   integrity sha512-hchdqzkQjDvHFP7H0WN7wHfFufxM7XBLIWvG+22mNc4GawL/CSRYwssk1ao8ivniXmlqP076KRaooBpIUXfe7A==
 
-"@framer/ruucm-h.enhanced-lottie@1.49.0":
-  version "1.49.0"
-  resolved "https://registry.framer.com/@framer/ruucm-h.enhanced-lottie/-/@framer/ruucm-h.enhanced-lottie-1.49.0.tgz#c77214dd24c8cc8b48b2847f4a657ffbf1e057c4"
-  integrity sha512-/K/qMCwN94nz1ci2/VjZKjpbqRxIEUJVRG6ozkNXX6mV4EGTj7qLrm8v981KhuoA+tBT7IFPxq1KeiSq532m5A==
+"@framer/ruucm-h.enhanced-lottie@1.51.0":
+  version "1.51.0"
+  resolved "https://registry.framer.com/@framer/ruucm-h.enhanced-lottie/-/@framer/ruucm-h.enhanced-lottie-1.51.0.tgz#2517f000f4282f5a872d7ac07ea16ccec32371aa"
+  integrity sha512-33iR4eujERKmakSBBYcI73nV1JfciVEiP4vvMOt2a9NVGg+uKOmUN6YAMs/nwREgSG5jZcS68izc5NDx/ZrjRg==
   dependencies:
     "@framer/framer.default" "^1.77.0"
     lottie-web "^5.5.3"
