@@ -8642,7 +8642,7 @@
                     "__class" : "CodeComponentNode",
                     "$control__theme" : {
                       "type" : "enum",
-                      "value" : "light"
+                      "value" : "dark"
                     },
                     "$control__themeFile" : {
                       "type" : "file",
@@ -27241,6 +27241,67 @@
             "visible" : true,
             "width" : 3160,
             "widthType" : 0
+          },
+          {
+            "__class" : "FrameNode",
+            "aspectRatio" : null,
+            "bottom" : null,
+            "centerAnchorX" : 0,
+            "centerAnchorY" : 0,
+            "children" : [
+
+            ],
+            "clip" : true,
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : false,
+            "duplicatedFrom" : null,
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "rgba(255,255,255,1)",
+            "fillEnabled" : true,
+            "fillImage" : null,
+            "fillImageOriginalName" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillType" : "color",
+            "framePreset" : "Youtube_1280_720",
+            "guidesX" : [
+
+            ],
+            "guidesY" : [
+
+            ],
+            "height" : 720,
+            "heightType" : 0,
+            "id" : "ihoVVOC4Q",
+            "intrinsicHeight" : null,
+            "intrinsicWidth" : null,
+            "isExternalMaster" : null,
+            "isMaster" : false,
+            "isTarget" : false,
+            "left" : 2961,
+            "locked" : false,
+            "name" : null,
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "vYz8uO0KD",
+            "previewSettings" : null,
+            "radius" : 0,
+            "radiusBottomLeft" : 0,
+            "radiusBottomRight" : 0,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 0,
+            "radiusTopRight" : 0,
+            "replicaInfo" : null,
+            "right" : null,
+            "rotation" : 0,
+            "top" : 889,
+            "visible" : true,
+            "width" : 1280,
+            "widthType" : 0
           }
         ],
         "duplicatedFrom" : null,
@@ -27502,97 +27563,31 @@
                 "__class" : "CodeComponentNode",
                 "$control__as" : {
                   "type" : "enum",
-                  "value" : "div"
+                  "value" : "span"
                 },
                 "$control__color" : {
                   "type" : "string",
-                  "value" : "#000"
+                  "value" : "contentPrimary"
                 },
                 "$control__content" : {
                   "type" : "string",
                   "value" : "You can draw with REAL components"
-                },
-                "$control__margin" : {
-                  "isFused" : false,
-                  "type" : "fusednumber",
-                  "value" : {
-                    "fused" : [
-                      0,
-                      0,
-                      0,
-                      0
-                    ],
-                    "single" : 0
-                  }
-                },
-                "$control__marginBottom" : {
-                  "type" : null,
-                  "value" : 0
-                },
-                "$control__marginLeft" : {
-                  "type" : null,
-                  "value" : 0
-                },
-                "$control__marginPerSide" : {
-                  "type" : null,
-                  "value" : false
-                },
-                "$control__marginRight" : {
-                  "type" : null,
-                  "value" : 0
-                },
-                "$control__marginTop" : {
-                  "type" : null,
-                  "value" : 0
-                },
-                "$control__padding" : {
-                  "isFused" : false,
-                  "type" : "fusednumber",
-                  "value" : {
-                    "fused" : [
-                      0,
-                      0,
-                      0,
-                      0
-                    ],
-                    "single" : 0
-                  }
-                },
-                "$control__paddingBottom" : {
-                  "type" : null,
-                  "value" : 0
-                },
-                "$control__paddingLeft" : {
-                  "type" : null,
-                  "value" : 0
-                },
-                "$control__paddingPerSide" : {
-                  "type" : null,
-                  "value" : false
-                },
-                "$control__paddingRight" : {
-                  "type" : null,
-                  "value" : 0
-                },
-                "$control__paddingTop" : {
-                  "type" : null,
-                  "value" : 0
                 },
                 "$control__textAlign" : {
                   "type" : "segmentedenum",
                   "value" : "left"
                 },
                 "aspectRatio" : null,
-                "bottom" : -6,
-                "centerAnchorX" : 0.43732590529247911,
-                "centerAnchorY" : 0.70999999999999996,
+                "bottom" : -8,
+                "centerAnchorX" : 0.54166666666666663,
+                "centerAnchorY" : 0.72999999999999998,
                 "clip" : true,
                 "codeComponentIdentifier" : ".\/LabelMedium.tsx_LabelMedium",
-                "codeComponentPackageVersion" : "1.71.0",
+                "codeComponentPackageVersion" : "1.77.0",
                 "codeOverrideEnabled" : false,
                 "constraintsLocked" : false,
                 "duplicatedFrom" : [
-                  "Hklq0EeHs"
+                  "YmOD0DQn6"
                 ],
                 "exportOptions" : [
 
@@ -27605,12 +27600,12 @@
                 "fillImagePixelWidth" : null,
                 "fillImageResize" : "fill",
                 "fillType" : "color",
-                "height" : 41,
+                "height" : 43,
                 "heightType" : 0,
-                "id" : "RqqPOUsra",
+                "id" : "pbrXelgyg",
                 "intrinsicHeight" : 21,
-                "intrinsicWidth" : 150,
-                "left" : 62,
+                "intrinsicWidth" : 109,
+                "left" : null,
                 "locked" : false,
                 "name" : null,
                 "opacity" : 1,
@@ -27624,11 +27619,11 @@
                 "radiusPerCorner" : false,
                 "radiusTopLeft" : 0,
                 "radiusTopRight" : 0,
-                "right" : null,
+                "right" : 41,
                 "rotation" : 0,
                 "top" : null,
                 "visible" : true,
-                "width" : 190,
+                "width" : 149,
                 "widthType" : 0
               }
             ],
@@ -27662,7 +27657,7 @@
             "isExternalMaster" : null,
             "isMaster" : false,
             "isTarget" : false,
-            "left" : 3406,
+            "left" : 3535,
             "locked" : false,
             "name" : null,
             "opacity" : 1,
@@ -27690,9 +27685,9 @@
             "stackDistribution" : "start",
             "stackEnabled" : true,
             "stackGap" : 12,
-            "top" : -509,
+            "top" : -286,
             "visible" : true,
-            "width" : 252,
+            "width" : 211,
             "widthType" : 0
           },
           {
@@ -28095,7 +28090,7 @@
             "isExternalMaster" : null,
             "isMaster" : false,
             "isTarget" : false,
-            "left" : 2068,
+            "left" : 2197,
             "locked" : false,
             "name" : "ListItem - Examples",
             "opacity" : 1,
@@ -28123,7 +28118,7 @@
             "stackDistribution" : "start",
             "stackEnabled" : true,
             "stackGap" : 0,
-            "top" : -625,
+            "top" : -402,
             "visible" : true,
             "width" : 1294,
             "widthType" : 0
@@ -28395,7 +28390,7 @@
             "isExternalMaster" : null,
             "isMaster" : false,
             "isTarget" : false,
-            "left" : 2068,
+            "left" : 2197,
             "locked" : false,
             "name" : "Table - Examples",
             "opacity" : 1,
@@ -28423,7 +28418,7 @@
             "stackDistribution" : "start",
             "stackEnabled" : true,
             "stackGap" : 0,
-            "top" : -275,
+            "top" : -52,
             "visible" : true,
             "width" : 496,
             "widthType" : 0
@@ -28855,7 +28850,7 @@
             "isExternalMaster" : null,
             "isMaster" : false,
             "isTarget" : false,
-            "left" : 2692,
+            "left" : 2821,
             "locked" : false,
             "name" : "Icon - Examples",
             "opacity" : 1,
@@ -28883,7 +28878,7 @@
             "stackDistribution" : "start",
             "stackEnabled" : true,
             "stackGap" : 0,
-            "top" : -275,
+            "top" : -52,
             "visible" : true,
             "width" : 368,
             "widthType" : 0
@@ -29072,8 +29067,8 @@
                         "fillImagePixelWidth" : null,
                         "fillImageResize" : "fill",
                         "fillType" : "color",
-                        "height" : 1,
-                        "heightType" : 3,
+                        "height" : 123,
+                        "heightType" : 0,
                         "id" : "USSGTeGZu",
                         "intrinsicHeight" : 50,
                         "intrinsicWidth" : 150,
@@ -31832,7 +31827,7 @@
             "isExternalMaster" : null,
             "isMaster" : false,
             "isTarget" : false,
-            "left" : 912,
+            "left" : 1041,
             "locked" : false,
             "name" : "Display Blocks",
             "opacity" : 1,
@@ -31860,7 +31855,7 @@
             "stackDistribution" : "start",
             "stackEnabled" : true,
             "stackGap" : 0,
-            "top" : -625,
+            "top" : -402,
             "visible" : true,
             "width" : 900,
             "widthType" : 0
@@ -36197,7 +36192,7 @@
             "isExternalMaster" : null,
             "isMaster" : false,
             "isTarget" : false,
-            "left" : 912,
+            "left" : 1041,
             "locked" : false,
             "name" : "Heading Blocks",
             "opacity" : 1,
@@ -36225,7 +36220,7 @@
             "stackDistribution" : "start",
             "stackEnabled" : true,
             "stackGap" : 0,
-            "top" : 156,
+            "top" : 379,
             "visible" : true,
             "width" : 574,
             "widthType" : 0
@@ -36241,7 +36236,7 @@
                 "__class" : "CodeComponentNode",
                 "$control__title" : {
                   "type" : "string",
-                  "value" : "BodyGroups"
+                  "value" : "Body Groups"
                 },
                 "aspectRatio" : null,
                 "bottom" : null,
@@ -39978,7 +39973,7 @@
             "isExternalMaster" : null,
             "isMaster" : false,
             "isTarget" : false,
-            "left" : 1605,
+            "left" : 1734,
             "locked" : false,
             "name" : "BodyGroups",
             "opacity" : 1,
@@ -40006,7 +40001,7 @@
             "stackDistribution" : "start",
             "stackEnabled" : true,
             "stackGap" : 0,
-            "top" : 396,
+            "top" : 619,
             "visible" : true,
             "width" : 413,
             "widthType" : 0
@@ -40091,7 +40086,7 @@
             "id" : "RSGoWJB3p",
             "intrinsicHeight" : 93,
             "intrinsicWidth" : 300,
-            "left" : 2508,
+            "left" : 2539,
             "locked" : false,
             "name" : null,
             "opacity" : 1,
@@ -40107,7 +40102,7 @@
             "radiusTopRight" : 0,
             "right" : null,
             "rotation" : 0,
-            "top" : 480,
+            "top" : 775,
             "visible" : true,
             "width" : 300,
             "widthType" : 0
@@ -40175,7 +40170,7 @@
             "id" : "OS1ise7DA",
             "intrinsicHeight" : 93,
             "intrinsicWidth" : 300,
-            "left" : 2508,
+            "left" : 2539,
             "locked" : false,
             "name" : null,
             "opacity" : 1,
@@ -40191,7 +40186,7 @@
             "radiusTopRight" : 0,
             "right" : null,
             "rotation" : 0,
-            "top" : 656,
+            "top" : 951,
             "visible" : true,
             "width" : 300,
             "widthType" : 0
@@ -40423,7 +40418,7 @@
             "isExternalMaster" : null,
             "isMaster" : false,
             "isTarget" : false,
-            "left" : 2508,
+            "left" : 2539,
             "locked" : false,
             "name" : "Form footer",
             "opacity" : 1,
@@ -40451,7 +40446,7 @@
             "stackDistribution" : "start",
             "stackEnabled" : true,
             "stackGap" : 30,
-            "top" : 1031,
+            "top" : 1326,
             "visible" : true,
             "width" : 212,
             "widthType" : 0
@@ -41906,7 +41901,7 @@
             "isExternalMaster" : null,
             "isMaster" : false,
             "isTarget" : false,
-            "left" : 185,
+            "left" : 216,
             "locked" : false,
             "name" : "Button - Examples",
             "opacity" : 1,
@@ -41934,7 +41929,7 @@
             "stackDistribution" : "start",
             "stackEnabled" : true,
             "stackGap" : 0,
-            "top" : 480,
+            "top" : 775,
             "visible" : true,
             "width" : 845,
             "widthType" : 0
@@ -42500,7 +42495,7 @@
             "isExternalMaster" : null,
             "isMaster" : false,
             "isTarget" : false,
-            "left" : 1158,
+            "left" : 1189,
             "locked" : false,
             "name" : "Input - Examples",
             "opacity" : 1,
@@ -42528,7 +42523,7 @@
             "stackDistribution" : "start",
             "stackEnabled" : true,
             "stackGap" : 0,
-            "top" : 480,
+            "top" : 775,
             "visible" : true,
             "width" : 396,
             "widthType" : 0
@@ -43173,7 +43168,7 @@
             "isExternalMaster" : null,
             "isMaster" : false,
             "isTarget" : false,
-            "left" : 1158,
+            "left" : 1189,
             "locked" : false,
             "name" : "Radio - Examples",
             "opacity" : 1,
@@ -43201,7 +43196,7 @@
             "stackDistribution" : "start",
             "stackEnabled" : true,
             "stackGap" : 0,
-            "top" : 923,
+            "top" : 1218,
             "visible" : true,
             "width" : 310,
             "widthType" : 0
@@ -43769,7 +43764,7 @@
             "isExternalMaster" : null,
             "isMaster" : false,
             "isTarget" : false,
-            "left" : 1682,
+            "left" : 1713,
             "locked" : false,
             "name" : "Form - Examples",
             "opacity" : 1,
@@ -43781,7 +43776,11 @@
             "paddingRight" : 0,
             "paddingTop" : 0,
             "parentid" : "CAOZ4HT_F",
-            "previewSettings" : null,
+            "previewSettings" : {
+              "__class" : "PreviewSettings",
+              "responsive" : false,
+              "touch" : false
+            },
             "radius" : 0,
             "radiusBottomLeft" : 0,
             "radiusBottomRight" : 0,
@@ -43792,12 +43791,12 @@
             "replicaInfo" : null,
             "right" : null,
             "rotation" : 0,
-            "stackAlignment" : "start",
+            "stackAlignment" : "center",
             "stackDirection" : "vertical",
             "stackDistribution" : "start",
             "stackEnabled" : true,
             "stackGap" : 0,
-            "top" : 480,
+            "top" : 775,
             "visible" : true,
             "width" : 744,
             "widthType" : 0
@@ -43995,7 +43994,7 @@
             "isExternalMaster" : null,
             "isMaster" : false,
             "isTarget" : false,
-            "left" : 2508,
+            "left" : 2539,
             "locked" : false,
             "name" : null,
             "opacity" : 1,
@@ -44023,7 +44022,7 @@
             "stackDistribution" : "center",
             "stackEnabled" : true,
             "stackGap" : 16,
-            "top" : 803,
+            "top" : 1098,
             "visible" : true,
             "width" : 150,
             "widthType" : 0
@@ -44225,7 +44224,7 @@
             "isExternalMaster" : null,
             "isMaster" : false,
             "isTarget" : false,
-            "left" : 2508,
+            "left" : 2539,
             "locked" : false,
             "name" : null,
             "opacity" : 1,
@@ -44253,7 +44252,7 @@
             "stackDistribution" : "center",
             "stackEnabled" : true,
             "stackGap" : 16,
-            "top" : 886,
+            "top" : 1181,
             "visible" : true,
             "width" : 150,
             "widthType" : 0
@@ -44266,7 +44265,7 @@
         "guidesY" : [
 
         ],
-        "homeNodeId" : "YyXuwWTYc",
+        "homeNodeId" : "Sc0DWxwI3",
         "id" : "CAOZ4HT_F",
         "name" : "INPUTS",
         "originalid" : null,
@@ -44541,7 +44540,7 @@
             "isExternalMaster" : null,
             "isMaster" : false,
             "isTarget" : false,
-            "left" : -1441,
+            "left" : -918,
             "locked" : false,
             "name" : null,
             "opacity" : 1,
@@ -44569,7 +44568,7 @@
             "stackDistribution" : "start",
             "stackEnabled" : true,
             "stackGap" : 10,
-            "top" : 2103,
+            "top" : 2171,
             "visible" : true,
             "width" : 129,
             "widthType" : 0
@@ -44779,7 +44778,7 @@
             "isExternalMaster" : null,
             "isMaster" : false,
             "isTarget" : false,
-            "left" : 1242,
+            "left" : 1341,
             "locked" : false,
             "name" : null,
             "opacity" : 1,
@@ -44807,7 +44806,7 @@
             "stackDistribution" : "center",
             "stackEnabled" : true,
             "stackGap" : 0,
-            "top" : 1784,
+            "top" : 2344,
             "visible" : true,
             "width" : 171,
             "widthType" : 0
@@ -44950,14 +44949,14 @@
                 },
                 "$control__confirmText" : {
                   "type" : "string",
-                  "value" : "confirmText"
+                  "value" : "Click Me!"
                 },
                 "$control__content" : {
                   "type" : "componentinstance"
                 },
                 "$control__desc" : {
                   "type" : "string",
-                  "value" : "Modal Description"
+                  "value" : "Lighthouse Design System Components are compatible with Framer Transitions. Framer automatically calculates differences between two Frame's states and animate correctly."
                 },
                 "$control__isOpen" : {
                   "type" : "boolean",
@@ -44976,17 +44975,17 @@
                 },
                 "$control__title" : {
                   "type" : "string",
-                  "value" : "title"
+                  "value" : "With Framer Transition"
                 },
                 "aspectRatio" : null,
                 "bottom" : null,
-                "centerAnchorX" : 0.50056625141562849,
+                "centerAnchorX" : 0.5,
                 "centerAnchorY" : 0.5,
                 "clip" : true,
                 "codeComponentIdentifier" : ".\/Modal.tsx_Modal",
                 "codeComponentPackageVersion" : "1.71.0",
                 "codeOverrideEnabled" : false,
-                "constraintsLocked" : false,
+                "constraintsLocked" : true,
                 "duplicatedFrom" : [
                   "Hozj5ChKs"
                 ],
@@ -45001,7 +45000,7 @@
                 "fillImagePixelWidth" : null,
                 "fillImageResize" : "fill",
                 "fillType" : "color",
-                "height" : 290,
+                "height" : 350,
                 "heightType" : 0,
                 "id" : "RgvGFgPkF",
                 "intrinsicHeight" : 290,
@@ -45038,7 +45037,7 @@
             "exportOptions" : [
 
             ],
-            "fillColor" : "rgba(128, 128, 128, 0.5)",
+            "fillColor" : "rgb(191, 191, 191)",
             "fillEnabled" : true,
             "fillImage" : null,
             "fillImageOriginalName" : null,
@@ -45061,7 +45060,7 @@
             "isExternalMaster" : null,
             "isMaster" : false,
             "isTarget" : false,
-            "left" : -790,
+            "left" : -691,
             "locked" : false,
             "name" : "Modal State 0",
             "opacity" : 1,
@@ -45078,7 +45077,7 @@
             "replicaInfo" : null,
             "right" : null,
             "rotation" : 0,
-            "top" : 2183,
+            "top" : 3749,
             "visible" : true,
             "width" : 700,
             "widthType" : 0
@@ -45402,7 +45401,7 @@
             "exportOptions" : [
 
             ],
-            "fillColor" : "hsla(0, 0%, 50%, 0.5)",
+            "fillColor" : "rgb(191, 191, 191)",
             "fillEnabled" : true,
             "fillImage" : null,
             "fillImageOriginalName" : null,
@@ -45425,7 +45424,7 @@
             "isExternalMaster" : null,
             "isMaster" : false,
             "isTarget" : false,
-            "left" : -26,
+            "left" : 73,
             "locked" : false,
             "name" : "Modal State 1",
             "opacity" : 1,
@@ -45442,7 +45441,7 @@
             "replicaInfo" : null,
             "right" : null,
             "rotation" : 0,
-            "top" : 2183,
+            "top" : 3749,
             "visible" : true,
             "width" : 700,
             "widthType" : 0
@@ -45635,7 +45634,7 @@
             "exportOptions" : [
 
             ],
-            "fillColor" : "hsla(0, 0%, 50%, 0.5)",
+            "fillColor" : "rgb(191, 191, 191)",
             "fillEnabled" : true,
             "fillImage" : null,
             "fillImageOriginalName" : null,
@@ -45658,7 +45657,7 @@
             "isExternalMaster" : null,
             "isMaster" : false,
             "isTarget" : false,
-            "left" : 738,
+            "left" : 837,
             "locked" : false,
             "name" : "Modal State 2",
             "opacity" : 1,
@@ -45675,7 +45674,7 @@
             "replicaInfo" : null,
             "right" : null,
             "rotation" : 0,
-            "top" : 2183,
+            "top" : 3749,
             "visible" : true,
             "width" : 700,
             "widthType" : 0
@@ -45711,7 +45710,7 @@
             "id" : "uFr7GCLKv",
             "intrinsicHeight" : 64,
             "intrinsicWidth" : 64,
-            "left" : -276,
+            "left" : -177,
             "locked" : false,
             "name" : null,
             "opacity" : 1,
@@ -45727,7 +45726,7 @@
             "radiusTopRight" : 0,
             "right" : null,
             "rotation" : 0,
-            "top" : 2055,
+            "top" : 2615,
             "visible" : true,
             "width" : 48,
             "widthType" : 0
@@ -45809,7 +45808,7 @@
             "isExternalMaster" : null,
             "isMaster" : false,
             "isTarget" : false,
-            "left" : -276,
+            "left" : -177,
             "locked" : false,
             "name" : "Icon",
             "opacity" : 1,
@@ -45826,7 +45825,7 @@
             "replicaInfo" : null,
             "right" : null,
             "rotation" : 0,
-            "top" : 3313,
+            "top" : 3343,
             "visible" : true,
             "width" : 116,
             "widthType" : 0
@@ -45843,7 +45842,7 @@
             },
             "$control__lottieJsonURL" : {
               "type" : "file",
-              "value" : "data:framer\/asset-reference,2eHaTuK9lOCuKBfvfRy4YGNLfHE.json?originalFilename=lf30_editor_uinezszu.json"
+              "value" : "data:framer\/asset-reference,2eHaTuK9lOCuKBfvfRy4YGNLfHE.json?originalFilename=2eHaTuK9lOCuKBfvfRy4YGNLfHE.json"
             },
             "$control__percentage" : {
               "type" : "number",
@@ -45897,7 +45896,7 @@
             "id" : "ieVPZc0PJ",
             "intrinsicHeight" : null,
             "intrinsicWidth" : null,
-            "left" : 238,
+            "left" : 337,
             "locked" : false,
             "name" : null,
             "opacity" : 1,
@@ -45913,7 +45912,7 @@
             "radiusTopRight" : 0,
             "right" : null,
             "rotation" : 0,
-            "top" : 3323,
+            "top" : 3353,
             "visible" : true,
             "width" : 200,
             "widthType" : 0
@@ -46267,7 +46266,7 @@
             "isExternalMaster" : null,
             "isMaster" : false,
             "isTarget" : false,
-            "left" : -1891,
+            "left" : -1792,
             "locked" : false,
             "name" : "Card - Examples",
             "opacity" : 1,
@@ -46295,7 +46294,7 @@
             "stackDistribution" : "start",
             "stackEnabled" : true,
             "stackGap" : 0,
-            "top" : 1611,
+            "top" : 2171,
             "visible" : true,
             "width" : 845,
             "widthType" : 0
@@ -46658,7 +46657,7 @@
             "isExternalMaster" : null,
             "isMaster" : false,
             "isTarget" : false,
-            "left" : -1891,
+            "left" : -1792,
             "locked" : false,
             "name" : "Drawer - Examples",
             "opacity" : 1,
@@ -46686,7 +46685,7 @@
             "stackDistribution" : "start",
             "stackEnabled" : true,
             "stackGap" : 0,
-            "top" : 2851,
+            "top" : 2871,
             "visible" : true,
             "width" : 471,
             "widthType" : 0
@@ -46870,7 +46869,7 @@
             "isExternalMaster" : null,
             "isMaster" : false,
             "isTarget" : false,
-            "left" : -1349,
+            "left" : -1250,
             "locked" : false,
             "name" : null,
             "opacity" : 1,
@@ -46898,7 +46897,7 @@
             "stackDistribution" : "center",
             "stackEnabled" : true,
             "stackGap" : 0,
-            "top" : 2851,
+            "top" : 2871,
             "visible" : true,
             "width" : 240,
             "widthType" : 0
@@ -46953,7 +46952,7 @@
             "id" : "iovFbnUMb",
             "intrinsicHeight" : 305,
             "intrinsicWidth" : 525,
-            "left" : -790,
+            "left" : -691,
             "locked" : false,
             "name" : null,
             "opacity" : 1,
@@ -46969,7 +46968,7 @@
             "radiusTopRight" : 0,
             "right" : null,
             "rotation" : 0,
-            "top" : 2841,
+            "top" : 2871,
             "visible" : true,
             "width" : 450,
             "widthType" : 0
@@ -47030,7 +47029,7 @@
             "id" : "e0ZksbvMF",
             "intrinsicHeight" : 305,
             "intrinsicWidth" : 525,
-            "left" : -276,
+            "left" : -177,
             "locked" : false,
             "name" : null,
             "opacity" : 1,
@@ -47046,7 +47045,7 @@
             "radiusTopRight" : 0,
             "right" : null,
             "rotation" : 0,
-            "top" : 2841,
+            "top" : 2871,
             "visible" : true,
             "width" : 450,
             "widthType" : 0
@@ -47108,7 +47107,7 @@
             "id" : "B7Vdf_Dx8",
             "intrinsicHeight" : 305,
             "intrinsicWidth" : 525,
-            "left" : 238,
+            "left" : 337,
             "locked" : false,
             "name" : null,
             "opacity" : 1,
@@ -47124,7 +47123,7 @@
             "radiusTopRight" : 0,
             "right" : null,
             "rotation" : 0,
-            "top" : 2841,
+            "top" : 2871,
             "visible" : true,
             "width" : 450,
             "widthType" : 0
@@ -47181,7 +47180,7 @@
             "id" : "YkB8nfxaA",
             "intrinsicHeight" : 305,
             "intrinsicWidth" : 525,
-            "left" : 752,
+            "left" : 851,
             "locked" : false,
             "name" : null,
             "opacity" : 1,
@@ -47197,7 +47196,7 @@
             "radiusTopRight" : 0,
             "right" : null,
             "rotation" : 0,
-            "top" : 2841,
+            "top" : 2871,
             "visible" : true,
             "width" : 450,
             "widthType" : 0
@@ -47275,13 +47274,17 @@
             "id" : "yay6g0uPj",
             "intrinsicHeight" : 317,
             "intrinsicWidth" : 525,
-            "left" : -790,
+            "left" : -691,
             "locked" : false,
             "name" : null,
             "opacity" : 1,
             "originalid" : null,
             "parentid" : "G12aGyw_k",
-            "previewSettings" : null,
+            "previewSettings" : {
+              "__class" : "PreviewSettings",
+              "responsive" : false,
+              "touch" : false
+            },
             "radius" : 0,
             "radiusBottomLeft" : 0,
             "radiusBottomRight" : 0,
@@ -47291,7 +47294,7 @@
             "radiusTopRight" : 0,
             "right" : null,
             "rotation" : 0,
-            "top" : 1611,
+            "top" : 2171,
             "visible" : true,
             "width" : 450,
             "widthType" : 0
@@ -47413,7 +47416,7 @@
             "codeOverrideFile" : ".\/overrides\/SURFACES.tsx",
             "codeOverrideIdentifier" : ".\/overrides\/SURFACES.tsx_Modal_DefaultLoading",
             "codeOverrideName" : "Modal_DefaultLoading",
-            "constraintsLocked" : true,
+            "constraintsLocked" : false,
             "duplicatedFrom" : [
               "q4Mdpbmk1",
               "CaxjTuG3C",
@@ -47430,12 +47433,12 @@
             "fillImagePixelWidth" : null,
             "fillImageResize" : "fill",
             "fillType" : "color",
-            "height" : 444,
+            "height" : 278,
             "heightType" : 0,
             "id" : "EIVBdO16R",
             "intrinsicHeight" : 50,
             "intrinsicWidth" : 150,
-            "left" : -276,
+            "left" : -177,
             "locked" : false,
             "name" : "Modal - DefaultLoading",
             "opacity" : 1,
@@ -47451,7 +47454,7 @@
             "radiusTopRight" : 0,
             "right" : null,
             "rotation" : 0,
-            "top" : 1611,
+            "top" : 2171,
             "visible" : true,
             "width" : 450,
             "widthType" : 0
@@ -47733,7 +47736,7 @@
             "isExternalMaster" : null,
             "isMaster" : false,
             "isTarget" : false,
-            "left" : 238,
+            "left" : 337,
             "locked" : false,
             "name" : "Modal - WithAlert",
             "opacity" : 1,
@@ -47750,7 +47753,7 @@
             "replicaInfo" : null,
             "right" : null,
             "rotation" : 0,
-            "top" : 1611,
+            "top" : 2171,
             "visible" : true,
             "width" : 450,
             "widthType" : 0
@@ -47839,7 +47842,7 @@
             "id" : "JJAOBwGnt",
             "intrinsicHeight" : 50,
             "intrinsicWidth" : 150,
-            "left" : 752,
+            "left" : 851,
             "locked" : false,
             "name" : "Modal - PartialLoading",
             "opacity" : 1,
@@ -47855,7 +47858,7 @@
             "radiusTopRight" : 0,
             "right" : null,
             "rotation" : 0,
-            "top" : 1611,
+            "top" : 2171,
             "visible" : true,
             "width" : 450,
             "widthType" : 0
@@ -47868,7 +47871,7 @@
         "guidesY" : [
 
         ],
-        "homeNodeId" : "oiHPkakB1",
+        "homeNodeId" : "OPneRW_ht",
         "id" : "G12aGyw_k",
         "name" : "SURFACES",
         "originalid" : null,
@@ -47977,7 +47980,7 @@
             "isExternalMaster" : null,
             "isMaster" : false,
             "isTarget" : false,
-            "left" : 3385,
+            "left" : 3087,
             "locked" : false,
             "name" : null,
             "opacity" : 1,
@@ -47994,7 +47997,7 @@
             "replicaInfo" : null,
             "right" : null,
             "rotation" : 0,
-            "top" : 2386,
+            "top" : 2293,
             "visible" : false,
             "width" : 150,
             "widthType" : 0
@@ -48074,9 +48077,9 @@
               {
                 "__class" : "FrameNode",
                 "aspectRatio" : null,
-                "bottom" : 1,
-                "centerAnchorX" : 0.5,
-                "centerAnchorY" : 0.57283950617283952,
+                "bottom" : null,
+                "centerAnchorX" : 0.73705722070844681,
+                "centerAnchorY" : 0.30198019801980197,
                 "children" : [
                   {
                     "__class" : "CodeComponentNode",
@@ -48260,6 +48263,108 @@
                     "visible" : true,
                     "width" : 290,
                     "widthType" : 0
+                  },
+                  {
+                    "__class" : "CodeComponentNode",
+                    "$control__active" : {
+                      "type" : "number",
+                      "value" : 0
+                    },
+                    "$control__animate" : {
+                      "type" : "boolean",
+                      "value" : true
+                    },
+                    "$control__isOpen" : {
+                      "type" : "boolean",
+                      "value" : true
+                    },
+                    "$control__options" : {
+                      "type" : "array",
+                      "value" : [
+                        {
+                          "id" : "migrated_array_value_lXMRqEbvy_options_0",
+                          "type" : "string",
+                          "value" : "apple"
+                        },
+                        {
+                          "id" : "migrated_array_value_lXMRqEbvy_options_1",
+                          "type" : "string",
+                          "value" : "banana"
+                        },
+                        {
+                          "id" : "ilvjGqnyr",
+                          "type" : "string",
+                          "value" : "Option Label"
+                        },
+                        {
+                          "id" : "i7_ADYAzW",
+                          "type" : "string",
+                          "value" : "Option Label"
+                        },
+                        {
+                          "id" : "K88XSZ2gK",
+                          "type" : "string",
+                          "value" : "Option Label"
+                        }
+                      ]
+                    },
+                    "$control__placeholder" : {
+                      "type" : "string",
+                      "value" : "Test Override"
+                    },
+                    "aspectRatio" : null,
+                    "bottom" : 41,
+                    "centerAnchorX" : 0.73705722070844681,
+                    "centerAnchorY" : 0.49855072463768119,
+                    "clip" : true,
+                    "codeComponentIdentifier" : ".\/Select.tsx_Select",
+                    "codeComponentPackageVersion" : "1.71.0",
+                    "codeOverrideEnabled" : true,
+                    "codeOverrideFile" : ".\/overrides\/PICKERS.tsx",
+                    "codeOverrideIdentifier" : ".\/overrides\/PICKERS.tsx_Select",
+                    "codeOverrideName" : "Select",
+                    "constraintsLocked" : false,
+                    "duplicatedFrom" : [
+                      "hV3NZo3ZR",
+                      "tSXjv3eQz",
+                      "lXMRqEbvy"
+                    ],
+                    "exportOptions" : [
+
+                    ],
+                    "fillColor" : "rgba(255,255,255,1)",
+                    "fillEnabled" : false,
+                    "fillImage" : null,
+                    "fillImageOriginalName" : null,
+                    "fillImagePixelHeight" : null,
+                    "fillImagePixelWidth" : null,
+                    "fillImageResize" : "fill",
+                    "fillType" : "color",
+                    "height" : 264,
+                    "heightType" : 0,
+                    "id" : "vCSGOPBtK",
+                    "intrinsicHeight" : 132,
+                    "intrinsicWidth" : 300,
+                    "left" : null,
+                    "locked" : false,
+                    "name" : "Select - Animate",
+                    "opacity" : 1,
+                    "originalid" : null,
+                    "parentid" : "Ohrw0gydL",
+                    "previewSettings" : null,
+                    "radius" : 0,
+                    "radiusBottomLeft" : 0,
+                    "radiusBottomRight" : 0,
+                    "radiusIsRelative" : false,
+                    "radiusPerCorner" : false,
+                    "radiusTopLeft" : 0,
+                    "radiusTopRight" : 0,
+                    "right" : 48,
+                    "rotation" : 0,
+                    "top" : 40,
+                    "visible" : true,
+                    "width" : 290,
+                    "widthType" : 0
                   }
                 ],
                 "clip" : true,
@@ -48320,7 +48425,7 @@
                 "radiusTopLeft" : 0,
                 "radiusTopRight" : 0,
                 "replicaInfo" : null,
-                "right" : 0,
+                "right" : -348,
                 "rotation" : 0,
                 "stackAlignment" : "start",
                 "stackDirection" : "horizontal",
@@ -48329,7 +48434,7 @@
                 "stackGap" : 48,
                 "top" : 60,
                 "visible" : true,
-                "width" : 734,
+                "width" : 1082,
                 "widthType" : 0
               }
             ],
@@ -48370,7 +48475,7 @@
             "isExternalMaster" : null,
             "isMaster" : false,
             "isTarget" : false,
-            "left" : 2204,
+            "left" : 1906,
             "locked" : false,
             "name" : "Select - Examples",
             "opacity" : 1,
@@ -48398,9 +48503,9 @@
             "stackDistribution" : "start",
             "stackEnabled" : true,
             "stackGap" : 0,
-            "top" : 1845,
+            "top" : 1752,
             "visible" : true,
-            "width" : 734,
+            "width" : 1082,
             "widthType" : 0
           }
         ],
@@ -50508,6 +50613,683 @@
         "visible" : true,
         "width" : 40,
         "widthType" : 0
+      },
+      {
+        "__class" : "PageNode",
+        "children" : [
+          {
+            "__class" : "FrameNode",
+            "aspectRatio" : null,
+            "bottom" : null,
+            "centerAnchorX" : 0,
+            "centerAnchorY" : 0,
+            "children" : [
+              {
+                "__class" : "FrameNode",
+                "aspectRatio" : null,
+                "bottom" : null,
+                "centerAnchorX" : 0.051369863013698627,
+                "centerAnchorY" : 0.24406332453825857,
+                "children" : [
+
+                ],
+                "clip" : false,
+                "codeOverrideEnabled" : false,
+                "constraintsLocked" : false,
+                "duplicatedFrom" : null,
+                "exportOptions" : [
+
+                ],
+                "fillColor" : "rgba(255,255,255,1)",
+                "fillEnabled" : true,
+                "fillImage" : "yGP6BQVLiKQFY1rMricy8l4qc.jpg",
+                "fillImageOriginalName" : "7ea52b34-8177-45ab-b5ad-d1cb83b6f006.jpg",
+                "fillImagePixelHeight" : 720,
+                "fillImagePixelWidth" : 1080,
+                "fillImageResize" : "fill",
+                "fillType" : "image",
+                "framePreset" : null,
+                "guidesX" : [
+
+                ],
+                "guidesY" : [
+
+                ],
+                "height" : 185,
+                "heightType" : 0,
+                "id" : "Qx6LIDFW0",
+                "intrinsicHeight" : 360,
+                "intrinsicWidth" : 540,
+                "isExternalMaster" : null,
+                "isMaster" : false,
+                "isTarget" : false,
+                "left" : -124,
+                "locked" : false,
+                "name" : "$7ea52b34_8177_45ab_b5ad_d1cb83b6f006",
+                "opacity" : 1,
+                "originalid" : null,
+                "parentid" : "LKay5lvyn",
+                "previewSettings" : null,
+                "radius" : 0,
+                "radiusBottomLeft" : 0,
+                "radiusBottomRight" : 0,
+                "radiusIsRelative" : false,
+                "radiusPerCorner" : false,
+                "radiusTopLeft" : 0,
+                "radiusTopRight" : 0,
+                "replicaInfo" : null,
+                "right" : null,
+                "rotation" : 0,
+                "top" : 0,
+                "visible" : true,
+                "width" : 292,
+                "widthType" : 0
+              },
+              {
+                "__class" : "CodeComponentNode",
+                "$control__as" : {
+                  "type" : "enum",
+                  "value" : "span"
+                },
+                "$control__color" : {
+                  "type" : "string",
+                  "value" : "primary600"
+                },
+                "$control__content" : {
+                  "type" : "string",
+                  "value" : "VERIFIED • CAPE TOWN"
+                },
+                "$control__margin" : {
+                  "isFused" : false,
+                  "type" : "fusednumber",
+                  "value" : {
+                    "fused" : [
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "single" : 0
+                  }
+                },
+                "$control__padding" : {
+                  "isFused" : false,
+                  "type" : "fusednumber",
+                  "value" : {
+                    "fused" : [
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "single" : 0
+                  }
+                },
+                "$control__textAlign" : {
+                  "type" : "segmentedenum",
+                  "value" : "left"
+                },
+                "aspectRatio" : null,
+                "bottom" : null,
+                "centerAnchorX" : 0.81029411764705883,
+                "centerAnchorY" : 0.50733496332518335,
+                "clip" : true,
+                "codeComponentIdentifier" : ".\/LabelLarge.tsx_LabelLarge",
+                "codeComponentPackageVersion" : "1.79.0",
+                "codeOverrideEnabled" : false,
+                "constraintsLocked" : false,
+                "duplicatedFrom" : [
+                  "ehTH7tQ4Z",
+                  "NcB00Ii2r"
+                ],
+                "exportOptions" : [
+
+                ],
+                "fillColor" : "rgba(255,255,255,1)",
+                "fillEnabled" : false,
+                "fillImage" : null,
+                "fillImageOriginalName" : null,
+                "fillImagePixelHeight" : null,
+                "fillImagePixelWidth" : null,
+                "fillImageResize" : "fill",
+                "fillType" : "color",
+                "height" : 25,
+                "heightType" : 0,
+                "id" : "bL2SHmm7F",
+                "intrinsicHeight" : 24,
+                "intrinsicWidth" : 99,
+                "left" : null,
+                "locked" : false,
+                "name" : null,
+                "opacity" : 1,
+                "originalid" : null,
+                "parentid" : "LKay5lvyn",
+                "previewSettings" : null,
+                "radius" : 0,
+                "radiusBottomLeft" : 0,
+                "radiusBottomRight" : 0,
+                "radiusIsRelative" : false,
+                "radiusPerCorner" : false,
+                "radiusTopLeft" : 0,
+                "radiusTopRight" : 0,
+                "right" : null,
+                "rotation" : 0,
+                "top" : null,
+                "visible" : true,
+                "width" : 199,
+                "widthType" : 0
+              },
+              {
+                "__class" : "CodeComponentNode",
+                "$control__as" : {
+                  "type" : "enum",
+                  "value" : "span"
+                },
+                "$control__color" : {
+                  "type" : "string",
+                  "value" : "mono1000"
+                },
+                "$control__content" : {
+                  "type" : "string",
+                  "value" : "Modern, Chic Penthouse with Mountain, City & Sea Views"
+                },
+                "$control__margin" : {
+                  "isFused" : false,
+                  "type" : "fusednumber",
+                  "value" : {
+                    "fused" : [
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "single" : 0
+                  }
+                },
+                "$control__padding" : {
+                  "isFused" : false,
+                  "type" : "fusednumber",
+                  "value" : {
+                    "fused" : [
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "single" : 0
+                  }
+                },
+                "$control__textAlign" : {
+                  "type" : "segmentedenum",
+                  "value" : "left"
+                },
+                "aspectRatio" : null,
+                "bottom" : 74,
+                "centerAnchorX" : 0.5,
+                "centerAnchorY" : 0.73157894736842111,
+                "clip" : true,
+                "codeComponentIdentifier" : ".\/HeadingXSmall.tsx_HeadingXSmall",
+                "codeComponentPackageVersion" : "1.129.0",
+                "codeOverrideEnabled" : false,
+                "constraintsLocked" : false,
+                "duplicatedFrom" : [
+                  "@framer\/ruucm-h.lighthouse\/.\/HeadingXSmall.tsx_HeadingXSmall"
+                ],
+                "exportOptions" : [
+
+                ],
+                "fillColor" : "rgba(255,255,255,1)",
+                "fillEnabled" : false,
+                "fillImage" : null,
+                "fillImageOriginalName" : null,
+                "fillImagePixelHeight" : null,
+                "fillImagePixelWidth" : null,
+                "fillImageResize" : "fill",
+                "fillType" : "color",
+                "height" : 56,
+                "heightType" : 0,
+                "id" : "k3qJUEmGK",
+                "intrinsicHeight" : 28,
+                "intrinsicWidth" : 156,
+                "left" : 20,
+                "locked" : false,
+                "name" : null,
+                "opacity" : 1,
+                "originalid" : null,
+                "parentid" : "LKay5lvyn",
+                "previewSettings" : null,
+                "radius" : 0,
+                "radiusBottomLeft" : 0,
+                "radiusBottomRight" : 0,
+                "radiusIsRelative" : false,
+                "radiusPerCorner" : false,
+                "radiusTopLeft" : 0,
+                "radiusTopRight" : 0,
+                "right" : 20,
+                "rotation" : 0,
+                "top" : null,
+                "visible" : true,
+                "width" : 292,
+                "widthType" : 0
+              },
+              {
+                "__class" : "CodeComponentNode",
+                "$control__as" : {
+                  "type" : "enum",
+                  "value" : "span"
+                },
+                "$control__color" : {
+                  "type" : "string",
+                  "value" : "mono1000"
+                },
+                "$control__content" : {
+                  "type" : "string",
+                  "value" : "$119\/night"
+                },
+                "$control__margin" : {
+                  "isFused" : false,
+                  "type" : "fusednumber",
+                  "value" : {
+                    "fused" : [
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "single" : 0
+                  }
+                },
+                "$control__padding" : {
+                  "isFused" : false,
+                  "type" : "fusednumber",
+                  "value" : {
+                    "fused" : [
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "single" : 0
+                  }
+                },
+                "$control__textAlign" : {
+                  "type" : "segmentedenum",
+                  "value" : "left"
+                },
+                "aspectRatio" : null,
+                "bottom" : null,
+                "centerAnchorX" : 0.19252873563218389,
+                "centerAnchorY" : 0.86817102137767221,
+                "clip" : true,
+                "codeComponentIdentifier" : ".\/ParagraphXSmall.tsx_ParagraphXSmall",
+                "codeComponentPackageVersion" : "1.79.0",
+                "codeOverrideEnabled" : false,
+                "constraintsLocked" : false,
+                "duplicatedFrom" : [
+                  "Ng1oYz1_R"
+                ],
+                "exportOptions" : [
+
+                ],
+                "fillColor" : "rgba(255,255,255,1)",
+                "fillEnabled" : false,
+                "fillImage" : null,
+                "fillImageOriginalName" : null,
+                "fillImagePixelHeight" : null,
+                "fillImagePixelWidth" : null,
+                "fillImageResize" : "fill",
+                "fillType" : "color",
+                "height" : 17,
+                "heightType" : 0,
+                "id" : "rlrWyofeC",
+                "intrinsicHeight" : 18,
+                "intrinsicWidth" : 106,
+                "left" : null,
+                "locked" : false,
+                "name" : null,
+                "opacity" : 1,
+                "originalid" : null,
+                "parentid" : "LKay5lvyn",
+                "previewSettings" : null,
+                "radius" : 0,
+                "radiusBottomLeft" : 0,
+                "radiusBottomRight" : 0,
+                "radiusIsRelative" : false,
+                "radiusPerCorner" : false,
+                "radiusTopLeft" : 0,
+                "radiusTopRight" : 0,
+                "right" : null,
+                "rotation" : 0,
+                "top" : null,
+                "visible" : true,
+                "width" : 60,
+                "widthType" : 0
+              },
+              {
+                "__class" : "FrameNode",
+                "aspectRatio" : null,
+                "bottom" : 20,
+                "centerAnchorX" : 0.50287356321839083,
+                "centerAnchorY" : 0.93230403800475059,
+                "children" : [
+                  {
+                    "__class" : "ShapeContainerNode",
+                    "autoSize" : true,
+                    "bottom" : null,
+                    "centerAnchorX" : 0.1125,
+                    "centerAnchorY" : 0.52941176470588236,
+                    "children" : [
+                      {
+                        "__class" : "StarShapeNode",
+                        "aspectRatio" : null,
+                        "duplicatedFrom" : [
+                          "eFlkppv3L",
+                          "mqIkL5rHh"
+                        ],
+                        "exportOptions" : [
+
+                        ],
+                        "fillColor" : "rgb(255, 153, 51)",
+                        "fillEnabled" : true,
+                        "fillImage" : null,
+                        "fillImageOriginalName" : null,
+                        "fillImagePixelHeight" : null,
+                        "fillImagePixelWidth" : null,
+                        "fillImageResize" : "fill",
+                        "fillType" : "color",
+                        "height" : 14,
+                        "id" : "Ah82FyM6t",
+                        "locked" : false,
+                        "name" : null,
+                        "opacity" : 1,
+                        "originalid" : null,
+                        "parentid" : "VvUPKLezi",
+                        "radius" : 0.56000000000000005,
+                        "rotation" : 0,
+                        "spikeCount" : 5,
+                        "spikeDepth" : 50,
+                        "visible" : true,
+                        "width" : 14,
+                        "x" : 0,
+                        "y" : 0
+                      }
+                    ],
+                    "constraintsLocked" : false,
+                    "duplicatedFrom" : [
+                      "Rx6NX9aE6",
+                      "aRhvwliaD"
+                    ],
+                    "exportIncludesBackground" : false,
+                    "exportOptions" : [
+
+                    ],
+                    "fillColor" : "#FFF",
+                    "fillEnabled" : false,
+                    "fillImage" : null,
+                    "fillImageOriginalName" : null,
+                    "fillImagePixelHeight" : null,
+                    "fillImagePixelWidth" : null,
+                    "fillImageResize" : "fill",
+                    "fillType" : "color",
+                    "height" : 14,
+                    "heightType" : 0,
+                    "id" : "VvUPKLezi",
+                    "left" : 2,
+                    "locked" : false,
+                    "name" : null,
+                    "opacity" : 1,
+                    "originalid" : null,
+                    "parentid" : "gjH8yw57Z",
+                    "previewSettings" : null,
+                    "radius" : 0,
+                    "radiusBottomLeft" : 0,
+                    "radiusBottomRight" : 0,
+                    "radiusPerCorner" : false,
+                    "radiusTopLeft" : 0,
+                    "radiusTopRight" : 0,
+                    "right" : null,
+                    "sizeToFit" : false,
+                    "top" : null,
+                    "visible" : true,
+                    "width" : 14,
+                    "widthType" : 0
+                  },
+                  {
+                    "__class" : "CodeComponentNode",
+                    "$control__as" : {
+                      "type" : "enum",
+                      "value" : "span"
+                    },
+                    "$control__color" : {
+                      "type" : "string",
+                      "value" : "contentPrimary"
+                    },
+                    "$control__content" : {
+                      "type" : "string",
+                      "value" : "4.84 (190)"
+                    },
+                    "$control__margin" : {
+                      "isFused" : false,
+                      "type" : "fusednumber",
+                      "value" : {
+                        "fused" : [
+                          0,
+                          0,
+                          0,
+                          0
+                        ],
+                        "single" : 0
+                      }
+                    },
+                    "$control__padding" : {
+                      "isFused" : false,
+                      "type" : "fusednumber",
+                      "value" : {
+                        "fused" : [
+                          0,
+                          0,
+                          0,
+                          0
+                        ],
+                        "single" : 0
+                      }
+                    },
+                    "$control__textAlign" : {
+                      "type" : "segmentedenum",
+                      "value" : "left"
+                    },
+                    "aspectRatio" : null,
+                    "bottom" : 0,
+                    "centerAnchorX" : 0.61184210526315785,
+                    "centerAnchorY" : 0.5,
+                    "clip" : true,
+                    "codeComponentIdentifier" : ".\/ParagraphXSmall.tsx_ParagraphXSmall",
+                    "codeComponentPackageVersion" : "1.79.0",
+                    "codeOverrideEnabled" : false,
+                    "constraintsLocked" : false,
+                    "duplicatedFrom" : [
+                      "Ng1oYz1_R",
+                      "rlrWyofeC"
+                    ],
+                    "exportOptions" : [
+
+                    ],
+                    "fillColor" : "rgba(255,255,255,1)",
+                    "fillEnabled" : false,
+                    "fillImage" : null,
+                    "fillImageOriginalName" : null,
+                    "fillImagePixelHeight" : null,
+                    "fillImagePixelWidth" : null,
+                    "fillImageResize" : "fill",
+                    "fillType" : "color",
+                    "height" : 17,
+                    "heightType" : 0,
+                    "id" : "GxPSpTC3d",
+                    "intrinsicHeight" : 18,
+                    "intrinsicWidth" : 106,
+                    "left" : null,
+                    "locked" : false,
+                    "name" : null,
+                    "opacity" : 1,
+                    "originalid" : null,
+                    "parentid" : "gjH8yw57Z",
+                    "previewSettings" : null,
+                    "radius" : 0,
+                    "radiusBottomLeft" : 0,
+                    "radiusBottomRight" : 0,
+                    "radiusIsRelative" : false,
+                    "radiusPerCorner" : false,
+                    "radiusTopLeft" : 0,
+                    "radiusTopRight" : 0,
+                    "right" : 0,
+                    "rotation" : 0,
+                    "top" : 0,
+                    "visible" : true,
+                    "width" : 59,
+                    "widthType" : 0
+                  }
+                ],
+                "clip" : false,
+                "codeOverrideEnabled" : false,
+                "constraintsLocked" : false,
+                "duplicatedFrom" : null,
+                "exportOptions" : [
+
+                ],
+                "fillColor" : "rgba(255,255,255,1)",
+                "fillEnabled" : false,
+                "fillImage" : null,
+                "fillImageOriginalName" : null,
+                "fillImagePixelHeight" : null,
+                "fillImagePixelWidth" : null,
+                "fillImageResize" : "fill",
+                "fillType" : "color",
+                "framePreset" : null,
+                "guidesX" : [
+
+                ],
+                "guidesY" : [
+
+                ],
+                "height" : 17,
+                "heightType" : 0,
+                "id" : "gjH8yw57Z",
+                "intrinsicHeight" : null,
+                "intrinsicWidth" : null,
+                "isExternalMaster" : null,
+                "isMaster" : false,
+                "isTarget" : false,
+                "left" : null,
+                "locked" : false,
+                "name" : null,
+                "opacity" : 1,
+                "originalid" : null,
+                "padding" : 0,
+                "paddingBottom" : 0,
+                "paddingLeft" : 0,
+                "paddingPerSide" : false,
+                "paddingRight" : 0,
+                "paddingTop" : 0,
+                "parentid" : "LKay5lvyn",
+                "previewSettings" : null,
+                "radius" : 0,
+                "radiusBottomLeft" : 0,
+                "radiusBottomRight" : 0,
+                "radiusIsRelative" : false,
+                "radiusPerCorner" : false,
+                "radiusTopLeft" : 0,
+                "radiusTopRight" : 0,
+                "replicaInfo" : null,
+                "right" : null,
+                "rotation" : 0,
+                "stackAlignment" : "center",
+                "stackDirection" : "horizontal",
+                "stackDistribution" : "center",
+                "stackEnabled" : true,
+                "stackGap" : 3,
+                "top" : null,
+                "visible" : true,
+                "width" : 76,
+                "widthType" : 0
+              }
+            ],
+            "clip" : true,
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : false,
+            "duplicatedFrom" : null,
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "white",
+            "fillEnabled" : true,
+            "fillImage" : null,
+            "fillImageOriginalName" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillType" : "color",
+            "framePreset" : null,
+            "guidesX" : [
+
+            ],
+            "guidesY" : [
+
+            ],
+            "height" : 380,
+            "heightType" : 0,
+            "id" : "LKay5lvyn",
+            "intrinsicHeight" : null,
+            "intrinsicWidth" : null,
+            "isExternalMaster" : null,
+            "isMaster" : false,
+            "isTarget" : false,
+            "left" : 4104,
+            "locked" : false,
+            "name" : null,
+            "opacity" : 1,
+            "originalid" : null,
+            "padding" : 20,
+            "paddingBottom" : 20,
+            "paddingLeft" : 20,
+            "paddingPerSide" : false,
+            "paddingRight" : 20,
+            "paddingTop" : 20,
+            "parentid" : "ADiihjNYj",
+            "previewSettings" : null,
+            "radius" : 0,
+            "radiusBottomLeft" : 0,
+            "radiusBottomRight" : 0,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 0,
+            "radiusTopRight" : 0,
+            "replicaInfo" : null,
+            "right" : null,
+            "rotation" : 0,
+            "stackAlignment" : "start",
+            "stackDirection" : "vertical",
+            "stackDistribution" : "start",
+            "stackEnabled" : true,
+            "stackGap" : 10,
+            "top" : 5003,
+            "visible" : true,
+            "width" : 332,
+            "widthType" : 0
+          }
+        ],
+        "duplicatedFrom" : null,
+        "guidesX" : [
+
+        ],
+        "guidesY" : [
+
+        ],
+        "homeNodeId" : "LKay5lvyn",
+        "id" : "ADiihjNYj",
+        "name" : "DESIGN TO CODE",
+        "originalid" : null,
+        "parentid" : "D0mDuwDso",
+        "visible" : false
       }
     ],
     "disableBackdropFilters" : false,
