@@ -8972,6 +8972,14 @@
                             "type" : "color",
                             "value" : "rgba(218, 236, 255, 1.00)"
                           },
+                          "$control__heightAmount" : {
+                            "type" : "enum",
+                            "value" : "scale0"
+                          },
+                          "$control__widthAmount" : {
+                            "type" : "enum",
+                            "value" : "scale0"
+                          },
                           "bottom" : null,
                           "centerAnchorX" : 0.5,
                           "centerAnchorY" : 0.018518518518518517,
@@ -9094,7 +9102,15 @@
                             "type" : "enum",
                             "value" : "scale100"
                           },
+                          "$control__heightAmount" : {
+                            "type" : "enum",
+                            "value" : "scale100"
+                          },
                           "$control__width" : {
+                            "type" : "enum",
+                            "value" : "scale100"
+                          },
+                          "$control__widthAmount" : {
                             "type" : "enum",
                             "value" : "scale100"
                           },
@@ -9231,7 +9247,15 @@
                             "type" : "enum",
                             "value" : "scale200"
                           },
+                          "$control__heightAmount" : {
+                            "type" : "enum",
+                            "value" : "scale200"
+                          },
                           "$control__width" : {
+                            "type" : "enum",
+                            "value" : "scale200"
+                          },
+                          "$control__widthAmount" : {
                             "type" : "enum",
                             "value" : "scale200"
                           },
@@ -9369,7 +9393,15 @@
                             "type" : "enum",
                             "value" : "scale300"
                           },
+                          "$control__heightAmount" : {
+                            "type" : "enum",
+                            "value" : "scale300"
+                          },
                           "$control__width" : {
+                            "type" : "enum",
+                            "value" : "scale300"
+                          },
+                          "$control__widthAmount" : {
                             "type" : "enum",
                             "value" : "scale300"
                           },
@@ -9509,7 +9541,15 @@
                             "type" : "enum",
                             "value" : "scale400"
                           },
+                          "$control__heightAmount" : {
+                            "type" : "enum",
+                            "value" : "scale400"
+                          },
                           "$control__width" : {
+                            "type" : "enum",
+                            "value" : "scale400"
+                          },
+                          "$control__widthAmount" : {
                             "type" : "enum",
                             "value" : "scale400"
                           },
@@ -9650,7 +9690,15 @@
                             "type" : "enum",
                             "value" : "scale500"
                           },
+                          "$control__heightAmount" : {
+                            "type" : "enum",
+                            "value" : "scale500"
+                          },
                           "$control__width" : {
+                            "type" : "enum",
+                            "value" : "scale500"
+                          },
+                          "$control__widthAmount" : {
                             "type" : "enum",
                             "value" : "scale500"
                           },
@@ -9792,7 +9840,15 @@
                             "type" : "enum",
                             "value" : "scale550"
                           },
+                          "$control__heightAmount" : {
+                            "type" : "enum",
+                            "value" : "scale550"
+                          },
                           "$control__width" : {
+                            "type" : "enum",
+                            "value" : "scale550"
+                          },
+                          "$control__widthAmount" : {
                             "type" : "enum",
                             "value" : "scale550"
                           },
@@ -9934,7 +9990,15 @@
                             "type" : "enum",
                             "value" : "scale600"
                           },
+                          "$control__heightAmount" : {
+                            "type" : "enum",
+                            "value" : "scale600"
+                          },
                           "$control__width" : {
+                            "type" : "enum",
+                            "value" : "scale600"
+                          },
+                          "$control__widthAmount" : {
                             "type" : "enum",
                             "value" : "scale600"
                           },
@@ -10078,7 +10142,15 @@
                             "type" : "enum",
                             "value" : "scale650"
                           },
+                          "$control__heightAmount" : {
+                            "type" : "enum",
+                            "value" : "scale650"
+                          },
                           "$control__width" : {
+                            "type" : "enum",
+                            "value" : "scale650"
+                          },
+                          "$control__widthAmount" : {
                             "type" : "enum",
                             "value" : "scale650"
                           },
@@ -10225,6 +10297,10 @@
                             "type" : "enum",
                             "value" : "scale700"
                           },
+                          "$control__widthAmount" : {
+                            "type" : "enum",
+                            "value" : "scale700"
+                          },
                           "bottom" : null,
                           "centerAnchorX" : 0.5,
                           "centerAnchorY" : 0.25,
@@ -10365,7 +10441,15 @@
                             "type" : "enum",
                             "value" : "scale750"
                           },
+                          "$control__heightAmount" : {
+                            "type" : "enum",
+                            "value" : "scale750"
+                          },
                           "$control__width" : {
+                            "type" : "enum",
+                            "value" : "scale750"
+                          },
+                          "$control__widthAmount" : {
                             "type" : "enum",
                             "value" : "scale750"
                           },
@@ -10510,7 +10594,15 @@
                             "type" : "enum",
                             "value" : "scale800"
                           },
+                          "$control__heightAmount" : {
+                            "type" : "enum",
+                            "value" : "scale800"
+                          },
                           "$control__width" : {
+                            "type" : "enum",
+                            "value" : "scale800"
+                          },
+                          "$control__widthAmount" : {
                             "type" : "enum",
                             "value" : "scale800"
                           },
@@ -10656,7 +10748,15 @@
                             "type" : "enum",
                             "value" : "scale900"
                           },
+                          "$control__heightAmount" : {
+                            "type" : "enum",
+                            "value" : "scale900"
+                          },
                           "$control__width" : {
+                            "type" : "enum",
+                            "value" : "scale900"
+                          },
+                          "$control__widthAmount" : {
                             "type" : "enum",
                             "value" : "scale900"
                           },
@@ -10803,7 +10903,15 @@
                             "type" : "enum",
                             "value" : "scale1000"
                           },
+                          "$control__heightAmount" : {
+                            "type" : "enum",
+                            "value" : "scale1000"
+                          },
                           "$control__width" : {
+                            "type" : "enum",
+                            "value" : "scale1000"
+                          },
+                          "$control__widthAmount" : {
                             "type" : "enum",
                             "value" : "scale1000"
                           },
@@ -10950,7 +11058,15 @@
                             "type" : "enum",
                             "value" : "scale1200"
                           },
+                          "$control__heightAmount" : {
+                            "type" : "enum",
+                            "value" : "scale1200"
+                          },
                           "$control__width" : {
+                            "type" : "enum",
+                            "value" : "scale1200"
+                          },
+                          "$control__widthAmount" : {
                             "type" : "enum",
                             "value" : "scale1200"
                           },
@@ -11100,7 +11216,15 @@
                             "type" : "enum",
                             "value" : "scale1400"
                           },
+                          "$control__heightAmount" : {
+                            "type" : "enum",
+                            "value" : "scale1400"
+                          },
                           "$control__width" : {
+                            "type" : "enum",
+                            "value" : "scale1400"
+                          },
+                          "$control__widthAmount" : {
                             "type" : "enum",
                             "value" : "scale1400"
                           },
@@ -11251,7 +11375,15 @@
                             "type" : "enum",
                             "value" : "scale1600"
                           },
+                          "$control__heightAmount" : {
+                            "type" : "enum",
+                            "value" : "scale1600"
+                          },
                           "$control__width" : {
+                            "type" : "enum",
+                            "value" : "scale1600"
+                          },
+                          "$control__widthAmount" : {
                             "type" : "enum",
                             "value" : "scale1600"
                           },
@@ -11403,7 +11535,15 @@
                             "type" : "enum",
                             "value" : "scale2400"
                           },
+                          "$control__heightAmount" : {
+                            "type" : "enum",
+                            "value" : "scale2400"
+                          },
                           "$control__width" : {
+                            "type" : "enum",
+                            "value" : "scale2400"
+                          },
+                          "$control__widthAmount" : {
                             "type" : "enum",
                             "value" : "scale2400"
                           },
@@ -11556,7 +11696,15 @@
                             "type" : "enum",
                             "value" : "scale3200"
                           },
+                          "$control__heightAmount" : {
+                            "type" : "enum",
+                            "value" : "scale3200"
+                          },
                           "$control__width" : {
+                            "type" : "enum",
+                            "value" : "scale3200"
+                          },
+                          "$control__widthAmount" : {
                             "type" : "enum",
                             "value" : "scale3200"
                           },
@@ -11711,7 +11859,15 @@
                             "type" : "enum",
                             "value" : "scale4800"
                           },
+                          "$control__heightAmount" : {
+                            "type" : "enum",
+                            "value" : "scale4800"
+                          },
                           "$control__width" : {
+                            "type" : "enum",
+                            "value" : "scale4800"
+                          },
+                          "$control__widthAmount" : {
                             "type" : "enum",
                             "value" : "scale4800"
                           },
@@ -27241,67 +27397,6 @@
             "visible" : true,
             "width" : 3160,
             "widthType" : 0
-          },
-          {
-            "__class" : "FrameNode",
-            "aspectRatio" : null,
-            "bottom" : null,
-            "centerAnchorX" : 0,
-            "centerAnchorY" : 0,
-            "children" : [
-
-            ],
-            "clip" : true,
-            "codeOverrideEnabled" : false,
-            "constraintsLocked" : false,
-            "duplicatedFrom" : null,
-            "exportOptions" : [
-
-            ],
-            "fillColor" : "rgba(255,255,255,1)",
-            "fillEnabled" : true,
-            "fillImage" : null,
-            "fillImageOriginalName" : null,
-            "fillImagePixelHeight" : null,
-            "fillImagePixelWidth" : null,
-            "fillImageResize" : "fill",
-            "fillType" : "color",
-            "framePreset" : "Youtube_1280_720",
-            "guidesX" : [
-
-            ],
-            "guidesY" : [
-
-            ],
-            "height" : 720,
-            "heightType" : 0,
-            "id" : "ihoVVOC4Q",
-            "intrinsicHeight" : null,
-            "intrinsicWidth" : null,
-            "isExternalMaster" : null,
-            "isMaster" : false,
-            "isTarget" : false,
-            "left" : 2961,
-            "locked" : false,
-            "name" : null,
-            "opacity" : 1,
-            "originalid" : null,
-            "parentid" : "vYz8uO0KD",
-            "previewSettings" : null,
-            "radius" : 0,
-            "radiusBottomLeft" : 0,
-            "radiusBottomRight" : 0,
-            "radiusIsRelative" : false,
-            "radiusPerCorner" : false,
-            "radiusTopLeft" : 0,
-            "radiusTopRight" : 0,
-            "replicaInfo" : null,
-            "right" : null,
-            "rotation" : 0,
-            "top" : 889,
-            "visible" : true,
-            "width" : 1280,
-            "widthType" : 0
           }
         ],
         "duplicatedFrom" : null,
@@ -40520,9 +40615,9 @@
               {
                 "__class" : "FrameNode",
                 "aspectRatio" : null,
-                "bottom" : 0,
+                "bottom" : 20,
                 "centerAnchorX" : 0.5,
-                "centerAnchorY" : 0.58333333333333337,
+                "centerAnchorY" : 0.55555555555555558,
                 "children" : [
                   {
                     "__class" : "FrameNode",
@@ -41824,7 +41919,7 @@
                 "guidesY" : [
 
                 ],
-                "height" : 300,
+                "height" : 280,
                 "heightType" : 0,
                 "id" : "vI7RTiiBp",
                 "intrinsicHeight" : null,
@@ -41893,7 +41988,7 @@
             "guidesY" : [
 
             ],
-            "height" : 360,
+            "height" : 340,
             "heightType" : 0,
             "id" : "jZSbylRUq",
             "intrinsicHeight" : null,
@@ -50225,9 +50320,17 @@
               "type" : "enum",
               "value" : "scale0"
             },
+            "$control__heightAmount" : {
+              "type" : "enum",
+              "value" : "scale700"
+            },
             "$control__width" : {
               "type" : "enum",
               "value" : "scale0"
+            },
+            "$control__widthAmount" : {
+              "type" : "enum",
+              "value" : "100%"
             },
             "aspectRatio" : null,
             "bottom" : 0,
