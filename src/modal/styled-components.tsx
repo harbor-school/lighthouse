@@ -16,16 +16,18 @@ export const Wrap = styled("div", ({ $theme }: Props) => {
     transform: "translate(-50%, -50%)",
     background: $theme.colors.backgroundPrimary,
     zIndex: $theme.zIndex.modal,
-    [$theme.mediaQuery.medium]: {
-      minWidth: `calc(100% - (${$theme.sizing.scale900} * 2))`,
-    },
   }
 })
 
-export const ModalBoxInner = styled("div", {
-  position: "relative",
-  minWidth: "450px",
-  minHeight: "278px", // 450/1.618 px
+export const InnerWarp = styled("div", ({ $theme }: Props) => {
+  return {
+    position: "relative",
+    minWidth: "450px",
+    minHeight: "278px", // 450/1.618 px
+    [$theme.mediaQuery.medium]: {
+      minWidth: `calc(100vw - (${$theme.sizing.scale900} * 2))`,
+    },
+  }
 })
 
 export const Loading = styled("div", {

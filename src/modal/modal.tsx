@@ -8,7 +8,7 @@ import { useOnClickOutside } from "../hooks"
 import { Spinner } from "../spinner"
 import { ROLE } from "./constants"
 import { ModalContent } from "./modal-content"
-import { ChildrenWrap, Loading, ModalBoxInner, Wrap } from "./styled-components"
+import { ChildrenWrap, Loading, InnerWarp, Wrap } from "./styled-components"
 import { ModalPropsT } from "./types"
 
 export const Modal: React.FC<ModalPropsT> = ({
@@ -65,7 +65,7 @@ export const Modal: React.FC<ModalPropsT> = ({
             {...sharedProps}
             {...motionProps}
           >
-            <ModalBoxInner>
+            <InnerWarp {...sharedProps}>
               {loading ? (
                 <Loading $style={overrides.Loading}>{loadingSpinner}</Loading>
               ) : (
@@ -84,7 +84,7 @@ export const Modal: React.FC<ModalPropsT> = ({
                   {children && <ChildrenWrap {...sharedProps}>{children}</ChildrenWrap>}
                 </ModalContent>
               )}
-            </ModalBoxInner>
+            </InnerWarp>
           </Wrap>
         </FormContext.Provider>
       )}
