@@ -32,7 +32,8 @@
     "docs:dev": "next documentation-site",
     "docs:build": "next build documentation-site",
     "docs:export": "next export documentation-site",
-    "docs:deploy": "npm run docs:build && npm run docs:export && cp -r .vercel documentation-site/out/.vercel && vercel --prod ./documentation-site/out"
+    "docs:deploy": "npm run docs:build && npm run docs:export && cp -r .vercel documentation-site/out/.vercel && vercel --prod ./documentation-site/out",
+    "gallery:deploy": "sh deploy-gallery.sh && open lighthouse-gallery.framerfx"
   },
   "lint-staged": {
     "{src,lighthouse-gallery.framerfx/code}/**/*.{js,ts,tsx}": [
