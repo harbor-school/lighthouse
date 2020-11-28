@@ -47225,7 +47225,7 @@
             },
             "$control__desc" : {
               "type" : "string",
-              "value" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue velit nibh, ut tincidunt dui porta et. Sed commodo ipsum ac accumsan tempor"
+              "value" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo quam, faucibus sit amet euismod vitae, pretium et erat."
             },
             "$control__isOpen" : {
               "type" : "boolean",
