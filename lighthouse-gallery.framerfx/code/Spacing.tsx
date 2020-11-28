@@ -4,7 +4,13 @@ import { ControlType, addPropertyControls } from "framer"
 import { withHOC } from "./utils/withHOC"
 
 const InnerSpacing = (props) => {
-  return <System.Spacing {...props}></System.Spacing>
+  return (
+    <System.Spacing
+      {...props}
+      width={props.widthAmount}
+      height={props.heightAmount}
+    ></System.Spacing>
+  )
 }
 
 export const Spacing = withHOC(InnerSpacing)
@@ -17,7 +23,7 @@ Spacing.defaultProps = {
 
 // Component width / height (the green border area)
 addPropertyControls(Spacing, {
-  width: {
+  widthAmount: {
     title: "Width",
     type: ControlType.Enum,
     options: [
@@ -68,7 +74,7 @@ addPropertyControls(Spacing, {
     ],
     defaultValue: "100%",
   },
-  height: {
+  heightAmount: {
     title: "Height",
     type: ControlType.Enum,
     options: [
