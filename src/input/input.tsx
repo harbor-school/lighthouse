@@ -95,7 +95,7 @@ export default Input
 Input.defaultProps = {
   name: "my-input",
   label: "label",
-  caption: "caption",
+  caption: "",
   placeholder: "placeholder",
   required: true,
 }

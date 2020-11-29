@@ -9,7 +9,7 @@
  *   const [value, setValue] = React.useState("")
  *
  *   return (
- *      <System.Input onChange={e => setValue(e.target.value)} />
+ *      <System.Input onChange={e => setValue(e.target.value)} caption="caption" />
  *   )
  * }
  * ```
