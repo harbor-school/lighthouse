@@ -12,25 +12,24 @@ export const Wrap = styled(motion.div, ({ $theme }: Props) => {
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    width: "450px",
     zIndex: $theme.zIndex.alert,
+  }
+})
 
+export const InnerWrap = styled("div", ({ $theme, $kind }: Props<{ $kind: keyof typeof KIND }>) => {
+  return {
+    minWidth: "450px",
+    minHeight: "200px",
+    padding: `0 ${$theme.sizing.scale900}`,
+    ...getKindStyles({ $theme, $kind }),
     [$theme.mediaQuery.medium]: {
       width: `calc(100% - (${$theme.sizing.scale900} * 2))`,
     },
   }
 })
 
-export const AlertBox = styled("div", ({ $theme, $kind }: Props<{ $kind: keyof typeof KIND }>) => {
+export const AlertContent = styled("div", ({ $theme }: Props) => {
   return {
-    padding: `0 ${$theme.sizing.scale900}`,
-    ...getKindStyles({ $theme, $kind }),
-  }
-})
-
-export const AlertWrap = styled("div", ({ $theme }: Props) => {
-  return {
-    minHeight: "200px",
     padding: `${$theme.sizing.scale1200} 0`,
     display: "flex",
     flexDirection: "column",

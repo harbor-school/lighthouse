@@ -6,12 +6,12 @@ import { useOnClickOutside } from "../hooks"
 import { KIND } from "./constants"
 import {
   AlertBody,
-  AlertBox,
+  InnerWrap,
   AlertHeader,
   AlertIcon,
   AlertMessage,
   AlertTitle,
-  AlertWrap,
+  AlertContent,
   Wrap,
 } from "./styled-components"
 import { AlertPropsT } from "./types"
@@ -52,8 +52,8 @@ export const Alert: React.FC<AlertPropsT> = ({
     <AnimatePresence>
       {show && (
         <Wrap ref={ref} $style={overrides.Wrap} {...sharedProps} {...motionProps}>
-          <AlertBox {...sharedProps}>
-            <AlertWrap {...sharedProps}>
+          <InnerWrap {...sharedProps}>
+            <AlertContent {...sharedProps}>
               <AlertHeader $style={overrides.AlertHeader} {...sharedProps}>
                 <AlertTitle>{title}</AlertTitle>
               </AlertHeader>
@@ -61,8 +61,8 @@ export const Alert: React.FC<AlertPropsT> = ({
                 {body && <AlertIcon {...sharedProps}>{body}</AlertIcon>}
                 <AlertMessage {...sharedProps}>{message}</AlertMessage>
               </AlertBody>
-            </AlertWrap>
-          </AlertBox>
+            </AlertContent>
+          </InnerWrap>
         </Wrap>
       )}
     </AnimatePresence>
