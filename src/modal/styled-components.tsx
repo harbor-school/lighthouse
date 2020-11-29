@@ -23,7 +23,7 @@ export const InnerWarp = styled("div", ({ $theme }: Props) => {
   return {
     position: "relative",
     minWidth: "450px",
-    minHeight: "278px", // 450/1.618 px
+    minHeight: "250px",
     [$theme.mediaQuery.medium]: {
       minWidth: `calc(100vw - (${$theme.sizing.scale900} * 2))`,
     },
