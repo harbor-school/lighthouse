@@ -5,13 +5,12 @@ This package implements the Lighthouse Design System from Harbor School in Frame
 ## Documentation
 
 Lighthouse Design System provides a [documentation site](https://lighthouse.harbor.school) for more details.
-Theming
 
 ## Theme Switcher
 
-**Theme Switcher** component is used to defining themes for targeted Framer canvas. Drop it to a specific page of Framer, and it applies with theme options to nearby components.
+**Theme Switcher** component is used to defining themes for targeted Framer canvas. Drop it to a specific page of Framer, and it applies with theme tokens to nearby components.
 
-Theme Switcher gives a Light/Dark theme. If you want to use a custom theme, change the Theme property to Custom, and upload the .json format file to Theme Switcher to get the components' custom appearance.
+Theme Switcher gives a Light/Dark theme. If you want to use a custom theme, change the theme property to "Custom," and upload the .json format file to Theme Switcher to get the components' custom appearance.
 
 Custom Theme could be made using the [Theme Generator](https://lighthouse.harbor.school/theme/theme-generator/) to make a custom theme of the system.
 
