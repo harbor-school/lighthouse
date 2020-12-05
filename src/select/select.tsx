@@ -32,7 +32,7 @@ export const Select: React.FC<SelectPropsT> = ({
   const [newValue, setNewValue] = useState(-1)
   const [readyToChange, setReadyToChange] = useState(false)
   useEffect(() => {
-    if (readyToChange && typeof newValue === "number" && newValue > 0) onChange(newValue)
+    if (readyToChange && typeof newValue === "number" && newValue >= 0) onChange(newValue)
     else setReadyToChange(false) // reset state when user click outside
   }, [readyToChange, newValue])
 
