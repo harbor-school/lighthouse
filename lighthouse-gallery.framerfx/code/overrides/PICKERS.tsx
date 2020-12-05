@@ -7,12 +7,14 @@ import { getCurrentTheme, getThemeByKey } from "../utils"
 export function Select(): Override {
   const theme = getThemeByKey(getCurrentTheme())
   const [isOpen, setIsOpen] = useState(false)
+  const [active, setActive] = useState(0)
 
   return {
     placeholder: "Yap!",
     isOpen,
+    active,
     onClick: () => setIsOpen(true),
-    closeOnClick: () => setIsOpen(false),
+    onClickOutside: () => setIsOpen(false),
     options: [
       { label: "label", endEnhancer: <div>🤢</div> },
       {
@@ -39,6 +41,6 @@ export function Select(): Override {
         ),
       },
     ],
-    onChange: (value) => console.log("value", value),
+    onChange: (value: any) => setActive(value),
   }
 }
