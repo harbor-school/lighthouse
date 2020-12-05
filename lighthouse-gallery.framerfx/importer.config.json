@@ -70,6 +70,9 @@
     "LightingChip": {
       "ignore": true
     },
+    "Spacing": {
+      "ignoredProps": ["width", "height"]
+    },
     "DisplayLarge": {
       "ignore": false,
       "ignoredProps": [
