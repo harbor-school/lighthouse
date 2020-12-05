@@ -29,10 +29,10 @@ export const Select: React.FC<SelectPropsT> = ({
 
   const ref = useRef(null)
   useOnClickOutside(ref, onClickOutside)
-  const [newValue, setNewValue] = useState(0)
+  const [newValue, setNewValue] = useState(-1)
   const [readyToChange, setReadyToChange] = useState(false)
   useEffect(() => {
-    if (readyToChange && typeof newValue === "number") onChange(newValue)
+    if (readyToChange && typeof newValue === "number" && newValue > 0) onChange(newValue)
     else setReadyToChange(false) // reset state when user click outside
   }, [readyToChange, newValue])
 
@@ -52,8 +52,10 @@ export const Select: React.FC<SelectPropsT> = ({
               onClick={() => {
                 if (!option.disabled) {
                   setNewValue(id)
-                  // trigger exit animation (setReadyToChange) first when animate is true
-                  animate ? onClickOutside() : onChange(id)
+                  // Close select and trigger onChange if it is animate.
+                  onClickOutside()
+                  // If it's not animate, it triggers onChange separately.
+                  if (!animate) onChange(id)
                 }
               }}
               {...sharedProps}
