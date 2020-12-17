@@ -41,6 +41,9 @@ export function Select(): Override {
         ),
       },
     ],
-    onChange: (value: any) => setActive(value),
+    onChange: (value: any) => {
+      setActive(value)
+      setIsOpen(false)
+    },
   }
 }
