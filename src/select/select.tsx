@@ -52,10 +52,9 @@ export const Select: React.FC<SelectPropsT> = ({
               onClick={() => {
                 if (!option.disabled) {
                   setNewValue(id)
-                  // Close select and trigger onChange if it is animate.
-                  onClickOutside()
+                  // Close select(onClickOutside) and trigger onChange if it is animate.
                   // If it's not animate, it triggers onChange separately.
-                  if (!animate) onChange(id)
+                  animate ? onClickOutside() : onChange(id)
                 }
               }}
               {...sharedProps}
