@@ -9,7 +9,7 @@ find ./lighthouse-gallery-deploy.framerfx -type f -exec sed -i "" 's/..\/..\/..\
 find ./lighthouse-gallery-deploy.framerfx -type f -exec sed -i "" 's/..\/..\/..\/lighthouse/@harborschool\/lighthouse/g' {} \;
 find ./lighthouse-gallery-deploy.framerfx -type f -exec sed -i "" 's/from "..\/utils/from "@framer\/ruucm-h.lighthouse\/code\/utils/g' {} \;
 # String find & replace (document.json)
-find ./lighthouse-gallery-deploy.framerfx -type f -exec sed -i "" 's/"codeComponentIdentifier" : "./"codeComponentIdentifier" : "@framer\/ruucm-h.lighthouse\/./g' {} \;
+find ./lighthouse-gallery-deploy.framerfx -type f -exec sed -i "" 's/"codeComponentIdentifier" : "\./"codeComponentIdentifier" : "@framer\/ruucm-h.lighthouse\/./g' {} \;
 # String find & replace (package.json)
 find ./lighthouse-gallery-deploy.framerfx -type f -exec sed -i "" 's/"name": "@framer\/ruucm-h.lighthouse",//g' {} \;
 find ./lighthouse-gallery-deploy.framerfx -type f -exec sed -i "" 's/"dependencies": {/"dependencies": {\
