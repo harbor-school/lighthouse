@@ -21,7 +21,7 @@ You can override all properties of components. The list of properties could be f
 ## Lighthouse Gallery
 
 Lighthouse Design System provides components overview gallery using Framer Web. It collects all components available in the system.
-[View](https://framer.com/projects/lighthouse-gallery--nOcWNNNMurIcwDRfoIsP-4jBuq) or [Duplicate](https://framer.com/projects/new?duplicate=nOcWNNNMurIcwDRfoIsP) it depends on your purpose.
+[View](https://framer.com/projects/lighthouse-gallery--ky1cQZRYNQoLD9MZTOC3-5ckF8) or [Duplicate](https://framer.com/projects/new?duplicate=ky1cQZRYNQoLD9MZTOC3) it depends on your purpose.
 
 ## Contact
 
