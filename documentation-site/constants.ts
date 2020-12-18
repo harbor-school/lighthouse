@@ -14,8 +14,8 @@ export const codeSandboxNewProjectWithLighthouseUrl =
   "https://codesandbox.io/s/lighthouse-typescript-31wjs"
 export const githubUrl = "https://github.com/harbor-school/lighthouse"
 export const lighthouseGalleryUrl =
-  "https://framer.com/projects/lighthouse-gallery--nOcWNNNMurIcwDRfoIsP-4jBuq"
+  "https://framer.com/projects/lighthouse-gallery--ky1cQZRYNQoLD9MZTOC3-5ckF8"
 export const lighthouseGalleryDuplicateUrl =
-  "https://framer.com/projects/new?duplicate=nOcWNNNMurIcwDRfoIsP"
+  "https://framer.com/projects/new?duplicate=ky1cQZRYNQoLD9MZTOC3"
 
 export const siteBaseUrl = "https://lighthouse.harbor.school"
