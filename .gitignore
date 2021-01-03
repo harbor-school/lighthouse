@@ -13,5 +13,6 @@ docs
 .vercel
 out
 sketches.framerfx
+lighthouse-gallery-deploy.framerfx
 stats.html
 .env
