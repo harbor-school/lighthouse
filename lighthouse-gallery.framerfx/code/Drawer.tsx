@@ -1,6 +1,6 @@
 import * as React from "react"
 import * as System from "../../../lighthouse"
-import { ControlType, addPropertyControls } from "framer"
+import { ControlType, addPropertyControls, Frame } from "framer"
 import { withHOC } from "./utils/withHOC"
 import { placeholderState } from "./utils/placeholderState"
 
@@ -12,9 +12,11 @@ const InnerDrawer = (props) => {
     })
   }
   return (
-    <System.Drawer {...props}>
-      {props.children && <div className="modal-children-wrap">{props.children}</div>}
-    </System.Drawer>
+    <Frame center background="" size="100%">
+      <System.Drawer {...props}>
+        {props.children && <div className="modal-children-wrap">{props.children}</div>}
+      </System.Drawer>
+    </Frame>
   )
 }
 

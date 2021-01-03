@@ -1,15 +1,17 @@
 import * as React from "react"
 import * as System from "../../../lighthouse"
-import { ControlType, addPropertyControls } from "framer"
+import { ControlType, addPropertyControls, Frame } from "framer"
 import { withHOC } from "./utils/withHOC"
 
 const InnerAlert = (props) => {
   const { body, ...rest } = props
   return (
-    <System.Alert
-      body={body.length > 0 && <div className="alert-body-wrap">{body}</div>}
-      {...rest}
-    ></System.Alert>
+    <Frame center background="">
+      <System.Alert
+        body={body.length > 0 && <div className="alert-body-wrap">{body}</div>}
+        {...rest}
+      ></System.Alert>
+    </Frame>
   )
 }
 

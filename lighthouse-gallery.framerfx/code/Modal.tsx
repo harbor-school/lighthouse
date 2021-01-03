@@ -1,16 +1,18 @@
 import * as React from "react"
 import * as System from "../../../lighthouse"
-import { ControlType, addPropertyControls } from "framer"
+import { ControlType, addPropertyControls, Frame } from "framer"
 import { withHOC } from "./utils/withHOC"
 
 const InnerModal = (props) => {
   return (
-    <System.Modal
-      {...props}
-      loadingSpinner={<div className="modal-loading-wrap">{props.loadingSpinner}</div>}
-    >
-      {props.content && <div className="modal-children-wrap">{props.content}</div>}
-    </System.Modal>
+    <Frame center background="">
+      <System.Modal
+        {...props}
+        loadingSpinner={<div className="modal-loading-wrap">{props.loadingSpinner}</div>}
+      >
+        {props.content && <div className="modal-children-wrap">{props.content}</div>}
+      </System.Modal>
+    </Frame>
   )
 }
 
