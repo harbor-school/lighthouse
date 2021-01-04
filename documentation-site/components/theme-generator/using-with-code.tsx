@@ -21,25 +21,42 @@ import { styletron, debug } from "../styletron"
 import { createTheme, LighthouseProvider } from "@harborschool/lighthouse"
 import * as output from './my-theme.json'
 
-const myTheme = output['default']
-// Custom Color Scale
-const colors = myTheme.colorScale
-// Foundational Colors
-const foundation = trimStringValues(myTheme.colorFoundation)
-// Semantic Colors
-const semantic = trimStringValues(myTheme.colorSemantic)
-// New Semantic Colors
-const newSemantic = myTheme.newColorSemantic
-
-// Add Your Custom Font
-const typography = {
-  primaryFontFamily: "system-ui, Helvetica, Arial, sans-serif",
-}
 
 export default class MyApp extends App {
   render() {
+    const typography = {
+      primaryFontFamily: 'system-ui, Helvetica, Arial, sans-serif',
+    }
+    const customTheme = generateCustomTheme({
+      tokens: output['default'], // Add imported tokens
+      typography, // Add your custom font
+    })
+
+    const { Component, pageProps } = this.props
+    return (
+      <StyletronProvider value={styletron} debug={debug}>
+        <LighthouseProvider theme={customTheme}>
+          <Component {...pageProps} />
+        </LighthouseProvider>
+      </StyletronProvider>
+    )
+  }
+}
+
+let colors, foundation, semantic, newSemantic // declare outsite to share variable to eval()
+
+export function generateCustomTheme({ tokens, typography }) {
+  if (tokens) {
+    // Custom Color Scale
+    colors = tokens.colors.colorScale
+    // Foundational Colors
+    foundation = trimStringValues(tokens.colors.colorFoundation)
+    // Semantic Colors
+    semantic = trimStringValues(tokens.colors.colorSemantic)
+    // New Semantic Colors
+    newSemantic = tokens.colors.newColorSemantic
+
     const primitives = {
-      customColorScale: colors,
       ...newSemantic,
       ...typography,
     }
@@ -48,26 +65,27 @@ export default class MyApp extends App {
         ...foundation,
         ...semantic,
       },
+      lighting: {
+        ...tokens.lighting,
+      },
       sizings: {},
       breakpoints: {},
       zIndex: {},
     }
-    const myTheme = createTheme(primitives, overrides)
-    const { Component, pageProps } = this.props
-    return (
-      <StyletronProvider value={styletron} debug={debug}>
-        <LighthouseProvider theme={myTheme}>
-          <Component {...pageProps} />
-        </LighthouseProvider>
-      </StyletronProvider>
-    )
+    const customTheme = createTheme(primitives, overrides)
+    return customTheme
   }
 }
-
 function trimStringValues(obj) {
-  Object.keys(obj).forEach((key) => (obj[key] = eval(obj[key])))
+  Object.keys(obj).forEach(
+    (key) => (obj[key] = isHex(obj[key]) ? obj[key] : eval(obj[key]))
+  )
   return obj
-}`
+}
+function isHex(value) {
+  return /^#[0-9A-F]{6}$/i.test(value)
+}
+`
   const { hasCopied: baseCodeStringHasCopied, onCopy: baseCodeStringOnCopy } = useClipboard(
     baseCodeString
   )
