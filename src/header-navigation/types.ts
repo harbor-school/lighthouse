@@ -7,3 +7,8 @@ export type HeaderNavigationPropsT = {
   children?: React.ReactNode
   overrides?: HeaderNavigationOverridesT
 }
+
+export type HeaderNavigationItemPropsT = {
+  children?: React.ReactNode
+  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void
+}
