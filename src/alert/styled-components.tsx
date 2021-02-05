@@ -23,7 +23,8 @@ export const InnerWrap = styled("div", ({ $theme, $kind }: Props<{ $kind: keyof 
     padding: `0 ${$theme.sizing.scale900}`,
     ...getKindStyles({ $theme, $kind }),
     [$theme.mediaQuery.medium]: {
-      width: `calc(100% - (${$theme.sizing.scale900} * 2))`,
+      minWidth: `calc(100vw - (${$theme.sizing.scale900} * 2))`,
+      boxSizing: "border-box",
     },
   }
 })
