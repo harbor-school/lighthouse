@@ -32,13 +32,14 @@
  * @param children - React.ReactNode
  */
 export const Icon: React.FC<IconPropsT> = IconComp
-const Icons = { Menu, ExternalLink, Arrow, Lock, Symbol }
+const Icons = { Menu, DivMenu, ExternalLink, Arrow, Lock, Symbol }
 export { Icons }
 export * from "./types"
 
 import { Icon as IconComp } from "./icon"
 import { IconPropsT } from "./types"
 import { Menu } from "./menu"
+import { DivMenu } from "./div-menu"
 import { ExternalLink } from "./external-link"
 import { Arrow } from "./arrow"
 import { Lock } from "./lock"
