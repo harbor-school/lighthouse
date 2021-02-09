@@ -17,8 +17,8 @@ export interface ModalContentPropsT extends ModalPropsT {
 }
 
 export interface ModalPropsT {
-  title?: string
-  desc?: string
+  title?: string | React.ReactNode
+  desc?: string | React.ReactNode
   children?: React.ReactNode
   confirmText?: string
   cancelText?: string

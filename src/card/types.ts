@@ -13,8 +13,8 @@ export type CardActionOverrides = {
 }
 
 export type CardPropsT = {
-  title?: string
-  label?: string
+  title?: string | React.ReactNode
+  label?: string | React.ReactNode
   children?: React.ReactNode
   onClick?: (event: React.MouseEvent<HTMLDivElement>) => void
   overrides?: CardOverrides
