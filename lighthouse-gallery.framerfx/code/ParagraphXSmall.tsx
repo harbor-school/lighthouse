@@ -5,12 +5,13 @@ import { withHOC } from "./utils/withHOC"
 import { getPaddingPros, getMarginPros } from "./utils/styles"
 
 const InnerParagraphXSmall = (props) => {
+  let styles: React.CSSProperties = { textAlign: props.textAlign }
+  if (props.as === "span") styles = { ...styles, display: "inline-block" }
+
   return (
     <System.ParagraphXSmall
       {...props}
-      style={{
-        textAlign: props.textAlign,
-      }}
+      style={styles}
       {...getPaddingPros(props)}
       {...getMarginPros(props)}
     >
@@ -23,7 +24,7 @@ export const ParagraphXSmall = withHOC(InnerParagraphXSmall)
 
 ParagraphXSmall.defaultProps = {
   width: 106,
-  height: 18,
+  height: 20,
 }
 
 addPropertyControls(ParagraphXSmall, {

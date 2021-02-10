@@ -5,12 +5,13 @@ import { withHOC } from "./utils/withHOC"
 import { getPaddingPros, getMarginPros } from "./utils/styles"
 
 const InnerDisplaySmall = (props) => {
+  let styles: React.CSSProperties = { textAlign: props.textAlign }
+  if (props.as === "span") styles = { ...styles, display: "inline-block" }
+
   return (
     <System.DisplaySmall
       {...props}
-      style={{
-        textAlign: props.textAlign,
-      }}
+      style={styles}
       {...getPaddingPros(props)}
       {...getMarginPros(props)}
     >
@@ -23,7 +24,7 @@ export const DisplaySmall = withHOC(InnerDisplaySmall)
 
 DisplaySmall.defaultProps = {
   width: 304,
-  height: 56,
+  height: 52,
 }
 
 addPropertyControls(DisplaySmall, {

@@ -5,12 +5,13 @@ import { withHOC } from "./utils/withHOC"
 import { getPaddingPros, getMarginPros } from "./utils/styles"
 
 const InnerParagraphMedium = (props) => {
+  let styles: React.CSSProperties = { textAlign: props.textAlign }
+  if (props.as === "span") styles = { ...styles, display: "inline-block" }
+
   return (
     <System.ParagraphMedium
       {...props}
-      style={{
-        textAlign: props.textAlign,
-      }}
+      style={styles}
       {...getPaddingPros(props)}
       {...getMarginPros(props)}
     >
@@ -23,7 +24,7 @@ export const ParagraphMedium = withHOC(InnerParagraphMedium)
 
 ParagraphMedium.defaultProps = {
   width: 151,
-  height: 23,
+  height: 24,
 }
 
 addPropertyControls(ParagraphMedium, {

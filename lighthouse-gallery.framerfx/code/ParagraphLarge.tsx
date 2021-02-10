@@ -5,12 +5,13 @@ import { withHOC } from "./utils/withHOC"
 import { getPaddingPros, getMarginPros } from "./utils/styles"
 
 const InnerParagraphLarge = (props) => {
+  let styles: React.CSSProperties = { textAlign: props.textAlign }
+  if (props.as === "span") styles = { ...styles, display: "inline-block" }
+
   return (
     <System.ParagraphLarge
       {...props}
-      style={{
-        textAlign: props.textAlign,
-      }}
+      style={styles}
       {...getPaddingPros(props)}
       {...getMarginPros(props)}
     >
@@ -23,7 +24,7 @@ export const ParagraphLarge = withHOC(InnerParagraphLarge)
 
 ParagraphLarge.defaultProps = {
   width: 147,
-  height: 26,
+  height: 28,
 }
 
 addPropertyControls(ParagraphLarge, {

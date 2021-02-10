@@ -5,12 +5,13 @@ import { getMarginPros, getPaddingPros } from "./utils/styles"
 import { withHOC } from "./utils/withHOC"
 
 const InnerHeadingXLarge = (props) => {
+  let styles: React.CSSProperties = { textAlign: props.textAlign }
+  if (props.as === "span") styles = { ...styles, display: "inline-block" }
+
   return (
     <System.HeadingXLarge
       {...props}
-      style={{
-        textAlign: props.textAlign,
-      }}
+      style={styles}
       {...getPaddingPros(props)}
       {...getMarginPros(props)}
     >
@@ -23,7 +24,7 @@ export const HeadingXLarge = withHOC(InnerHeadingXLarge)
 
 HeadingXLarge.defaultProps = {
   width: 290,
-  height: 47,
+  height: 44,
 }
 
 addPropertyControls(HeadingXLarge, {
