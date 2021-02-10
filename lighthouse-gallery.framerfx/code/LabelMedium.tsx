@@ -5,12 +5,13 @@ import { getMarginPros, getPaddingPros } from "./utils/styles"
 import { withHOC } from "./utils/withHOC"
 
 const InnerLabelMedium = (props) => {
+  let styles: React.CSSProperties = { textAlign: props.textAlign }
+  if (props.as === "span") styles = { ...styles, display: "inline-block" }
+
   return (
     <System.LabelMedium
       {...props}
-      style={{
-        textAlign: props.textAlign,
-      }}
+      style={styles}
       {...getPaddingPros(props)}
       {...getMarginPros(props)}
     >
@@ -23,7 +24,7 @@ export const LabelMedium = withHOC(InnerLabelMedium)
 
 LabelMedium.defaultProps = {
   width: 109,
-  height: 21,
+  height: 20,
 }
 
 addPropertyControls(LabelMedium, {
@@ -50,7 +51,7 @@ addPropertyControls(LabelMedium, {
   as: {
     title: "As",
     type: ControlType.Enum,
-    defaultValue: "div",
+    defaultValue: "span",
     options: [
       "symbol",
       "object",

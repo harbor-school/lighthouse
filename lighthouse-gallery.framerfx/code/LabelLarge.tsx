@@ -5,12 +5,13 @@ import { getMarginPros, getPaddingPros } from "./utils/styles"
 import { withHOC } from "./utils/withHOC"
 
 const InnerLabelLarge = (props) => {
+  let styles: React.CSSProperties = { textAlign: props.textAlign }
+  if (props.as === "span") styles = { ...styles, display: "inline-block" }
+
   return (
     <System.LabelLarge
       {...props}
-      style={{
-        textAlign: props.textAlign,
-      }}
+      style={styles}
       {...getPaddingPros(props)}
       {...getMarginPros(props)}
     >
@@ -50,7 +51,7 @@ addPropertyControls(LabelLarge, {
   as: {
     title: "As",
     type: ControlType.Enum,
-    defaultValue: "div",
+    defaultValue: "span",
     options: [
       "symbol",
       "object",
