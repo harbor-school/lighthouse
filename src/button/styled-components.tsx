@@ -49,6 +49,22 @@ export const StartEnhancer = styled(motion.div, ({ $theme, $hide }: Props<{ $hid
     }
 })
 
+export const EndEnhancer = styled(motion.div, ({ $theme, $hide }: Props<{ $hide: boolean }>) => {
+  if ($hide)
+    return {
+      /* to remove width */
+      position: "absolute",
+      left: "0px",
+      /* safari fix */
+      display: "flex",
+      alignItems: "center",
+    }
+  else
+    return {
+      marginLeft: $theme.sizing.scale300,
+    }
+})
+
 export const ButtonText = styled(motion.div, ({ $theme }: Props) => {
   return {
     whiteSpace: "nowrap",

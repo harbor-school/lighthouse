@@ -19,6 +19,7 @@ addPropertyControls(Button, {
   content: {
     title: "Children",
     type: ControlType.String,
+    // @ts-ignore
     defaultValue: System.Button.defaultProps.children,
   },
   kind: {
@@ -41,6 +42,10 @@ addPropertyControls(Button, {
   },
   startEnhancer: {
     title: "Start enhancer",
+    type: ControlType.String,
+  },
+  endEnhancer: {
+    title: "End enhancer",
     type: ControlType.String,
   },
   onClick: {

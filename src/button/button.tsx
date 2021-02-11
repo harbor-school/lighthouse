@@ -9,6 +9,7 @@ import {
   FlexWrap,
   getBorderRadiusStyles,
   StartEnhancer,
+  EndEnhancer,
 } from "./styled-components"
 import { ButtonPropsT } from "./types"
 
@@ -17,6 +18,7 @@ export const Button: React.FC<ButtonPropsT> = ({
   shape = "default",
   children,
   startEnhancer,
+  endEnhancer,
   onClick,
   animate,
   as = motion.button,
@@ -71,6 +73,19 @@ export const Button: React.FC<ButtonPropsT> = ({
         <ButtonText $style={overrides.ButtonText} {...sharedProps} {...motionProps}>
           {children}
         </ButtonText>
+        {endEnhancer && (
+          <EndEnhancer
+            $hide={isHover && isMotion}
+            animate={{
+              opacity: isHover && isMotion ? 0 : 1,
+            }}
+            $style={overrides.EndEnhancer}
+            {...sharedProps}
+            {...motionProps}
+          >
+            {endEnhancer}
+          </EndEnhancer>
+        )}
       </FlexWrap>
     </BaseButton>
   )

@@ -5,6 +5,7 @@ import { KIND, SHAPE, TYPE } from "./constants"
 export type ButtonOverridesT = {
   BaseButton?: StyleObject
   StartEnhancer?: StyleObject
+  EndEnhancer?: StyleObject
   ButtonText?: StyleObject
 }
 
@@ -14,6 +15,7 @@ export type ButtonPropsT = {
   type?: keyof typeof TYPE
   children?: React.ReactNode
   startEnhancer?: React.ReactNode
+  endEnhancer?: React.ReactNode
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void
   animate?: boolean
   as?: ElementType
