@@ -30,3 +30,4 @@ export { default as LighthouseProvider, ThemeContext } from "./helpers/lighthous
 export * from "./utils/hex-to-rgb"
 export * from "./utils/increase-brightness"
 export * from "./tokens"
+export * from "./hooks"
