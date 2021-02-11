@@ -1,25 +1,25 @@
 {
-  "main": "dist/index.js",
-  "license": "MIT",
-  "devDependencies": {
-    "@types/react": "^16.8"
-  },
-  "peerDependencies": {
-    "framer": "^1.0",
-    "react": "^16.8"
-  },
-  "framer": {
-    "id": "01efca91-8ae0-46a1-9e26-73e4c13fdf22",
-    "displayName": "Lighthouse Design System"
-  },
-  "author": "yongmin ruucm",
-  "dependencies": {
-    "@framer/framer.default": "^1.71.0",
-    "@framer/maximedegreve.tinyfaces": "^1.4.0",
-    "@framer/ruucm-h.enhanced-lottie": "1.51.0",
-    "framer-motion": "^2.9.4",
-    "module-alias": "^2.2.2"
-  },
-  "name": "@framer/ruucm-h.lighthouse",
-  "version": "1.39.0"
+	"main": "dist/index.js",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/react": "^16.8"
+	},
+	"peerDependencies": {
+		"framer": "^1.0",
+		"react": "^16.8"
+	},
+	"framer": {
+		"id": "01efca91-8ae0-46a1-9e26-73e4c13fdf22",
+		"displayName": "Lighthouse Design System"
+	},
+	"author": "yongmin ruucm",
+	"dependencies": {
+		"@framer/framer.default": "^1.71.0",
+		"@framer/maximedegreve.tinyfaces": "^1.4.0",
+		"@framer/ruucm-h.enhanced-lottie": "1.51.0",
+		"framer-motion": "^2.9.4",
+		"module-alias": "^2.2.2"
+	},
+	"name": "@framer/ruucm-h.lighthouse",
+	"version": "1.159.0"
 }

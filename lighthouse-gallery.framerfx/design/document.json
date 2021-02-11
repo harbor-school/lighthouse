@@ -40307,6 +40307,10 @@
                   "type" : "string",
                   "value" : "Reset"
                 },
+                "$control__endEnhancer" : {
+                  "type" : "string",
+                  "value" : ""
+                },
                 "$control__href" : {
                   "type" : "string",
                   "value" : "https:\/\/framer.com"
@@ -40400,6 +40404,10 @@
                 "$control__content" : {
                   "type" : "string",
                   "value" : "Submit"
+                },
+                "$control__endEnhancer" : {
+                  "type" : "string",
+                  "value" : ""
                 },
                 "$control__href" : {
                   "type" : "string",
@@ -40640,6 +40648,10 @@
                           "type" : "string",
                           "value" : "Button Label"
                         },
+                        "$control__endEnhancer" : {
+                          "type" : "string",
+                          "value" : ""
+                        },
                         "$control__href" : {
                           "type" : "string",
                           "value" : "https:\/\/framer.com"
@@ -40738,6 +40750,10 @@
                           "type" : "string",
                           "value" : "Button Label"
                         },
+                        "$control__endEnhancer" : {
+                          "type" : "string",
+                          "value" : ""
+                        },
                         "$control__href" : {
                           "type" : "string",
                           "value" : "https:\/\/framer.com"
@@ -40833,6 +40849,10 @@
                         "$control__content" : {
                           "type" : "string",
                           "value" : "Button Label"
+                        },
+                        "$control__endEnhancer" : {
+                          "type" : "string",
+                          "value" : ""
                         },
                         "$control__href" : {
                           "type" : "string",
@@ -41004,6 +41024,10 @@
                           "type" : "string",
                           "value" : "Button Label"
                         },
+                        "$control__endEnhancer" : {
+                          "type" : "string",
+                          "value" : ""
+                        },
                         "$control__href" : {
                           "type" : "string",
                           "value" : "https:\/\/framer.com"
@@ -41100,6 +41124,10 @@
                         "$control__content" : {
                           "type" : "string",
                           "value" : "Button Label"
+                        },
+                        "$control__endEnhancer" : {
+                          "type" : "string",
+                          "value" : ""
                         },
                         "$control__href" : {
                           "type" : "string",
@@ -41198,6 +41226,10 @@
                         "$control__content" : {
                           "type" : "string",
                           "value" : "Button Label"
+                        },
+                        "$control__endEnhancer" : {
+                          "type" : "string",
+                          "value" : ""
                         },
                         "$control__href" : {
                           "type" : "string",
@@ -41372,6 +41404,10 @@
                           "type" : "string",
                           "value" : "Button Label"
                         },
+                        "$control__endEnhancer" : {
+                          "type" : "string",
+                          "value" : ""
+                        },
                         "$control__href" : {
                           "type" : "string",
                           "value" : "https:\/\/framer.com"
@@ -41468,6 +41504,10 @@
                         "$control__content" : {
                           "type" : "string",
                           "value" : "Button Label"
+                        },
+                        "$control__endEnhancer" : {
+                          "type" : "string",
+                          "value" : ""
                         },
                         "$control__href" : {
                           "type" : "string",
@@ -41642,6 +41682,10 @@
                           "type" : "string",
                           "value" : "Button Label"
                         },
+                        "$control__endEnhancer" : {
+                          "type" : "string",
+                          "value" : ""
+                        },
                         "$control__href" : {
                           "type" : "string",
                           "value" : "https:\/\/lighthouse.harbor.school"
@@ -41736,6 +41780,10 @@
                         "$control__content" : {
                           "type" : "string",
                           "value" : "Button Label"
+                        },
+                        "$control__endEnhancer" : {
+                          "type" : "string",
+                          "value" : ""
                         },
                         "$control__href" : {
                           "type" : "string",
@@ -44524,6 +44572,10 @@
                   "type" : "string",
                   "value" : "Learn More"
                 },
+                "$control__endEnhancer" : {
+                  "type" : "string",
+                  "value" : ""
+                },
                 "$control__href" : {
                   "type" : "string",
                   "value" : "https:\/\/framer.com"
@@ -46485,6 +46537,10 @@
                     "$control__content" : {
                       "type" : "string",
                       "value" : "Open"
+                    },
+                    "$control__endEnhancer" : {
+                      "type" : "string",
+                      "value" : ""
                     },
                     "$control__href" : {
                       "type" : "string",
