@@ -23,6 +23,7 @@ export const Input: React.FC<InputPropsT> = ({
   required,
   pattern = "",
   onChange,
+  onFocus,
   onBlur,
   overrides = {},
 }) => {
@@ -81,6 +82,7 @@ export const Input: React.FC<InputPropsT> = ({
           placeholder={placeholder}
           defaultValue={defaultValue}
           onChange={onChange}
+          onFocus={onFocus}
           onBlur={onBlur}
           $style={overrides.BaseInput}
           {...sharedProps}

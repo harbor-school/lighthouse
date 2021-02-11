@@ -59,4 +59,10 @@ addPropertyControls(Input, {
       return props.hasForm === false || props.required === false
     },
   },
+  onFocus: {
+    type: ControlType.EventHandler,
+  },
+  onBlur: {
+    type: ControlType.EventHandler,
+  },
 })
