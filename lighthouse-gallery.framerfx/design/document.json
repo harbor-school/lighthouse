@@ -424,8 +424,8 @@
                         },
                         "aspectRatio" : null,
                         "bottom" : 0,
-                        "centerAnchorX" : 0.74948875255623726,
-                        "centerAnchorY" : 0.92682926829268297,
+                        "centerAnchorX" : 0.76073619631901868,
+                        "centerAnchorY" : 0.92682926829268319,
                         "clip" : true,
                         "codeComponentIdentifier" : ".\/LabelLarge.tsx_LabelLarge",
                         "codeComponentPackageVersion" : "1.71.0",
@@ -466,7 +466,7 @@
                         "radiusPerCorner" : false,
                         "radiusTopLeft" : 0,
                         "radiusTopRight" : 0,
-                        "right" : 6,
+                        "right" : 0,
                         "rotation" : 0,
                         "top" : null,
                         "visible" : true,
@@ -51865,6 +51865,73 @@
             "top" : 3664,
             "visible" : true,
             "width" : 226,
+            "widthType" : 0
+          },
+          {
+            "__class" : "CodeComponentNode",
+            "$control__as" : {
+              "type" : "enum",
+              "value" : "span"
+            },
+            "$control__color" : {
+              "type" : "string",
+              "value" : "contentPrimary"
+            },
+            "$control__content" : {
+              "type" : "string",
+              "value" : "Last Update"
+            },
+            "$control__textAlign" : {
+              "type" : "segmentedenum",
+              "value" : "left"
+            },
+            "aspectRatio" : null,
+            "bottom" : null,
+            "centerAnchorX" : 0,
+            "centerAnchorY" : 0,
+            "clip" : true,
+            "codeComponentIdentifier" : ".\/LabelLarge.tsx_LabelLarge",
+            "codeComponentPackageVersion" : null,
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : false,
+            "duplicatedFrom" : [
+              "SckrEZAKk"
+            ],
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "rgba(255,255,255,1)",
+            "fillEnabled" : false,
+            "fillImage" : null,
+            "fillImageOriginalName" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillType" : "color",
+            "height" : 24,
+            "heightType" : 0,
+            "id" : "ZRgdchnIh",
+            "intrinsicHeight" : 24,
+            "intrinsicWidth" : 99,
+            "left" : 1726,
+            "locked" : false,
+            "name" : null,
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "pLdQJ6KMe",
+            "previewSettings" : null,
+            "radius" : 0,
+            "radiusBottomLeft" : 0,
+            "radiusBottomRight" : 0,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 0,
+            "radiusTopRight" : 0,
+            "right" : null,
+            "rotation" : 0,
+            "top" : 3524,
+            "visible" : true,
+            "width" : 109,
             "widthType" : 0
           }
         ],

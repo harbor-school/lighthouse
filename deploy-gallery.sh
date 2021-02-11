@@ -1,4 +1,5 @@
 # Duplicate Gallery
+rm -rf lighthouse-gallery-deploy.framerfx
 cp -r lighthouse-gallery.framerfx lighthouse-gallery-deploy.framerfx
 
 # Remove Project code files "except overrides" directory

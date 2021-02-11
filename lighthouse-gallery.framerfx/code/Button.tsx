@@ -43,6 +43,10 @@ addPropertyControls(Button, {
     title: "Start enhancer",
     type: ControlType.String,
   },
+  endEnhancer: {
+    title: "End enhancer",
+    type: ControlType.String,
+  },
   onClick: {
     type: ControlType.EventHandler,
   },
