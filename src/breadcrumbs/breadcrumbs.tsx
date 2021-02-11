@@ -13,7 +13,7 @@ export const Breadcrumbs: React.FC<BreadcrumbsPropsT> = ({ children, overrides =
     <Wrap $style={overrides.Wrap} {...sharedProps}>
       {childrenArray.map((child, id) => (
         <Item key={id} {...sharedProps} $style={overrides.Item}>
-          {child} {id !== childrenArray.length - 1 && <Separator {...sharedProps}>/</Separator>}
+          {child} {id < childrenArray.length - 1 && <Separator {...sharedProps}>/</Separator>}
         </Item>
       ))}
     </Wrap>
