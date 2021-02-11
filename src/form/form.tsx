@@ -9,6 +9,7 @@ import { FormFooter, FormWrap } from "./styled-components"
 import { FormPropsT } from "./types"
 
 export const Form: React.FC<FormPropsT> = ({
+  rowGap,
   formBody,
   formFooter,
   onSubmit = (values) => console.log("values from default onSubmit", values),
@@ -27,18 +28,21 @@ export const Form: React.FC<FormPropsT> = ({
     <FormContext.Provider value={formProps}>
       <FormWrap onSubmit={formProps.handleSubmit(onSubmit)} $style={overrides.FormWrap} {...props}>
         {/* FormBody */}
-        <System.FlexBox flexDirection="column" rowGap="scale900">
+        <System.FlexBox flexDirection="column" rowGap={rowGap}>
           {React.Children.map(body, (child, id) => (
             <System.FlexItem key={id}>{child}</System.FlexItem>
           ))}
         </System.FlexBox>
         {/* FormFooter */}
-        <FormFooter {...sharedProps}>{formFooter}</FormFooter>
+        <FormFooter $style={overrides.FormFooter} {...sharedProps}>
+          {formFooter}
+        </FormFooter>
       </FormWrap>
     </FormContext.Provider>
   )
 }
 
 Form.defaultProps = {
+  rowGap: "scale900",
   onSubmit: (values) => console.log("values from default onSubmit", values),
 }
