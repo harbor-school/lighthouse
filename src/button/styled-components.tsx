@@ -16,7 +16,7 @@ export const BaseButton = styled(
       borderStyle: "unset",
       margin: "unset",
       outline: "unset",
-      boxSizing: "unset",
+      boxSizing: "border-box",
       lineHeight: "unset",
       // start new styles
       cursor: "pointer",
