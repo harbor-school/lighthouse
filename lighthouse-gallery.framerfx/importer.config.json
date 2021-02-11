@@ -71,7 +71,7 @@
       "ignore": true
     },
     "Spacing": {
-      "ignoredProps": ["width", "height"]
+      "ignoredProps": ["width", "height", "display"]
     },
     "DisplayLarge": {
       "ignore": false,

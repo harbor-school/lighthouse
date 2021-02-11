@@ -19,7 +19,6 @@ addPropertyControls(Button, {
   content: {
     title: "Children",
     type: ControlType.String,
-    // @ts-ignore
     defaultValue: System.Button.defaultProps.children,
   },
   kind: {
