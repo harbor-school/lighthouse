@@ -9,6 +9,7 @@ export type InputPropsT = {
   required?: boolean
   pattern?: string
   onChange?: (event: React.FocusEvent<HTMLInputElement>) => void
+  onFocus?: (event: React.FocusEvent<HTMLInputElement>) => void
   onBlur?: (event: React.FocusEvent<HTMLInputElement>) => void
   overrides?: {
     Wrap?: StyleObject
