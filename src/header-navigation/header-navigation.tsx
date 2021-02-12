@@ -2,7 +2,7 @@ import * as React from "react"
 import { useContext } from "react"
 import { ThemeContext } from "../helpers/lighthouse-provider"
 import { HeaderNavigationPropsT } from "./types"
-import { Header, HeaderWrap } from "./styled-components"
+import { Nav, NavWrap } from "./styled-components"
 
 export const HeaderNavigation: React.FC<HeaderNavigationPropsT> = ({
   children,
@@ -12,9 +12,9 @@ export const HeaderNavigation: React.FC<HeaderNavigationPropsT> = ({
   const sharedProps = { $theme: theme }
 
   return (
-    <Header $style={overrides.Header} {...sharedProps}>
-      <HeaderWrap {...sharedProps}>{children}</HeaderWrap>
-    </Header>
+    <Nav $style={overrides.Header} {...sharedProps}>
+      <NavWrap {...sharedProps}>{children}</NavWrap>
+    </Nav>
   )
 }
 

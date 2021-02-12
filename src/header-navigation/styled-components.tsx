@@ -4,14 +4,14 @@ import { Extendtable } from "../utils/extendable"
 
 type Props<U = Record<string, unknown>> = { $theme: ThemeT } & Extendtable<U>
 
-export const Header = styled("header", ({ $theme }: Props) => {
+export const Nav = styled("nav", ({ $theme }: Props) => {
   return {
     width: "100%",
     background: $theme.colors.backgroundPrimary,
   }
 })
 
-export const HeaderWrap = styled("div", ({ $theme }: Props) => {
+export const NavWrap = styled("div", ({ $theme }: Props) => {
   return {
     padding: `${$theme.sizing.scale900} ${$theme.sizing.scale900}`,
     display: "flex",
@@ -21,7 +21,7 @@ export const HeaderWrap = styled("div", ({ $theme }: Props) => {
   }
 })
 
-export const NavigationItemWrap = styled("button", ({ $theme }: Props) => {
+export const NavigationItemWrap = styled("div", ({ $theme }: Props) => {
   return {
     border: "none",
     outline: "none",
