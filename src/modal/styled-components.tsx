@@ -23,9 +23,11 @@ export const InnerWarp = styled("div", ({ $theme }: Props) => {
   return {
     position: "relative",
     minWidth: "450px",
+    maxWidth: "450px",
     minHeight: "250px",
     [$theme.mediaQuery.medium]: {
       minWidth: `calc(100vw - (${$theme.sizing.scale900} * 2))`,
+      maxWidth: `calc(100vw - (${$theme.sizing.scale900} * 2))`,
     },
   }
 })

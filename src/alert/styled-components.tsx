@@ -19,11 +19,13 @@ export const Wrap = styled(motion.div, ({ $theme }: Props) => {
 export const InnerWrap = styled("div", ({ $theme, $kind }: Props<{ $kind: keyof typeof KIND }>) => {
   return {
     minWidth: "450px",
+    maxWidth: "450px",
     minHeight: "200px",
     padding: `0 ${$theme.sizing.scale900}`,
     ...getKindStyles({ $theme, $kind }),
     [$theme.mediaQuery.medium]: {
       minWidth: `calc(100vw - (${$theme.sizing.scale900} * 2))`,
+      maxWidth: `calc(100vw - (${$theme.sizing.scale900} * 2))`,
       boxSizing: "border-box",
     },
   }
