@@ -10,5 +10,5 @@ export type HeaderNavigationPropsT = {
 
 export type HeaderNavigationItemPropsT = {
   children?: React.ReactNode
-  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void
+  onClick?: (event: React.MouseEvent<HTMLDivElement>) => void
 }
