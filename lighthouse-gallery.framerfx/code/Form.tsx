@@ -31,6 +31,7 @@ export const Form = withHOC(InnerForm)
 Form.defaultProps = {
   width: 280,
   height: 160,
+  ...System.Form.defaultProps,
 }
 
 addPropertyControls(Form, {
