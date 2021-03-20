@@ -80,7 +80,6 @@ export function generateCustomTheme({ themeData }) {
 }
 
 function trimStringValues(obj) {
-  console.log("obj", obj)
   Object.keys(obj).forEach((key) => (obj[key] = isHex(obj[key]) ? obj[key] : eval(obj[key])))
   return obj
 }
