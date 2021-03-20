@@ -26,7 +26,13 @@ export const Form: React.FC<FormPropsT> = ({
 
   return (
     <FormContext.Provider value={formProps}>
-      <FormWrap onSubmit={formProps.handleSubmit(onSubmit)} $style={overrides.FormWrap} {...props}>
+      <FormWrap
+        onSubmit={formProps.handleSubmit((values) =>
+          onSubmit({ ...values, reset: formProps.reset })
+        )}
+        $style={overrides.FormWrap}
+        {...props}
+      >
         {/* FormBody */}
         <System.FlexBox flexDirection="column" rowGap={rowGap}>
           {React.Children.map(body, (child, id) => (
