@@ -8,6 +8,7 @@ export type InputPropsT = {
   name?: string
   required?: boolean
   pattern?: string
+  type?: string
   onChange?: (event: React.FocusEvent<HTMLInputElement>) => void
   onFocus?: (event: React.FocusEvent<HTMLInputElement>) => void
   onBlur?: (event: React.FocusEvent<HTMLInputElement>) => void
