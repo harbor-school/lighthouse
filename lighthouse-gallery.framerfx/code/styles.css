@@ -6,7 +6,7 @@
 .flex-children-wrap > div {
   position: relative !important;
 }
-.flex-children-wrap [data-framer-component-type='Frame'] {
+.flex-children-wrap [data-framer-component-type="Frame"] {
   position: relative !important;
   width: 100% !important;
   height: 100% !important;
@@ -24,7 +24,9 @@
   position: relative !important;
   width: 100% !important;
 }
-.modal-loading-wrap [data-framer-component-type='Frame'] {
+.modal-loading-wrap [data-framer-component-type="Frame"],
+.modal-loading-wrap [data-framer-component-type="Stack"],
+.modal-loading-wrap > div {
   position: relative !important;
 }
 
