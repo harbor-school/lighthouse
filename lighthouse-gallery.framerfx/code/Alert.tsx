@@ -20,6 +20,7 @@ export const Alert = withHOC(InnerAlert)
 Alert.defaultProps = {
   width: 450,
   height: 240,
+  body: [],
   ...System.Alert.defaultProps,
 }
 
