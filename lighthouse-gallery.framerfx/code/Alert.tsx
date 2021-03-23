@@ -6,7 +6,7 @@ import { withHOC } from "./utils/withHOC"
 const InnerAlert = (props) => {
   const { body, ...rest } = props
   return (
-    <Frame center background="">
+    <Frame center background="" size="100%">
       <System.Alert
         body={body.length > 0 && <div className="alert-body-wrap">{body}</div>}
         {...rest}

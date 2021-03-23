@@ -5,7 +5,7 @@ import { withHOC } from "./utils/withHOC"
 
 const InnerModal = (props) => {
   return (
-    <Frame center background="">
+    <Frame center background="" size="100%">
       <System.Modal
         {...props}
         loadingSpinner={<div className="modal-loading-wrap">{props.loadingSpinner}</div>}
