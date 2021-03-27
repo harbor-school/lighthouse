@@ -7,6 +7,7 @@ import { themeEditorState } from "../../../store"
 import { KIND } from "../constants"
 import { deleteThemeTableRow, newThemeTableRow } from "./handler"
 import { NewRowInput } from "./new-row-input"
+import { TokenCopying } from "./token-copying"
 
 type TokenEditorPropsT = {
   type?: "colors" | "lighting"
@@ -77,30 +78,37 @@ export const TokenEditor: React.FC<TokenEditorPropsT> = ({
                 PreviewBlock(tableData, key),
                 // controls
                 <System.Block // remove button
-                  onClick={() =>
-                    deleteThemeTableRow({
-                      type,
-                      key,
-                      tableData,
-                      setTableData,
-                      colorTokenKind,
-                      themeEditor,
-                      setThemeEditor,
-                    })
-                  }
-                  cursor="pointer"
                   display="inline-block"
                   color={theme.colors.contentSecondary}
                   overrides={{
                     Block: {
                       width: "100%",
-                      textAlign: "right",
                       overflow: "hidden",
                       textOverflow: "ellipsis",
+                      display: "flex",
+                      justifyContent: "flex-end",
+                      alignItems: "center",
                     },
                   }}
                 >
-                  remove
+                  <System.Block
+                    onClick={() =>
+                      deleteThemeTableRow({
+                        type,
+                        key,
+                        tableData,
+                        setTableData,
+                        colorTokenKind,
+                        themeEditor,
+                        setThemeEditor,
+                      })
+                    }
+                    cursor="pointer"
+                  >
+                    remove
+                  </System.Block>
+                  <System.Spacing width="scale500" />
+                  <TokenCopying tokenValue={tableData[key]} />
                 </System.Block>,
               ]
           )
