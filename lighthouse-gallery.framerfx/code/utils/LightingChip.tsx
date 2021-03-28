@@ -12,9 +12,13 @@ export const LightingChip = withHOC(InnerLightingChip)
 LightingChip.defaultProps = {
   width: 290,
   height: 92,
+  ...System.LightingChip.defaultProps,
 }
 
 addPropertyControls(LightingChip, {
+  showInfo: {
+    type: ControlType.Boolean,
+  },
   lighting: {
     title: "Lighting",
     type: ControlType.Enum,
