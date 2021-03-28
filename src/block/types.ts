@@ -322,6 +322,7 @@ export interface BlockPropsT {
   paddingBottom?: ResponsiveT<ScaleT>
   paddingLeft?: ResponsiveT<ScaleT>
   borderRadius?: ResponsiveT<string>
+  boxShadow?: ResponsiveT<string>
   /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/place-content */
   placeContent?: ResponsiveT<string>
   /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/place-items */

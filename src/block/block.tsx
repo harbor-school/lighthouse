@@ -67,6 +67,7 @@ export const Block: React.FC<BlockPropsT> = ({
   paddingBottom,
   paddingLeft,
   borderRadius,
+  boxShadow,
   placeContent,
   placeItems,
   placeSelf,
@@ -148,6 +149,7 @@ export const Block: React.FC<BlockPropsT> = ({
       $paddingBottom={paddingBottom}
       $paddingLeft={paddingLeft}
       $borderRadius={borderRadius}
+      $boxShadow={boxShadow}
       $placeContent={placeContent}
       $placeItems={placeItems}
       $placeSelf={placeSelf}

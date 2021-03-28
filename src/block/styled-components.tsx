@@ -46,7 +46,7 @@ function getFontValue(obj, key) {
 }
 
 export const BaseBlock = styled("div", (props: any) => {
-  const { breakpoints, colors, typography, sizing } = props.$theme
+  const { breakpoints, colors, lighting, typography, sizing } = props.$theme
 
   const get = (obj, key) => obj[key]
   const getScale = (size) => sizing[size] || size
@@ -301,6 +301,11 @@ export const BaseBlock = styled("div", (props: any) => {
     transform: getScale,
   })
   styles.apply({ property: "borderRadius", value: get(props, "$borderRadius") })
+  styles.apply({
+    property: "boxShadow",
+    value: get(props, "$boxShadow"),
+    transform: (boxShadow) => lighting[boxShadow] || boxShadow,
+  })
 
   styles.apply({
     property: "placeContent",
