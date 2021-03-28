@@ -70,12 +70,15 @@ export const HeaderLine = styled("div", ({ $theme }: Props) => {
   }
 })
 
-export const ModalBody = styled("div", {
-  padding: "0 35px",
+export const ModalBody = styled("div", ({ $theme }: Props) => {
+  return {
+    padding: `0 ${$theme.sizing.scale900}`,
+  }
 })
 
 export const Description = styled("div", ({ $theme }: Props) => {
   return {
+    maxWidth: "450px",
     paddingBottom: $theme.sizing.scale900,
     color: $theme.colors.contentPrimary,
     ...$theme.typography.ParagraphSmall,

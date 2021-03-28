@@ -12,9 +12,13 @@ export const ColorChip = withHOC(InnerColorChip)
 ColorChip.defaultProps = {
   width: 180,
   height: 112,
+  ...System.ColorChip.defaultProps,
 }
 
 addPropertyControls(ColorChip, {
+  showInfo: {
+    type: ControlType.Boolean,
+  },
   kind: {
     title: "Kind",
     type: ControlType.Enum,

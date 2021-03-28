@@ -65,6 +65,7 @@ export const AlertMessage = styled("p", ({ $theme }: Props) => {
     overflow: "scroll",
     margin: "0px",
     padding: "0px",
+    maxWidth: "450px",
     ...$theme.typography.ParagraphSmall,
   }
 })

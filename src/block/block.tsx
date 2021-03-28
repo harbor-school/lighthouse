@@ -66,6 +66,7 @@ export const Block: React.FC<BlockPropsT> = ({
   paddingRight,
   paddingBottom,
   paddingLeft,
+  borderRadius,
   placeContent,
   placeItems,
   placeSelf,
@@ -74,6 +75,7 @@ export const Block: React.FC<BlockPropsT> = ({
   top,
   right,
   bottom,
+  textAlign,
   textOverflow,
   whiteSpace,
   cursor,
@@ -145,6 +147,7 @@ export const Block: React.FC<BlockPropsT> = ({
       $paddingRight={paddingRight}
       $paddingBottom={paddingBottom}
       $paddingLeft={paddingLeft}
+      $borderRadius={borderRadius}
       $placeContent={placeContent}
       $placeItems={placeItems}
       $placeSelf={placeSelf}
@@ -153,6 +156,7 @@ export const Block: React.FC<BlockPropsT> = ({
       $top={top}
       $right={right}
       $bottom={bottom}
+      $textAlign={textAlign}
       $textOverflow={textOverflow}
       $whiteSpace={whiteSpace}
       $cursor={cursor}
