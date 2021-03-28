@@ -210,6 +210,8 @@ type OverflowT =
 
 export type ScaleT = 0 | string
 
+export type TextAlignT = "left" | "center" | "right" | "justify" | "initial" | "inherit"
+
 export type WhiteSpaceT =
   | "normal"
   | "nowrap"
@@ -319,6 +321,7 @@ export interface BlockPropsT {
   paddingRight?: ResponsiveT<ScaleT>
   paddingBottom?: ResponsiveT<ScaleT>
   paddingLeft?: ResponsiveT<ScaleT>
+  borderRadius?: ResponsiveT<string>
   /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/place-content */
   placeContent?: ResponsiveT<string>
   /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/place-items */
@@ -330,6 +333,7 @@ export interface BlockPropsT {
   top?: ResponsiveT<ScaleT>
   right?: ResponsiveT<ScaleT>
   bottom?: ResponsiveT<ScaleT>
+  textAlign?: ResponsiveT<TextAlignT>
   /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/text-overflow */
   textOverflow?: ResponsiveT<string>
   /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/white-space */

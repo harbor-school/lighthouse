@@ -300,6 +300,7 @@ export const BaseBlock = styled("div", (props: any) => {
     value: get(props, "$paddingLeft"),
     transform: getScale,
   })
+  styles.apply({ property: "borderRadius", value: get(props, "$borderRadius") })
 
   styles.apply({
     property: "placeContent",
@@ -334,6 +335,7 @@ export const BaseBlock = styled("div", (props: any) => {
     transform: getScale,
   })
 
+  styles.apply({ property: "textAlign", value: get(props, "$textAlign") })
   styles.apply({ property: "textOverflow", value: get(props, "$textOverflow") })
   styles.apply({ property: "whiteSpace", value: get(props, "$whiteSpace") })
   styles.apply({ property: "cursor", value: get(props, "$cursor") })
