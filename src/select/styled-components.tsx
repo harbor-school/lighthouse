@@ -47,6 +47,7 @@ export const Option = styled(
       color: $disabled ? $theme.colors.contentTertiary : $theme.colors.contentSecondary,
       cursor: "pointer",
       position: "relative",
+      textDecoration: "none",
       ...getOptionHoverStyle({ $theme, $disabled }),
       ...getOptionWarpSelectedStyle({ $theme, $selected }),
     }

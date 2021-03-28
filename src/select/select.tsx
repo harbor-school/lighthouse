@@ -43,26 +43,27 @@ export const Select: React.FC<SelectPropsT> = ({
       </Placeholder>
       <OptionList $style={overrides.OptionList} {...sharedProps}>
         <AnimateOptions isOpen={isOpen} animate={animate} setReadyToChange={setReadyToChange}>
-          {options.map((option, id) => (
+          {options.map(({ disabled, label, endEnhancer, ...rest }, id) => (
             <Option
               key={id}
               $selected={id === active}
-              $disabled={option.disabled || false}
+              $disabled={disabled || false}
               $style={overrides.Option}
               onClick={() => {
-                if (!option.disabled) {
+                if (!disabled) {
                   setNewValue(id)
                   // Close select(onClickOutside) and trigger onChange if it is animate.
                   // If it's not animate, it triggers onChange separately.
                   animate ? onClickOutside() : onChange(id)
                 }
               }}
+              {...rest}
               {...sharedProps}
             >
               <OptionLabel $style={overrides.OptionLabel} {...sharedProps}>
-                {option.label}
+                {label}
               </OptionLabel>
-              <OptionEndEnhancer>{option.endEnhancer}</OptionEndEnhancer>
+              <OptionEndEnhancer>{endEnhancer}</OptionEndEnhancer>
             </Option>
           ))}
         </AnimateOptions>
