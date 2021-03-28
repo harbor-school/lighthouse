@@ -35,7 +35,7 @@ export const ModalContent: React.FC<ModalContentPropsT> = ({
         </Title>
         <HeaderLine {...sharedProps} />
       </ModalHeader>
-      <ModalBody $style={overrides.ModalBody}>
+      <ModalBody $style={overrides.ModalBody} {...sharedProps}>
         {desc && (
           <Description $style={overrides.Description} {...sharedProps}>
             {handleNewline(desc)}
