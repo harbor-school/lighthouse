@@ -7,7 +7,6 @@ type Props<U = Record<string, unknown>> = { $theme: ThemeT } & Extendtable<U>
 export const Nav = styled("nav", ({ $theme }: Props) => {
   return {
     width: "100%",
-    background: $theme.colors.backgroundPrimary,
   }
 })
 
