@@ -8,6 +8,7 @@ import { KIND } from "./constants"
 import { ColorChipPropsT } from "./types"
 
 export const ColorChip: React.FC<ColorChipPropsT> = ({
+  showInfo,
   kind,
   colorScale,
   colorFoundation,
@@ -24,45 +25,48 @@ export const ColorChip: React.FC<ColorChipPropsT> = ({
 
   return (
     <>
-      <System.Block height="scale900" backgroundColor={color} />
-      <System.Block padding={theme.sizing.scale400}>
-        <System.LabelMedium>
-          {getColorName({
-            $kind: kind,
-            $colorScale: colorScale,
-            $colorFoundation: colorFoundation,
-            $colorSemantic: colorSemantic,
-          })}
-        </System.LabelMedium>
+      <System.Block height={showInfo ? "scale900" : "100%"} backgroundColor={color} />
+      {showInfo && (
+        <System.Block padding={theme.sizing.scale400}>
+          <System.LabelMedium>
+            {getColorName({
+              $kind: kind,
+              $colorScale: colorScale,
+              $colorFoundation: colorFoundation,
+              $colorSemantic: colorSemantic,
+            })}
+          </System.LabelMedium>
 
-        <System.Spacing height="scale100" />
-        <System.LabelSmall
-          overrides={{
-            Block: {
-              textTransform: "lowercase",
-              color: theme.colors.contentInverseTertiary,
-            },
-          }}
-        >
-          {hexToHSL(color)}
-        </System.LabelSmall>
-        <System.Spacing height="scale100" />
-        <System.LabelSmall
-          overrides={{
-            Block: {
-              textTransform: "lowercase",
-              color: theme.colors.contentInverseTertiary,
-            },
-          }}
-        >
-          {color}
-        </System.LabelSmall>
-      </System.Block>
+          <System.Spacing height="scale100" />
+          <System.LabelSmall
+            overrides={{
+              Block: {
+                textTransform: "lowercase",
+                color: theme.colors.contentInverseTertiary,
+              },
+            }}
+          >
+            {hexToHSL(color)}
+          </System.LabelSmall>
+          <System.Spacing height="scale100" />
+          <System.LabelSmall
+            overrides={{
+              Block: {
+                textTransform: "lowercase",
+                color: theme.colors.contentInverseTertiary,
+              },
+            }}
+          >
+            {color}
+          </System.LabelSmall>
+        </System.Block>
+      )}
     </>
   )
 }
 
 ColorChip.defaultProps = {
+  showInfo: false,
   kind: KIND.scale,
   colorScale: "blue100",
   colorSemantic: "backgroundInversePrimary",

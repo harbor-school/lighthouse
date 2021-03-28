@@ -3,6 +3,7 @@ import { ColorTokensT as ColorFoundationTokensT, CoreSemanticColorTokensT } from
 import { KIND } from "./constants"
 
 export type ColorChipPropsT = {
+  showInfo?: boolean
   kind?: keyof typeof KIND
   colorScale?: keyof ColorTokensT
   colorFoundation?: keyof ColorFoundationTokensT
