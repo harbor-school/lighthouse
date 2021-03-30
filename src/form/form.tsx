@@ -27,8 +27,8 @@ export const Form: React.FC<FormPropsT> = ({
   return (
     <FormContext.Provider value={formProps}>
       <FormWrap
-        onSubmit={formProps.handleSubmit((values) =>
-          onSubmit({ ...values, reset: formProps.reset })
+        onSubmit={formProps.handleSubmit((values, event) =>
+          onSubmit({ ...values, reset: formProps.reset }, event)
         )}
         $style={overrides.FormWrap}
         {...props}
