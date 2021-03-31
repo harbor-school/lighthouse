@@ -66,6 +66,9 @@ export const AlertMessage = styled("p", ({ $theme }: Props) => {
     margin: "0px",
     padding: "0px",
     maxWidth: "450px",
+    "::-webkit-scrollbar": {
+      width: "0px",
+    },
     ...$theme.typography.ParagraphSmall,
   }
 })

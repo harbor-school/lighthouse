@@ -32,6 +32,9 @@ export const OptionList = styled("div", ({ $theme }: Props) => {
     top: "100%",
     zIndex: $theme.zIndex.select,
     width: "100%",
+    "::-webkit-scrollbar": {
+      width: "0px",
+    },
   }
 })
 
