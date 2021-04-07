@@ -15,7 +15,7 @@ const InnerHeaderNavigation = ({ logo, items = defaultValue, ...props }) => {
       <System.Block>
         {items.map((item, i) => (
           <System.HeaderNavigationItem key={i}>
-            <System.ParagraphLarge>{item}</System.ParagraphLarge>
+            <System.StyledLink>{item}</System.StyledLink>
           </System.HeaderNavigationItem>
         ))}
       </System.Block>
