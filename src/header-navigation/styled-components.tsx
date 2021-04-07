@@ -26,6 +26,7 @@ export const NavigationItemWrap = styled("div", ({ $theme }: Props) => {
     outline: "none",
     background: "none",
     cursor: "pointer",
+    display: "inline-block",
     marginLeft: $theme.sizing.scale1200,
   }
 })
