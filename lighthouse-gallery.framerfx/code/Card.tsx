@@ -28,18 +28,15 @@ Card.defaultProps = {
 }
 
 addPropertyControls(Card, {
-  title: {
-    title: "Title",
-    type: ControlType.String,
-    defaultValue: "title",
-  },
   label: {
     title: "Label",
     type: ControlType.String,
     defaultValue: "label",
   },
-  defaultStyle: {
-    type: ControlType.Boolean,
+  title: {
+    title: "Title",
+    type: ControlType.String,
+    defaultValue: "title",
   },
   body: {
     title: "Body",
@@ -55,6 +52,9 @@ addPropertyControls(Card, {
     hidden(props) {
       return props.defaultStyle === false
     },
+  },
+  defaultStyle: {
+    type: ControlType.Boolean,
   },
   content: {
     title: "Children",
