@@ -9,6 +9,7 @@ const InnerSpacing = (props) => {
       {...props}
       width={props.widthAmount}
       height={props.heightAmount}
+      backgroundColor={"var(--lh-guide-spacing)"}
     ></System.Spacing>
   )
 }
@@ -124,10 +125,5 @@ addPropertyControls(Spacing, {
       "scale4800",
     ],
     defaultValue: "scale700",
-  },
-  backgroundColor: {
-    title: "Background color",
-    type: ControlType.Color,
-    defaultValue: "#C4DEB7",
   },
 })
