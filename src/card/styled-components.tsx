@@ -67,6 +67,7 @@ export const BodyWrap = styled("div", ({ $theme }: Props) => {
     color: $theme.colors.contentPrimary,
     textAlign: "left",
     marginBottom: $theme.sizing.scale1400,
+    display: "flex", // remove inner space after texts
     ...$theme.typography.ParagraphMedium,
   }
 })
