@@ -49,6 +49,9 @@ export const BaseInput = styled("input", ({ $theme }: Props) => {
     boxShadow: `inset 0px 0px 0px 1px ${$theme.colors.backgroundTertiary}`, // inside border
     background: $theme.colors.backgroundSecondary,
     color: $theme.colors.contentPrimary,
+    "::placeholder": {
+      color: $theme.colors.contentSecondary,
+    },
     ...$theme.typography.ParagraphMedium,
     ":focus": {
       outline: "none",
