@@ -1,6 +1,6 @@
 # Lighthouse Design System
 
-This package implements the Lighthouse Design System from Harbor School in Framer.
+Lighthouse is [Harbor School](https://link.harbor.school/lighthouse-package-framer)’s open-source design system for its integrated design & development workflow.
 
 ## Documentation
 
