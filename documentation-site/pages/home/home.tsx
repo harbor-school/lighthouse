@@ -9,8 +9,22 @@ import { githubUrl } from "../../constants"
 import { DesktopView, isDarkTheme, MobileView, sizeBg } from "../../utils"
 import { Heading } from "./styled-components"
 
-const headingText = `Lighthouse is a continuous design system for integrating design with development workflows.\n Designing just got easier as you can directely import coded components, use the exact same layouts and measurments, and publish in no matter of time. Lighthouse Design System also provides fully customizable themes.`
-
+const HeadingText = () => (
+  <>
+    Lighthouse is a continuous design system of{" "}
+    <System.Block
+      as="a"
+      href="https://link.harbor.school/lighthouse-package-docs"
+      target="_blank"
+      color="primary"
+    >
+      Harbor School
+    </System.Block>{" "}
+    for integrating design with development workflows. Designing just got easier as you can
+    directely import coded components, use the exact same layouts and measurments, and publish in no
+    matter of time. Lighthouse Design System also provides fully customizable themes.
+  </>
+)
 export default function HomePage() {
   const theme = useTheme()
   const sharedProps = { $theme: theme }
@@ -24,7 +38,9 @@ export default function HomePage() {
         <DesktopView>
           <System.DisplayMedium>Lighthouse Design System</System.DisplayMedium>
           <System.Spacing height="scale900" backgroundColor={sizeBg} />
-          <System.ParagraphLarge>{headingText}</System.ParagraphLarge>
+          <System.ParagraphLarge>
+            <HeadingText />
+          </System.ParagraphLarge>
         </DesktopView>
         <MobileView>
           <System.DisplayXSmall
@@ -39,7 +55,9 @@ export default function HomePage() {
             Design System
           </System.DisplayXSmall>
           <System.Spacing height="scale900" backgroundColor={sizeBg} />
-          <System.ParagraphSmall>{headingText}</System.ParagraphSmall>
+          <System.ParagraphSmall>
+            <HeadingText />
+          </System.ParagraphSmall>
         </MobileView>
 
         <System.Spacing height="scale900" backgroundColor={sizeBg} />
