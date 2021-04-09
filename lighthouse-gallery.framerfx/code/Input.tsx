@@ -65,4 +65,8 @@ addPropertyControls(Input, {
   onBlur: {
     type: ControlType.EventHandler,
   },
+  type: {
+    title: "Type",
+    type: ControlType.String,
+  },
 })

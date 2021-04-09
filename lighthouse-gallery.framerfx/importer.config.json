@@ -11,7 +11,7 @@
     },
     "Card": {
       "ignore": false,
-      "ignoredProps": ["children"]
+      "ignoredProps": ["children", "as"]
     },
     "CardBody": {
       "ignore": true
@@ -71,11 +71,13 @@
       "ignore": true
     },
     "Spacing": {
-      "ignoredProps": ["width", "height", "display"]
+      "ignoredProps": ["width", "height", "display", "backgroundColor"]
     },
     "DisplayLarge": {
       "ignore": false,
       "ignoredProps": [
+        "boxShadow",
+        "borderRadius",
         "cursor",
         "children",
         "font",
@@ -149,6 +151,8 @@
     "DisplayMedium": {
       "ignore": false,
       "ignoredProps": [
+        "boxShadow",
+        "borderRadius",
         "cursor",
         "children",
         "font",
@@ -222,6 +226,8 @@
     "DisplaySmall": {
       "ignore": false,
       "ignoredProps": [
+        "boxShadow",
+        "borderRadius",
         "cursor",
         "children",
         "font",
@@ -295,6 +301,8 @@
     "DisplayXSmall": {
       "ignore": false,
       "ignoredProps": [
+        "boxShadow",
+        "borderRadius",
         "cursor",
         "children",
         "font",
@@ -368,6 +376,8 @@
     "HeadingXXLarge": {
       "ignore": false,
       "ignoredProps": [
+        "boxShadow",
+        "borderRadius",
         "cursor",
         "children",
         "font",
@@ -441,6 +451,8 @@
     "HeadingXLarge": {
       "ignore": false,
       "ignoredProps": [
+        "boxShadow",
+        "borderRadius",
         "cursor",
         "children",
         "font",
@@ -514,6 +526,8 @@
     "HeadingLarge": {
       "ignore": false,
       "ignoredProps": [
+        "boxShadow",
+        "borderRadius",
         "cursor",
         "children",
         "font",
@@ -587,6 +601,8 @@
     "HeadingMedium": {
       "ignore": false,
       "ignoredProps": [
+        "boxShadow",
+        "borderRadius",
         "cursor",
         "children",
         "font",
@@ -660,6 +676,8 @@
     "HeadingSmall": {
       "ignore": false,
       "ignoredProps": [
+        "boxShadow",
+        "borderRadius",
         "cursor",
         "children",
         "font",
@@ -733,6 +751,8 @@
     "HeadingXSmall": {
       "ignore": false,
       "ignoredProps": [
+        "boxShadow",
+        "borderRadius",
         "cursor",
         "children",
         "font",
@@ -806,6 +826,8 @@
     "LabelLarge": {
       "ignore": false,
       "ignoredProps": [
+        "boxShadow",
+        "borderRadius",
         "cursor",
         "children",
         "font",
@@ -879,6 +901,8 @@
     "ParagraphLarge": {
       "ignore": false,
       "ignoredProps": [
+        "boxShadow",
+        "borderRadius",
         "cursor",
         "children",
         "font",
@@ -952,6 +976,8 @@
     "LabelMedium": {
       "ignore": false,
       "ignoredProps": [
+        "boxShadow",
+        "borderRadius",
         "cursor",
         "children",
         "font",
@@ -1025,6 +1051,8 @@
     "ParagraphMedium": {
       "ignore": false,
       "ignoredProps": [
+        "boxShadow",
+        "borderRadius",
         "cursor",
         "children",
         "font",
@@ -1098,6 +1126,8 @@
     "LabelSmall": {
       "ignore": false,
       "ignoredProps": [
+        "boxShadow",
+        "borderRadius",
         "cursor",
         "children",
         "font",
@@ -1171,6 +1201,8 @@
     "ParagraphSmall": {
       "ignore": false,
       "ignoredProps": [
+        "boxShadow",
+        "borderRadius",
         "cursor",
         "children",
         "font",
@@ -1244,6 +1276,8 @@
     "LabelXSmall": {
       "ignore": false,
       "ignoredProps": [
+        "boxShadow",
+        "borderRadius",
         "cursor",
         "children",
         "font",
@@ -1317,6 +1351,8 @@
     "ParagraphXSmall": {
       "ignore": false,
       "ignoredProps": [
+        "boxShadow",
+        "borderRadius",
         "cursor",
         "children",
         "font",
