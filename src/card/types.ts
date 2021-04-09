@@ -1,4 +1,5 @@
 import { StyleObject } from "styletron-react"
+import { ElementType } from "react"
 
 export type CardOverrides = {
   Wrap?: StyleObject
@@ -17,6 +18,7 @@ export type CardPropsT = {
   label?: string | React.ReactNode
   children?: React.ReactNode
   onClick?: (event: React.MouseEvent<HTMLDivElement>) => void
+  as?: ElementType
   overrides?: CardOverrides
 }
 

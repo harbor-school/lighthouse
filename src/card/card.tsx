@@ -2,7 +2,7 @@ import * as React from "react"
 import { useContext } from "react"
 import { ThemeContext } from "../helpers/lighthouse-provider"
 import { useHover } from "../hooks"
-import { LabelText, TitleText, Wrap } from "./styled-components"
+import { Wrap, LabelText, TitleText, MotionWrap } from "./styled-components"
 import { CardPropsT } from "./types"
 
 export const Card: React.FC<CardPropsT> = ({
@@ -10,7 +10,9 @@ export const Card: React.FC<CardPropsT> = ({
   label,
   title,
   onClick = () => void 0,
+  as,
   overrides = {},
+  ...rest
 }) => {
   const theme = useContext(ThemeContext)
   const [hoverRef, isHover] = useHover({})
@@ -36,17 +38,13 @@ export const Card: React.FC<CardPropsT> = ({
   }
 
   return (
-    <Wrap
-      onClick={onClick}
-      $style={overrides.Wrap}
-      {...sharedProps}
-      {...motionProps}
-      ref={hoverRef}
-    >
-      {label && <LabelText {...sharedProps}>{label}</LabelText>}
-      <TitleText {...sharedProps}>{title}</TitleText>
-      {children}
-    </Wrap>
+    <MotionWrap ref={hoverRef} {...sharedProps} {...motionProps}>
+      <Wrap $as={as} onClick={onClick} $style={overrides.Wrap} {...sharedProps} {...rest}>
+        {label && <LabelText {...sharedProps}>{label}</LabelText>}
+        <TitleText {...sharedProps}>{title}</TitleText>
+        {children}
+      </Wrap>
+    </MotionWrap>
   )
 }
 

@@ -5,6 +5,8 @@ import { Extendtable } from "../utils/extendable"
 
 type Props<U = Record<string, unknown>> = { $theme: ThemeT } & Extendtable<U>
 
+export const MotionWrap = styled(motion.div, {})
+
 export const Wrap = styled(
   motion.div,
   ({ $theme, onClick }: Props<{ onClick?: (event: React.MouseEvent<HTMLDivElement>) => void }>) => {
@@ -14,6 +16,8 @@ export const Wrap = styled(
       background: $theme.colors.backgroundSecondary,
       height: "fit-content",
       cursor: onClick ? "pointer" : "initial",
+      textDecoration: "none",
+      display: "inline-block",
     }
   }
 )
