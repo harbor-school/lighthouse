@@ -13,6 +13,7 @@ export const StyledLink: React.FC<StyledLinkPropsT> = ({
   onClick,
   as,
   overrides = {},
+  ...rest
 }) => {
   const theme = useContext(ThemeContext)
   const sharedProps = { $theme: theme, $highlight: highlight }
@@ -24,6 +25,7 @@ export const StyledLink: React.FC<StyledLinkPropsT> = ({
       $as={as}
       $style={overrides.Link}
       {...sharedProps}
+      {...rest}
     >
       {children}
     </Link>
