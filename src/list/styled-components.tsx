@@ -11,6 +11,7 @@ export const Wrap = styled("div", ({ $theme }: Props) => {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
+    height: "100%",
   }
 })
 
