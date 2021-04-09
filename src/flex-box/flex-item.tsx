@@ -18,7 +18,12 @@ export const FlexItem: React.FC<FlexItemPropsT> = ({
   }
 
   return (
-    <System.Block {...paddingProps} {...getWidthProp({ $id, $columnGap, $widthRatio })} {...props}>
+    <System.Block
+      minWidth="0px"
+      {...paddingProps}
+      {...getWidthProp({ $id, $columnGap, $widthRatio })}
+      {...props}
+    >
       {children}
     </System.Block>
   )
