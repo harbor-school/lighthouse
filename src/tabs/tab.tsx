@@ -30,7 +30,17 @@ export const Tab: React.FC<TabPropsT> = ({ children, $id }) => {
 
   return (
     <TabWrap onClick={() => ctx.setActiveTab($id)} {...sharedProps}>
-      <System.LabelMedium as={motion.div} {...textMotionProps}>
+      <System.LabelMedium
+        as={motion.div}
+        overrides={{
+          Block: {
+            overflow: "hidden",
+            textOverflow: "ellipsis",
+            whiteSpace: "nowrap",
+          },
+        }}
+        {...textMotionProps}
+      >
         {children}
       </System.LabelMedium>
       {isActive && <TabActiveBar {...sharedProps} {...barMotionProps} />}
