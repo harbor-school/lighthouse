@@ -5,7 +5,14 @@ import { withHOC } from "./utils/withHOC"
 
 const InnerListItem = (props) => {
   return (
-    <System.ListItem {...props}>
+    <System.ListItem
+      {...props}
+      overrides={{
+        Wrap: {
+          height: "100%",
+        },
+      }}
+    >
       {props.defaultStyle && (
         <System.ListItemLabel>
           {props.title && <System.LabelMedium>{props.title}</System.LabelMedium>}
