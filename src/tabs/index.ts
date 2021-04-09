@@ -14,6 +14,10 @@
  * @param placement - "center" | "topRight" | "bottomRight"
  */
 export const Tabs: React.FC<TabsPropsT> = TabsComp
+export { TabList } from "./tab-list"
+export { Tab } from "./tab"
+export { TabPanels } from "./tab-panels"
+export { TabPanel } from "./tab-panel"
 export * from "./types"
 
 import { Tabs as TabsComp } from "./tabs"
