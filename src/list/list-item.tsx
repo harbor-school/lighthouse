@@ -9,12 +9,13 @@ export const ListItem: React.FC<ListItemPropsT> = ({
   endEnhancer,
   onClick = () => void 0,
   overrides = {},
+  ...rest
 }) => {
   const theme = useContext(ThemeContext)
   const sharedProps = { $theme: theme }
 
   return (
-    <Wrap onClick={onClick} $style={overrides.Wrap} {...sharedProps}>
+    <Wrap onClick={onClick} $style={overrides.Wrap} {...sharedProps} {...rest}>
       {children}
       <EndEnhancer $style={overrides.EndEnhancer}>{endEnhancer}</EndEnhancer>
     </Wrap>
