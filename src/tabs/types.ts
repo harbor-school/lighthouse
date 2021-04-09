@@ -7,6 +7,7 @@ export type TabsOverridesT = {
 export type TabsPropsT = {
   overrides?: TabsOverridesT
   placement?: keyof typeof PLACEMENT
+  initial?: number
 }
 
 export type TabListPropsT = {

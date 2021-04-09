@@ -8,11 +8,11 @@ import { Wrap as StyledWrap } from "./styled-components"
 import { getOverrides } from "../helpers/overrides"
 import { TabsContext } from "../helpers/tabs-provider"
 
-export const Tabs: React.FC<TabsPropsT> = ({ overrides = {}, placement, children }) => {
+export const Tabs: React.FC<TabsPropsT> = ({ overrides = {}, placement, children, initial }) => {
   const theme: System.ThemeT = useContext(ThemeContext)
   const sharedProps = { $theme: theme, $placement: placement }
   const [Wrap, wrapProps] = getOverrides(overrides.Wrap, StyledWrap)
-  const [activeTab, setActiveTab] = useState(0)
+  const [activeTab, setActiveTab] = useState(initial)
 
   return (
     <TabsContext.Provider value={{ activeTab, setActiveTab }}>
@@ -26,4 +26,5 @@ export const Tabs: React.FC<TabsPropsT> = ({ overrides = {}, placement, children
 Tabs.defaultProps = {
   overrides: {},
   placement: PLACEMENT.center,
+  initial: 0,
 }
