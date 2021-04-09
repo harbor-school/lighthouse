@@ -23,6 +23,5 @@ addPropertyControls(ProgressBar, {
   infinite: {
     title: "Infinite",
     type: ControlType.Boolean,
-    defaultValue: true,
   },
 })

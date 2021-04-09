@@ -26,6 +26,7 @@ export const ProgressBar: React.FC<ProgressBarPropsT> = ({
 ProgressBar.defaultProps = {
   overrides: {},
   value: 30,
+  infinite: false,
 }
 
 function getMotionProps({ $theme, $value, $infinite }) {
