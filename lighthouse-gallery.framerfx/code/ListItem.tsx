@@ -4,17 +4,16 @@ import { ControlType, addPropertyControls } from "framer"
 import { withHOC } from "./utils/withHOC"
 
 const InnerListItem = ({ overrides, ...props }) => {
+  const overridesWithHeight = {
+    ...overrides,
+    Wrap: {
+      height: "100%",
+      ...(overrides ? overrides.Wrap : {}),
+    },
+  }
+
   return (
-    <System.ListItem
-      {...props}
-      overrides={{
-        ...overrides,
-        Wrap: {
-          height: "100%",
-          ...overrides.Wrap,
-        },
-      }}
-    >
+    <System.ListItem {...props} overrides={overridesWithHeight}>
       {props.defaultStyle && (
         <System.ListItemLabel>
           {props.title && <System.LabelMedium>{props.title}</System.LabelMedium>}
