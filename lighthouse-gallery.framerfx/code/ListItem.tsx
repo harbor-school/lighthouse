@@ -3,13 +3,15 @@ import * as System from "../../../lighthouse"
 import { ControlType, addPropertyControls } from "framer"
 import { withHOC } from "./utils/withHOC"
 
-const InnerListItem = (props) => {
+const InnerListItem = ({ overrides, ...props }) => {
   return (
     <System.ListItem
       {...props}
       overrides={{
+        ...overrides,
         Wrap: {
           height: "100%",
+          ...overrides.Wrap,
         },
       }}
     >
