@@ -28232,7 +28232,7 @@
             "isExternalMaster" : null,
             "isMaster" : false,
             "isTarget" : false,
-            "left" : 3535,
+            "left" : 3613,
             "locked" : false,
             "name" : null,
             "opacity" : 1,
@@ -28665,7 +28665,7 @@
             "isExternalMaster" : null,
             "isMaster" : false,
             "isTarget" : false,
-            "left" : 2197,
+            "left" : 2275,
             "locked" : false,
             "name" : "ListItem - Examples",
             "opacity" : 1,
@@ -28713,8 +28713,8 @@
                 },
                 "aspectRatio" : null,
                 "bottom" : null,
-                "centerAnchorX" : 1.1476510067114094,
-                "centerAnchorY" : 0.048387096774193547,
+                "centerAnchorX" : 0.50000000000000022,
+                "centerAnchorY" : 0.090361445783132752,
                 "clip" : true,
                 "codeComponentIdentifier" : ".\/utils\/BoxTitle.tsx_BoxTitle",
                 "codeComponentPackageVersion" : "1.71.0",
@@ -28766,9 +28766,9 @@
               {
                 "__class" : "FrameNode",
                 "aspectRatio" : null,
-                "bottom" : 0,
-                "centerAnchorX" : 0.5,
-                "centerAnchorY" : 0.59036144578313254,
+                "bottom" : null,
+                "centerAnchorX" : 0.50000000000000022,
+                "centerAnchorY" : 0.59036144578313277,
                 "children" : [
                   {
                     "__class" : "CodeComponentNode",
@@ -28897,7 +28897,7 @@
                 "isExternalMaster" : null,
                 "isMaster" : false,
                 "isTarget" : false,
-                "left" : 0,
+                "left" : null,
                 "locked" : false,
                 "name" : null,
                 "opacity" : 1,
@@ -28918,14 +28918,14 @@
                 "radiusTopLeft" : 0,
                 "radiusTopRight" : 0,
                 "replicaInfo" : null,
-                "right" : 0,
+                "right" : null,
                 "rotation" : 0,
                 "stackAlignment" : "start",
                 "stackDirection" : "horizontal",
                 "stackDistribution" : "start",
                 "stackEnabled" : true,
                 "stackGap" : 48,
-                "top" : 60,
+                "top" : null,
                 "visible" : true,
                 "width" : 496,
                 "widthType" : 0
@@ -28965,7 +28965,7 @@
             "isExternalMaster" : null,
             "isMaster" : false,
             "isTarget" : false,
-            "left" : 2197,
+            "left" : 2275,
             "locked" : false,
             "name" : "Table - Examples",
             "opacity" : 1,
@@ -28996,6 +28996,317 @@
             "top" : -52,
             "visible" : true,
             "width" : 496,
+            "widthType" : 0
+          },
+          {
+            "__class" : "FrameNode",
+            "aspectRatio" : null,
+            "bottom" : null,
+            "centerAnchorX" : 0,
+            "centerAnchorY" : 0,
+            "children" : [
+              {
+                "__class" : "CodeComponentNode",
+                "$control__title" : {
+                  "type" : "string",
+                  "value" : "Tabs - Examples"
+                },
+                "aspectRatio" : null,
+                "bottom" : null,
+                "centerAnchorX" : 0.33064516129032279,
+                "centerAnchorY" : 0.077519379844961461,
+                "clip" : true,
+                "codeComponentIdentifier" : ".\/utils\/BoxTitle.tsx_BoxTitle",
+                "codeComponentPackageVersion" : "1.71.0",
+                "codeOverrideEnabled" : false,
+                "constraintsLocked" : false,
+                "duplicatedFrom" : [
+                  "PUm19yT9b",
+                  "UPLBJYKfW",
+                  "Slhy5CPJw",
+                  "DfEQ6ZvFH",
+                  "frmAp1gWk"
+                ],
+                "exportOptions" : [
+
+                ],
+                "fillColor" : "rgba(255,255,255,1)",
+                "fillEnabled" : false,
+                "fillImage" : null,
+                "fillImageOriginalName" : null,
+                "fillImagePixelHeight" : null,
+                "fillImagePixelWidth" : null,
+                "fillImageResize" : "fill",
+                "fillType" : "color",
+                "height" : 60,
+                "heightType" : 0,
+                "id" : "gaknoI279",
+                "intrinsicHeight" : 60,
+                "intrinsicWidth" : 600,
+                "left" : null,
+                "locked" : false,
+                "name" : null,
+                "opacity" : 1,
+                "originalid" : null,
+                "parentid" : "dPs39uONW",
+                "previewSettings" : null,
+                "radius" : 0,
+                "radiusBottomLeft" : 0,
+                "radiusBottomRight" : 0,
+                "radiusIsRelative" : false,
+                "radiusPerCorner" : false,
+                "radiusTopLeft" : 0,
+                "radiusTopRight" : 0,
+                "right" : null,
+                "rotation" : 0,
+                "top" : null,
+                "visible" : true,
+                "width" : 1,
+                "widthType" : 1
+              },
+              {
+                "__class" : "FrameNode",
+                "aspectRatio" : null,
+                "bottom" : null,
+                "centerAnchorX" : 0.45967741935483891,
+                "centerAnchorY" : 0.5788113695090441,
+                "children" : [
+                  {
+                    "__class" : "CodeComponentNode",
+                    "$control__current" : {
+                      "type" : "number",
+                      "value" : 2
+                    },
+                    "$control__panels" : {
+                      "type" : "array",
+                      "value" : [
+                        {
+                          "id" : "MNKEmqgMG",
+                          "type" : "componentinstance",
+                          "value" : "FIKFj8x1K"
+                        },
+                        {
+                          "id" : "fupp5D5Ic",
+                          "type" : "componentinstance",
+                          "value" : "aRZshGLFn"
+                        },
+                        {
+                          "id" : "Lev2Yq7wd",
+                          "type" : "componentinstance",
+                          "value" : "JHSYc6mPE"
+                        }
+                      ]
+                    },
+                    "$control__placement" : {
+                      "type" : "enum",
+                      "value" : "center"
+                    },
+                    "$control__tabs" : {
+                      "type" : "array",
+                      "value" : [
+                        {
+                          "id" : "RCW2hnDa7",
+                          "type" : "string",
+                          "value" : "Tab 1"
+                        },
+                        {
+                          "id" : "botlD68lm",
+                          "type" : "string",
+                          "value" : "Tab 2"
+                        },
+                        {
+                          "id" : "yUu2_jIKy",
+                          "type" : "string",
+                          "value" : "Tab 3"
+                        }
+                      ]
+                    },
+                    "aspectRatio" : null,
+                    "bottom" : null,
+                    "centerAnchorX" : 0.50000000000000022,
+                    "centerAnchorY" : 0.50000000000000022,
+                    "clip" : true,
+                    "codeComponentIdentifier" : ".\/Tabs.tsx_Tabs",
+                    "codeComponentPackageVersion" : null,
+                    "codeOverrideEnabled" : false,
+                    "constraintsLocked" : false,
+                    "duplicatedFrom" : [
+                      "Q5Yo5UyiD",
+                      "mZb16NRll"
+                    ],
+                    "exportOptions" : [
+
+                    ],
+                    "fillColor" : "rgba(255,255,255,1)",
+                    "fillEnabled" : false,
+                    "fillImage" : null,
+                    "fillImageOriginalName" : null,
+                    "fillImagePixelHeight" : null,
+                    "fillImagePixelWidth" : null,
+                    "fillImageResize" : "fill",
+                    "fillType" : "color",
+                    "height" : 248,
+                    "heightType" : 0,
+                    "id" : "CSNjhlSmz",
+                    "intrinsicHeight" : 208,
+                    "intrinsicWidth" : 280,
+                    "left" : null,
+                    "locked" : false,
+                    "name" : null,
+                    "opacity" : 1,
+                    "originalid" : null,
+                    "parentid" : "NfLU63aQK",
+                    "previewSettings" : null,
+                    "radius" : 0,
+                    "radiusBottomLeft" : 0,
+                    "radiusBottomRight" : 0,
+                    "radiusIsRelative" : false,
+                    "radiusPerCorner" : false,
+                    "radiusTopLeft" : 0,
+                    "radiusTopRight" : 0,
+                    "right" : null,
+                    "rotation" : 0,
+                    "top" : null,
+                    "visible" : true,
+                    "width" : 360,
+                    "widthType" : 0
+                  }
+                ],
+                "clip" : true,
+                "codeOverrideEnabled" : false,
+                "constraintsLocked" : false,
+                "duplicatedFrom" : [
+                  "FR3Fd210t",
+                  "Y1WnH_MjF",
+                  "hiQsp3vs5",
+                  "t1_GC1sUE"
+                ],
+                "exportOptions" : [
+
+                ],
+                "fillColor" : "white",
+                "fillEnabled" : false,
+                "fillImage" : null,
+                "fillImageOriginalName" : null,
+                "fillImagePixelHeight" : null,
+                "fillImagePixelWidth" : null,
+                "fillImageResize" : "fill",
+                "fillType" : "color",
+                "framePreset" : null,
+                "guidesX" : [
+
+                ],
+                "guidesY" : [
+
+                ],
+                "height" : 328,
+                "heightType" : 0,
+                "id" : "NfLU63aQK",
+                "intrinsicHeight" : null,
+                "intrinsicWidth" : null,
+                "isExternalMaster" : null,
+                "isMaster" : false,
+                "isTarget" : false,
+                "left" : null,
+                "locked" : false,
+                "name" : null,
+                "opacity" : 1,
+                "originalid" : null,
+                "padding" : 0,
+                "paddingBottom" : 40,
+                "paddingLeft" : 48,
+                "paddingPerSide" : true,
+                "paddingRight" : 48,
+                "paddingTop" : 40,
+                "parentid" : "dPs39uONW",
+                "previewSettings" : null,
+                "radius" : 0,
+                "radiusBottomLeft" : 0,
+                "radiusBottomRight" : 0,
+                "radiusIsRelative" : false,
+                "radiusPerCorner" : false,
+                "radiusTopLeft" : 0,
+                "radiusTopRight" : 0,
+                "replicaInfo" : null,
+                "right" : null,
+                "rotation" : 0,
+                "stackAlignment" : "start",
+                "stackDirection" : "horizontal",
+                "stackDistribution" : "start",
+                "stackEnabled" : true,
+                "stackGap" : 48,
+                "top" : null,
+                "visible" : true,
+                "width" : 456,
+                "widthType" : 0
+              }
+            ],
+            "clip" : true,
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : false,
+            "duplicatedFrom" : [
+              "t_1YqB86q",
+              "AisSVBweZ",
+              "jk0OXtG1b",
+              "Zjarbeu2n"
+            ],
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "rgba(255,255,255,1)",
+            "fillEnabled" : false,
+            "fillImage" : null,
+            "fillImageOriginalName" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillType" : "color",
+            "framePreset" : null,
+            "guidesX" : [
+
+            ],
+            "guidesY" : [
+
+            ],
+            "height" : 388,
+            "heightType" : 0,
+            "id" : "dPs39uONW",
+            "intrinsicHeight" : null,
+            "intrinsicWidth" : null,
+            "isExternalMaster" : null,
+            "isMaster" : false,
+            "isTarget" : false,
+            "left" : 2275,
+            "locked" : false,
+            "name" : "Table - Examples",
+            "opacity" : 1,
+            "originalid" : null,
+            "padding" : 0,
+            "paddingBottom" : 0,
+            "paddingLeft" : 0,
+            "paddingPerSide" : false,
+            "paddingRight" : 0,
+            "paddingTop" : 0,
+            "parentid" : "fklgEMVC2",
+            "previewSettings" : null,
+            "radius" : 0,
+            "radiusBottomLeft" : 0,
+            "radiusBottomRight" : 0,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 0,
+            "radiusTopRight" : 0,
+            "replicaInfo" : null,
+            "right" : null,
+            "rotation" : 0,
+            "stackAlignment" : "start",
+            "stackDirection" : "vertical",
+            "stackDistribution" : "start",
+            "stackEnabled" : true,
+            "stackGap" : 0,
+            "top" : 408,
+            "visible" : true,
+            "width" : 456,
             "widthType" : 0
           },
           {
@@ -29425,7 +29736,7 @@
             "isExternalMaster" : null,
             "isMaster" : false,
             "isTarget" : false,
-            "left" : 2821,
+            "left" : 2899,
             "locked" : false,
             "name" : "Icon - Examples",
             "opacity" : 1,
@@ -40548,7 +40859,7 @@
             "isExternalMaster" : null,
             "isMaster" : false,
             "isTarget" : false,
-            "left" : 1734,
+            "left" : 1715,
             "locked" : false,
             "name" : "BodyGroups",
             "opacity" : 1,
@@ -40579,6 +40890,196 @@
             "top" : 619,
             "visible" : true,
             "width" : 413,
+            "widthType" : 0
+          },
+          {
+            "__class" : "FrameNode",
+            "aspectRatio" : null,
+            "bottom" : null,
+            "centerAnchorX" : 0,
+            "centerAnchorY" : 0,
+            "children" : [
+
+            ],
+            "clip" : true,
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : false,
+            "duplicatedFrom" : null,
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "white",
+            "fillEnabled" : true,
+            "fillImage" : "data:framer\/asset-reference,D2Oq62l2Dv61j2sCkwuwk0Xys?originalFilename=3+yellow+and+red+fruits",
+            "fillImageOriginalName" : "3 yellow and red fruits",
+            "fillImagePixelHeight" : 4000,
+            "fillImagePixelWidth" : 6000,
+            "fillImageResize" : "fill",
+            "fillType" : "image",
+            "framePreset" : null,
+            "guidesX" : [
+
+            ],
+            "guidesY" : [
+
+            ],
+            "height" : 180,
+            "heightType" : 0,
+            "id" : "FIKFj8x1K",
+            "intrinsicHeight" : 2000,
+            "intrinsicWidth" : 3000,
+            "isExternalMaster" : null,
+            "isMaster" : false,
+            "isTarget" : false,
+            "left" : 2830,
+            "locked" : false,
+            "name" : null,
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "fklgEMVC2",
+            "previewSettings" : null,
+            "radius" : 0,
+            "radiusBottomLeft" : 0,
+            "radiusBottomRight" : 0,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 0,
+            "radiusTopRight" : 0,
+            "replicaInfo" : null,
+            "right" : null,
+            "rotation" : 0,
+            "top" : 408,
+            "visible" : true,
+            "width" : 360,
+            "widthType" : 0
+          },
+          {
+            "__class" : "FrameNode",
+            "aspectRatio" : null,
+            "bottom" : null,
+            "centerAnchorX" : 0,
+            "centerAnchorY" : 0,
+            "children" : [
+
+            ],
+            "clip" : true,
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : false,
+            "duplicatedFrom" : [
+              "FIKFj8x1K"
+            ],
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "white",
+            "fillEnabled" : true,
+            "fillImage" : "data:framer\/asset-reference,GlJR0XR8tdwKFXD1cMv6YTb3mC8?originalFilename=two+peace+fruits+on+fabric",
+            "fillImageOriginalName" : "two peace fruits on fabric",
+            "fillImagePixelHeight" : 5184,
+            "fillImagePixelWidth" : 3456,
+            "fillImageResize" : "fill",
+            "fillType" : "image",
+            "framePreset" : null,
+            "guidesX" : [
+
+            ],
+            "guidesY" : [
+
+            ],
+            "height" : 180,
+            "heightType" : 0,
+            "id" : "aRZshGLFn",
+            "intrinsicHeight" : 2592,
+            "intrinsicWidth" : 1728,
+            "isExternalMaster" : null,
+            "isMaster" : false,
+            "isTarget" : false,
+            "left" : 2830,
+            "locked" : false,
+            "name" : null,
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "fklgEMVC2",
+            "previewSettings" : null,
+            "radius" : 0,
+            "radiusBottomLeft" : 0,
+            "radiusBottomRight" : 0,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 0,
+            "radiusTopRight" : 0,
+            "replicaInfo" : null,
+            "right" : null,
+            "rotation" : 0,
+            "top" : 646,
+            "visible" : true,
+            "width" : 360,
+            "widthType" : 0
+          },
+          {
+            "__class" : "FrameNode",
+            "aspectRatio" : null,
+            "bottom" : null,
+            "centerAnchorX" : 0,
+            "centerAnchorY" : 0,
+            "children" : [
+
+            ],
+            "clip" : true,
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : false,
+            "duplicatedFrom" : [
+              "FIKFj8x1K",
+              "aRZshGLFn",
+              "Mr2RZ89vy",
+              "xT1xlNvH4"
+            ],
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "white",
+            "fillEnabled" : true,
+            "fillImage" : "data:framer\/asset-reference,Rxh5BPWkNJiXOWUFvYZqGKQ6M?originalFilename=five+yellow+pear+fruits",
+            "fillImageOriginalName" : "five yellow pear fruits",
+            "fillImagePixelHeight" : 3064,
+            "fillImagePixelWidth" : 4592,
+            "fillImageResize" : "fill",
+            "fillType" : "image",
+            "framePreset" : null,
+            "guidesX" : [
+
+            ],
+            "guidesY" : [
+
+            ],
+            "height" : 180,
+            "heightType" : 0,
+            "id" : "JHSYc6mPE",
+            "intrinsicHeight" : 1532,
+            "intrinsicWidth" : 2296,
+            "isExternalMaster" : null,
+            "isMaster" : false,
+            "isTarget" : false,
+            "left" : 2830,
+            "locked" : false,
+            "name" : null,
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "fklgEMVC2",
+            "previewSettings" : null,
+            "radius" : 0,
+            "radiusBottomLeft" : 0,
+            "radiusBottomRight" : 0,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 0,
+            "radiusTopRight" : 0,
+            "replicaInfo" : null,
+            "right" : null,
+            "rotation" : 0,
+            "top" : 884,
+            "visible" : true,
+            "width" : 360,
             "widthType" : 0
           }
         ],
@@ -40638,6 +41139,10 @@
             "$control__required" : {
               "type" : "boolean",
               "value" : true
+            },
+            "$control__type" : {
+              "type" : "string",
+              "value" : ""
             },
             "aspectRatio" : null,
             "bottom" : null,
@@ -40727,6 +41232,10 @@
             "$control__required" : {
               "type" : "boolean",
               "value" : true
+            },
+            "$control__type" : {
+              "type" : "string",
+              "value" : ""
             },
             "aspectRatio" : null,
             "bottom" : null,
@@ -42683,6 +43192,10 @@
                       "type" : "boolean",
                       "value" : false
                     },
+                    "$control__type" : {
+                      "type" : "string",
+                      "value" : ""
+                    },
                     "aspectRatio" : null,
                     "bottom" : null,
                     "centerAnchorX" : 0,
@@ -42914,6 +43427,10 @@
                         "$control__required" : {
                           "type" : "boolean",
                           "value" : false
+                        },
+                        "$control__type" : {
+                          "type" : "string",
+                          "value" : ""
                         },
                         "aspectRatio" : null,
                         "bottom" : 36,
@@ -45287,6 +45804,10 @@
                   "type" : "boolean",
                   "value" : true
                 },
+                "$control__type" : {
+                  "type" : "string",
+                  "value" : ""
+                },
                 "aspectRatio" : null,
                 "bottom" : null,
                 "centerAnchorX" : 0.5,
@@ -45375,6 +45896,10 @@
                 "$control__required" : {
                   "type" : "boolean",
                   "value" : true
+                },
+                "$control__type" : {
+                  "type" : "string",
+                  "value" : ""
                 },
                 "aspectRatio" : null,
                 "bottom" : 30,
@@ -46679,6 +47204,10 @@
                       "type" : "string",
                       "value" : "Button Label"
                     },
+                    "$control__as" : {
+                      "type" : "enum",
+                      "value" : "symbol"
+                    },
                     "$control__body" : {
                       "type" : "string",
                       "value" : "Body"
@@ -46756,6 +47285,10 @@
                     "$control__actionButtonText" : {
                       "type" : "string",
                       "value" : ""
+                    },
+                    "$control__as" : {
+                      "type" : "enum",
+                      "value" : "symbol"
                     },
                     "$control__body" : {
                       "type" : "string",
@@ -52794,6 +53327,25 @@
         "homeNodeId" : "E2nxc2EiX",
         "id" : "pLdQJ6KMe",
         "name" : "TEST PAGE",
+        "originalid" : null,
+        "parentid" : "D0mDuwDso",
+        "visible" : false
+      },
+      {
+        "__class" : "PageNode",
+        "children" : [
+
+        ],
+        "duplicatedFrom" : null,
+        "guidesX" : [
+
+        ],
+        "guidesY" : [
+
+        ],
+        "homeNodeId" : null,
+        "id" : "YXjl6VQsW",
+        "name" : "Page 12",
         "originalid" : null,
         "parentid" : "D0mDuwDso",
         "visible" : false
