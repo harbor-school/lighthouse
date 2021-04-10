@@ -5,7 +5,9 @@ import { Extendtable } from "../utils/extendable"
 
 type Props<U = Record<string, unknown>> = { $theme: ThemeT } & Extendtable<U>
 
-export const MotionWrap = styled(motion.div, {})
+export const MotionWrap = styled(motion.div, {
+  height: "fit-content",
+})
 
 export const Wrap = styled(
   motion.div,
@@ -14,7 +16,6 @@ export const Wrap = styled(
       position: "relative",
       padding: `${$theme.sizing.scale800} ${$theme.sizing.scale700}`,
       background: $theme.colors.backgroundSecondary,
-      height: "fit-content",
       cursor: onClick ? "pointer" : "initial",
       textDecoration: "none",
       display: "inline-block",
