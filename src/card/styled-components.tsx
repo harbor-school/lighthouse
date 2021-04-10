@@ -18,7 +18,6 @@ export const Wrap = styled(
       background: $theme.colors.backgroundSecondary,
       cursor: onClick ? "pointer" : "initial",
       textDecoration: "none",
-      display: "inline-block",
     }
   }
 )
