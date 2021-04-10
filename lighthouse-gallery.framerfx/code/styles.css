@@ -45,3 +45,7 @@
 .header-navigation-logo-wrap > div {
   position: relative !important;
 }
+
+.tab-panel-wrap > div {
+  position: relative !important;
+}

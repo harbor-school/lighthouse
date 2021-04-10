@@ -30,6 +30,18 @@
     "ListItemLabel": {
       "ignore": true
     },
+    "TabPanels": {
+      "ignore": true
+    },
+    "TabPanel": {
+      "ignore": true
+    },
+    "TabList": {
+      "ignore": true
+    },
+    "Tab": {
+      "ignore": true
+    },
     "Icon": {
       "ignore": false,
       "ignoredProps": ["children"]

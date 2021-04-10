@@ -7,6 +7,7 @@ interface Props {
   label?: string
   error?: boolean
   striped?: boolean
+  height?: string
 }
 
 const textStyles: CSSProperties = {
@@ -26,7 +27,7 @@ const stripedStyles = {
   backgroundSize: `12.73px 12.73px`,
 }
 
-export function placeholderState({ title, label, error, striped = false }: Props) {
+export function placeholderState({ title, label, error, striped = false, ...rest }: Props) {
   const color = Color(error ? colors.error : colors.placeholder)
 
   return (
@@ -44,6 +45,7 @@ export function placeholderState({ title, label, error, striped = false }: Props
       ).toValue()}`}
       background={Color.alpha(color, 0.12)}
       style={striped ? stripedStyles : {}}
+      {...rest}
     >
       {title && (
         <h5
