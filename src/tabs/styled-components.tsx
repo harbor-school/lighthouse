@@ -5,8 +5,10 @@ export const Wrap = styled("div", ({ $theme }: any) => {
   return {}
 })
 
-export const TabListWrap = styled("div", ({ $theme }: any) => {
-  return {}
+export const TabListWrap = styled("div", ({ $theme, $tabListScroll }: any) => {
+  return {
+    ...getTabListStyles({ $tabListScroll }),
+  }
 })
 
 export const TabWrap = styled("div", ({ $theme }: any) => {
@@ -34,3 +36,22 @@ export const TabPanelsWrap = styled("div", ({ $theme }: any) => {
 export const TabPanelWrap = styled("div", ({ $theme }: any) => {
   return {}
 })
+
+export function getTabListStyles({ $tabListScroll }) {
+  if ($tabListScroll)
+    return {
+      overflow: "scroll",
+      "::-webkit-scrollbar": {
+        width: "0px",
+      },
+    }
+  else return Object.freeze({})
+}
+
+export function getFlexItemStyles({ $tabListScroll }) {
+  if ($tabListScroll)
+    return {
+      minWidth: "initial",
+    }
+  else return Object.freeze({})
+}
