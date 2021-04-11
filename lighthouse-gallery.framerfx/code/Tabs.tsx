@@ -58,4 +58,9 @@ addPropertyControls(Tabs, {
     displayStepper: true,
     min: 0,
   },
+  tabListScroll: {
+    title: "Tab list scroll",
+    type: ControlType.Boolean,
+    defaultValue: false,
+  },
 })

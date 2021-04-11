@@ -15,9 +15,12 @@ export const TabList: React.FC<TabListPropsT> = ({ children }) => {
   return (
     <AnimateSharedLayout>
       <TabListWrap {...sharedProps}>
-        <System.FlexBox columnGap={theme.sizing.scale600}>
+        <System.FlexBox
+          columnGap={theme.sizing.scale600}
+          {...getFlexBoxStyles({ $tabListScroll: ctx.tabListScroll })}
+        >
           {React.Children.map(children, (child, id) => (
-            <System.FlexItem key={id}>
+            <System.FlexItem key={id} {...getFlexItemStyles({ $tabListScroll: ctx.tabListScroll })}>
               {React.isValidElement(child) &&
                 React.cloneElement(child, {
                   $id: id,
@@ -28,4 +31,27 @@ export const TabList: React.FC<TabListPropsT> = ({ children }) => {
       </TabListWrap>
     </AnimateSharedLayout>
   )
+}
+
+export function getFlexBoxStyles({ $tabListScroll }) {
+  if ($tabListScroll)
+    return {
+      overrides: {
+        Block: {
+          overflow: "scroll",
+          "::-webkit-scrollbar": {
+            width: "0px",
+          },
+        },
+      },
+    }
+  else return Object.freeze({})
+}
+
+export function getFlexItemStyles({ $tabListScroll }) {
+  if ($tabListScroll)
+    return {
+      minWidth: "initial",
+    }
+  else return Object.freeze({})
 }

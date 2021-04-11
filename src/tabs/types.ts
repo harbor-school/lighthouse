@@ -6,6 +6,7 @@ export type TabsOverridesT = {
 export type TabsPropsT = {
   overrides?: TabsOverridesT
   current?: number
+  tabListScroll?: boolean
 }
 
 export type TabListPropsT = {

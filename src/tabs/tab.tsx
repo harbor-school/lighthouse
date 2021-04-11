@@ -32,9 +32,8 @@ export const Tab: React.FC<TabPropsT> = ({ children, $id }) => {
     <TabWrap onClick={() => ctx.setActiveTab($id)} {...sharedProps}>
       <System.LabelMedium
         as={motion.div}
-        whiteSpace="nowrap"
-        overflow="hidden"
-        textOverflow="ellipsis"
+        textAlign="center"
+        {...getTextOverflowStyles({ $tabListScroll: ctx.tabListScroll })}
         {...textMotionProps}
       >
         {children}
@@ -42,4 +41,14 @@ export const Tab: React.FC<TabPropsT> = ({ children, $id }) => {
       {isActive && <TabActiveBar {...sharedProps} {...barMotionProps} />}
     </TabWrap>
   )
+}
+
+export function getTextOverflowStyles({ $tabListScroll }) {
+  if ($tabListScroll)
+    return {
+      textOverflow: "hidden",
+      whiteSpace: "nowrap",
+      overflow: "hidden",
+    }
+  else return Object.freeze({})
 }

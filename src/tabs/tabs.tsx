@@ -7,7 +7,12 @@ import { Wrap as StyledWrap } from "./styled-components"
 import { getOverrides } from "../helpers/overrides"
 import { TabsContext } from "../helpers/tabs-provider"
 
-export const Tabs: React.FC<TabsPropsT> = ({ overrides = {}, children, current }) => {
+export const Tabs: React.FC<TabsPropsT> = ({
+  overrides = {},
+  children,
+  current,
+  tabListScroll,
+}) => {
   const theme: System.ThemeT = useContext(ThemeContext)
   const sharedProps = { $theme: theme }
   const [Wrap, wrapProps] = getOverrides(overrides.Wrap, StyledWrap)
@@ -18,7 +23,7 @@ export const Tabs: React.FC<TabsPropsT> = ({ overrides = {}, children, current }
   }, [current])
 
   return (
-    <TabsContext.Provider value={{ activeTab, setActiveTab }}>
+    <TabsContext.Provider value={{ activeTab, setActiveTab, tabListScroll }}>
       <Wrap {...sharedProps} {...wrapProps}>
         {children}
       </Wrap>

@@ -24,6 +24,7 @@
  * ```
  * @param children - React.ReactNode
  * @param current - number
+ * @param tabListScroll - boolean
  */
 export const Tabs: React.FC<TabsPropsT> = TabsComp
 export { TabList } from "./tab-list"
