@@ -73,6 +73,7 @@ export const BodyWrap = styled("div", ({ $theme }: Props) => {
     textAlign: "left",
     marginBottom: $theme.sizing.scale1400,
     display: "flex", // remove inner space after texts
+    flexDirection: "column",
     ...$theme.typography.ParagraphMedium,
   }
 })
