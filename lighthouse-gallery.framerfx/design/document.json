@@ -12141,7 +12141,7 @@
                     },
                     "$control__showInfo" : {
                       "type" : "boolean",
-                      "value" : false
+                      "value" : true
                     },
                     "aspectRatio" : null,
                     "bottom" : null,
@@ -12200,7 +12200,7 @@
                     },
                     "$control__showInfo" : {
                       "type" : "boolean",
-                      "value" : false
+                      "value" : true
                     },
                     "aspectRatio" : null,
                     "bottom" : null,
@@ -12260,7 +12260,7 @@
                     },
                     "$control__showInfo" : {
                       "type" : "boolean",
-                      "value" : false
+                      "value" : true
                     },
                     "aspectRatio" : null,
                     "bottom" : null,
@@ -12321,7 +12321,7 @@
                     },
                     "$control__showInfo" : {
                       "type" : "boolean",
-                      "value" : false
+                      "value" : true
                     },
                     "aspectRatio" : null,
                     "bottom" : null,
@@ -12383,7 +12383,7 @@
                     },
                     "$control__showInfo" : {
                       "type" : "boolean",
-                      "value" : false
+                      "value" : true
                     },
                     "aspectRatio" : null,
                     "bottom" : null,
@@ -12446,7 +12446,7 @@
                     },
                     "$control__showInfo" : {
                       "type" : "boolean",
-                      "value" : false
+                      "value" : true
                     },
                     "aspectRatio" : null,
                     "bottom" : null,
@@ -12517,7 +12517,7 @@
                     },
                     "$control__showInfo" : {
                       "type" : "boolean",
-                      "value" : false
+                      "value" : true
                     },
                     "aspectRatio" : null,
                     "bottom" : null,
@@ -12581,7 +12581,7 @@
                     },
                     "$control__showInfo" : {
                       "type" : "boolean",
-                      "value" : false
+                      "value" : true
                     },
                     "aspectRatio" : null,
                     "bottom" : null,
@@ -12646,7 +12646,7 @@
                     },
                     "$control__showInfo" : {
                       "type" : "boolean",
-                      "value" : false
+                      "value" : true
                     },
                     "aspectRatio" : null,
                     "bottom" : null,
@@ -12712,7 +12712,7 @@
                     },
                     "$control__showInfo" : {
                       "type" : "boolean",
-                      "value" : false
+                      "value" : true
                     },
                     "aspectRatio" : null,
                     "bottom" : null,
@@ -12779,7 +12779,7 @@
                     },
                     "$control__showInfo" : {
                       "type" : "boolean",
-                      "value" : false
+                      "value" : true
                     },
                     "aspectRatio" : null,
                     "bottom" : null,
@@ -12847,7 +12847,7 @@
                     },
                     "$control__showInfo" : {
                       "type" : "boolean",
-                      "value" : false
+                      "value" : true
                     },
                     "aspectRatio" : null,
                     "bottom" : null,
@@ -13144,7 +13144,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -13215,7 +13215,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -13287,7 +13287,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -13360,7 +13360,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -13434,7 +13434,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -13509,7 +13509,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -13585,7 +13585,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -13662,7 +13662,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -13740,7 +13740,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -13819,7 +13819,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -13899,7 +13899,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -13980,7 +13980,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -14062,7 +14062,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -14145,7 +14145,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -14300,7 +14300,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -14385,7 +14385,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -14471,7 +14471,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -14558,7 +14558,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -14646,7 +14646,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -14735,7 +14735,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -14825,7 +14825,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -14916,7 +14916,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -15008,7 +15008,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -15101,7 +15101,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -15195,7 +15195,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -15375,7 +15375,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : 0,
@@ -15471,7 +15471,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : 0,
@@ -15568,7 +15568,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : 0,
@@ -15666,7 +15666,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : 0,
@@ -15765,7 +15765,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : 0,
@@ -15865,7 +15865,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : 0,
@@ -15966,7 +15966,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : 0,
@@ -16068,7 +16068,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : 0,
@@ -16171,7 +16171,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : 0,
@@ -16275,7 +16275,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : 0,
@@ -16380,7 +16380,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : 0,
@@ -16572,7 +16572,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -16679,7 +16679,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -16787,7 +16787,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -16896,7 +16896,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -17006,7 +17006,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -17117,7 +17117,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -17229,7 +17229,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -17342,7 +17342,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -17456,7 +17456,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -17571,7 +17571,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -17687,7 +17687,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -18088,7 +18088,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -18206,7 +18206,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -18329,7 +18329,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -18453,7 +18453,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -18578,7 +18578,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -18704,7 +18704,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -18831,7 +18831,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -18959,7 +18959,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -19088,7 +19088,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -19218,7 +19218,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -19339,7 +19339,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -19537,7 +19537,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -19668,7 +19668,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -19800,7 +19800,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -19933,7 +19933,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -20067,7 +20067,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -20202,7 +20202,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -20338,7 +20338,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -20475,7 +20475,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -20613,7 +20613,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -20829,7 +20829,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -20969,7 +20969,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -21110,7 +21110,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -21252,7 +21252,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -21395,7 +21395,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -21539,7 +21539,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -21684,7 +21684,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -21830,7 +21830,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -21977,7 +21977,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -22203,7 +22203,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -22352,7 +22352,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -22502,7 +22502,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -22653,7 +22653,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -22805,7 +22805,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -22958,7 +22958,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -23112,7 +23112,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -23267,7 +23267,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -23423,7 +23423,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -23659,7 +23659,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -23778,7 +23778,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -23898,7 +23898,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -24056,7 +24056,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -24215,7 +24215,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -24375,7 +24375,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -24536,7 +24536,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -24698,7 +24698,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -24861,7 +24861,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -25025,7 +25025,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -25190,7 +25190,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -25356,7 +25356,7 @@
                             },
                             "$control__showInfo" : {
                               "type" : "boolean",
-                              "value" : false
+                              "value" : true
                             },
                             "aspectRatio" : null,
                             "bottom" : -20,
@@ -25793,7 +25793,7 @@
                         },
                         "$control__showInfo" : {
                           "type" : "boolean",
-                          "value" : false
+                          "value" : true
                         },
                         "aspectRatio" : null,
                         "bottom" : 20,
@@ -25961,7 +25961,7 @@
                         },
                         "$control__showInfo" : {
                           "type" : "boolean",
-                          "value" : false
+                          "value" : true
                         },
                         "aspectRatio" : null,
                         "bottom" : 20,
@@ -26130,7 +26130,7 @@
                         },
                         "$control__showInfo" : {
                           "type" : "boolean",
-                          "value" : false
+                          "value" : true
                         },
                         "aspectRatio" : null,
                         "bottom" : 20,
@@ -26300,7 +26300,7 @@
                         },
                         "$control__showInfo" : {
                           "type" : "boolean",
-                          "value" : false
+                          "value" : true
                         },
                         "aspectRatio" : null,
                         "bottom" : 20,
@@ -26471,7 +26471,7 @@
                         },
                         "$control__showInfo" : {
                           "type" : "boolean",
-                          "value" : false
+                          "value" : true
                         },
                         "aspectRatio" : null,
                         "bottom" : 20,
@@ -26643,7 +26643,7 @@
                         },
                         "$control__showInfo" : {
                           "type" : "boolean",
-                          "value" : false
+                          "value" : true
                         },
                         "aspectRatio" : null,
                         "bottom" : 20,
@@ -26816,7 +26816,7 @@
                         },
                         "$control__showInfo" : {
                           "type" : "boolean",
-                          "value" : false
+                          "value" : true
                         },
                         "aspectRatio" : null,
                         "bottom" : 20,
@@ -26990,7 +26990,7 @@
                         },
                         "$control__showInfo" : {
                           "type" : "boolean",
-                          "value" : false
+                          "value" : true
                         },
                         "aspectRatio" : null,
                         "bottom" : 20,
@@ -27165,7 +27165,7 @@
                         },
                         "$control__showInfo" : {
                           "type" : "boolean",
-                          "value" : false
+                          "value" : true
                         },
                         "aspectRatio" : null,
                         "bottom" : 20,
@@ -27341,7 +27341,7 @@
                         },
                         "$control__showInfo" : {
                           "type" : "boolean",
-                          "value" : false
+                          "value" : true
                         },
                         "aspectRatio" : null,
                         "bottom" : 20,
@@ -27518,7 +27518,7 @@
                         },
                         "$control__showInfo" : {
                           "type" : "boolean",
-                          "value" : false
+                          "value" : true
                         },
                         "aspectRatio" : null,
                         "bottom" : 20,
@@ -29100,6 +29100,10 @@
                     "$control__placement" : {
                       "type" : "enum",
                       "value" : "center"
+                    },
+                    "$control__tabListScroll" : {
+                      "type" : "boolean",
+                      "value" : false
                     },
                     "$control__tabs" : {
                       "type" : "array",
