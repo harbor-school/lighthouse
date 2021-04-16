@@ -3,7 +3,17 @@ import { TypographyPropsT } from "./types"
 import { handleNewline } from "../utils/handle-newline"
 import * as System from "../lighthouse"
 
-const resetStyles = { margin: "0px", padding: "0px" }
+const resetStyles = {
+  marginTop: "0px",
+  marginBottom: "0px",
+  marginLeft: "0px",
+  marginRight: "0px",
+
+  paddingTop: "0px",
+  paddingBottom: "0px",
+  paddingLeft: "0px",
+  paddingRight: "0px",
+}
 
 export const ParagraphXSmall: React.FC<TypographyPropsT> = React.forwardRef(function Comp(
   props: TypographyPropsT,
