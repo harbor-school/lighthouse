@@ -10,7 +10,11 @@ export type TabsPropsT = {
   tabListScroll?: boolean
 }
 
+export type TabListOverridesT = {
+  TabListWrap?: StyleObject
+}
 export type TabListPropsT = {
+  overrides?: TabListOverridesT
   children?: React.ReactNode
 }
 

@@ -7,14 +7,14 @@ import { TabListPropsT } from "./types"
 import * as System from "../lighthouse"
 import { AnimateSharedLayout } from "framer-motion"
 
-export const TabList: React.FC<TabListPropsT> = ({ children }) => {
+export const TabList: React.FC<TabListPropsT> = ({ overrides = {}, children }) => {
   const theme = useContext(ThemeContext)
   const ctx = useContext(TabsContext)
   const sharedProps = { $theme: theme, $tabListScroll: ctx.tabListScroll }
 
   return (
     <AnimateSharedLayout>
-      <TabListWrap {...sharedProps}>
+      <TabListWrap {...sharedProps} $style={overrides.TabListWrap}>
         <System.FlexBox columnGap={theme.sizing.scale600}>
           {React.Children.map(children, (child, id) => (
             <System.FlexItem key={id} {...getFlexItemStyles(sharedProps)}>
