@@ -3,8 +3,7 @@ import { useContext, useEffect, useState } from "react"
 import * as System from "../lighthouse"
 import { ThemeContext } from "../helpers/lighthouse-provider"
 import { TabsPropsT } from "./types"
-import { Wrap as StyledWrap } from "./styled-components"
-import { getOverrides } from "../helpers/overrides"
+import { Wrap } from "./styled-components"
 import { TabsContext } from "../helpers/tabs-provider"
 
 export const Tabs: React.FC<TabsPropsT> = ({
@@ -15,7 +14,6 @@ export const Tabs: React.FC<TabsPropsT> = ({
 }) => {
   const theme: System.ThemeT = useContext(ThemeContext)
   const sharedProps = { $theme: theme }
-  const [Wrap, wrapProps] = getOverrides(overrides.Wrap, StyledWrap)
 
   const [activeTab, setActiveTab] = useState(current)
   useEffect(() => {
@@ -24,7 +22,7 @@ export const Tabs: React.FC<TabsPropsT> = ({
 
   return (
     <TabsContext.Provider value={{ activeTab, setActiveTab, tabListScroll }}>
-      <Wrap {...sharedProps} {...wrapProps}>
+      <Wrap {...sharedProps} $style={overrides.Wrap}>
         {children}
       </Wrap>
     </TabsContext.Provider>
