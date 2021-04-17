@@ -91,6 +91,10 @@ export const BaseBlock = styled("div", (props: any) => {
     value: get(props, "$backgroundSize"),
   })
   styles.apply({
+    property: "background",
+    value: get(props, "$background"),
+  })
+  styles.apply({
     property: "fontFamily",
     value: get(props, "$font"),
     transform: (font) => getFontValue(typography[font], "fontFamily"),

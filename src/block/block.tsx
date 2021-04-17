@@ -19,6 +19,7 @@ export const Block: React.FC<BlockPropsT> = ({
   backgroundPosition,
   backgroundRepeat,
   backgroundSize,
+  background,
   font,
   alignContent,
   alignItems,
@@ -101,6 +102,7 @@ export const Block: React.FC<BlockPropsT> = ({
       $backgroundPosition={backgroundPosition}
       $backgroundRepeat={backgroundRepeat}
       $backgroundSize={backgroundSize}
+      $background={background}
       $font={font}
       $alignContent={alignContent}
       $alignItems={alignItems}
