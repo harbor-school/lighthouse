@@ -1,3 +1,4 @@
+import { StyleObject } from "styletron-react"
 import { Override } from "../overrides"
 
 export type TabsOverridesT = {
@@ -18,7 +19,11 @@ export type TabPropsT = {
   children?: React.ReactNode
 }
 
+export type TabPanelsOverridesT = {
+  TabPanelsWrap?: StyleObject
+}
 export type TabPanelsPropsT = {
+  overrides?: TabPanelsOverridesT
   children?: React.ReactNode
 }
 

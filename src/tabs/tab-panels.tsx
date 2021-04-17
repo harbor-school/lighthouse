@@ -4,12 +4,12 @@ import { ThemeContext } from "../helpers/lighthouse-provider"
 import { TabPanelsWrap } from "./styled-components"
 import { TabPanelsPropsT } from "./types"
 
-export const TabPanels: React.FC<TabPanelsPropsT> = ({ children }) => {
+export const TabPanels: React.FC<TabPanelsPropsT> = ({ overrides = {}, children }) => {
   const theme = useContext(ThemeContext)
   const sharedProps = { $theme: theme }
 
   return (
-    <TabPanelsWrap {...sharedProps}>
+    <TabPanelsWrap {...sharedProps} $style={overrides.TabPanelsWrap}>
       {Array.isArray(children) &&
         children.map(
           (child, id) =>
