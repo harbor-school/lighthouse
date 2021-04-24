@@ -1,5 +1,5 @@
 import { ElementType } from "react"
-import { StyleObject } from "styletron-react"
+import { StyleObject, StyletronBase } from "styletron-react"
 import { TARGET } from "./constants"
 
 export type InputOverridesT = {
@@ -11,7 +11,7 @@ export type StyledLinkPropsT = {
   target?: keyof typeof TARGET
   children?: React.ReactNode
   highlight?: boolean
-  as?: ElementType
+  as?: ElementType | StyletronBase
   onClick?: (event: React.MouseEvent<HTMLElement>) => void
   overrides?: InputOverridesT
 }
