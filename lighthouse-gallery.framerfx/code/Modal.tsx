@@ -50,6 +50,9 @@ addPropertyControls(Modal, {
   confirmOnClick: {
     type: ControlType.EventHandler,
   },
+  onSubmit: {
+    type: ControlType.EventHandler,
+  },
   loading: {
     title: "Loading",
     type: ControlType.Boolean,
