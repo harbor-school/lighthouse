@@ -1,7 +1,6 @@
 import { addPropertyControls, ControlType } from "framer"
 import * as React from "react"
 import * as System from "../../../lighthouse"
-import { getMarginPros, getPaddingPros } from "./utils/styles"
 import { withHOC } from "./utils/withHOC"
 
 const InnerLabelMedium = (props) => {
@@ -9,12 +8,7 @@ const InnerLabelMedium = (props) => {
   if (props.as === "span") styles = { ...styles, display: "inline-block" }
 
   return (
-    <System.LabelMedium
-      {...props}
-      style={styles}
-      {...getPaddingPros(props)}
-      {...getMarginPros(props)}
-    >
+    <System.LabelMedium {...props} style={styles}>
       {props.content}
     </System.LabelMedium>
   )

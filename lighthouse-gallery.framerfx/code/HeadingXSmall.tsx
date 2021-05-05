@@ -1,7 +1,6 @@
 import { addPropertyControls, ControlType } from "framer"
 import * as React from "react"
 import * as System from "../../../lighthouse"
-import { getMarginPros, getPaddingPros } from "./utils/styles"
 import { withHOC } from "./utils/withHOC"
 
 const InnerHeadingXSmall = (props) => {
@@ -9,12 +8,7 @@ const InnerHeadingXSmall = (props) => {
   if (props.as === "span") styles = { ...styles, display: "inline-block" }
 
   return (
-    <System.HeadingXSmall
-      {...props}
-      style={styles}
-      {...getPaddingPros(props)}
-      {...getMarginPros(props)}
-    >
+    <System.HeadingXSmall {...props} style={styles}>
       {props.content}
     </System.HeadingXSmall>
   )
