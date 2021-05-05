@@ -2,19 +2,13 @@ import * as React from "react"
 import * as System from "../../../lighthouse"
 import { ControlType, addPropertyControls } from "framer"
 import { withHOC } from "./utils/withHOC"
-import { getPaddingPros, getMarginPros } from "./utils/styles"
 
 const InnerParagraphMedium = (props) => {
   let styles: React.CSSProperties = { textAlign: props.textAlign }
   if (props.as === "span") styles = { ...styles, display: "inline-block" }
 
   return (
-    <System.ParagraphMedium
-      {...props}
-      style={styles}
-      {...getPaddingPros(props)}
-      {...getMarginPros(props)}
-    >
+    <System.ParagraphMedium {...props} style={styles}>
       {props.content}
     </System.ParagraphMedium>
   )

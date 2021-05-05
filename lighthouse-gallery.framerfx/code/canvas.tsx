@@ -1,6 +1,7 @@
 // WARNING: this file is auto generated, any changes will be lost
 import { createDesignComponent, CanvasStore } from "framer"
 const canvas = CanvasStore.shared(); // CANVAS_DATA;
+export const Harbor_school_Navigation = createDesignComponent<{parentSize?:{width:number|string,height:number|string},width?:number|string,height?:number|string}>(canvas, "id_Y1GXoWgHH", {}, 1792,88);
 
 export const colors = Object.freeze({
     /** rgba(178, 178, 178, 0) */
