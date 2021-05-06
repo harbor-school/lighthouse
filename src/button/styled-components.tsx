@@ -23,6 +23,7 @@ export const BaseButton = styled(
       display: "inline-block",
       ...getKindStyles({ $theme, $kind }),
       ...getPaddingStyles({ $theme, $shape }),
+      ...getBorderRadiusStyles({ $shape }),
     }
   }
 )
@@ -107,10 +108,10 @@ export function getBorderRadiusStyles({ $shape }) {
   let value = 0
   if ($shape === SHAPE.pill || $shape === SHAPE.circle) value = 1000 // a large amount of radius
   return {
-    borderTopRightRadius: value,
-    borderBottomRightRadius: value,
-    borderTopLeftRadius: value,
-    borderBottomLeftRadius: value,
+    borderTopRightRadius: value + "px",
+    borderBottomRightRadius: value + "px",
+    borderTopLeftRadius: value + "px",
+    borderBottomLeftRadius: value + "px",
   }
 }
 
