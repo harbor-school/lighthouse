@@ -157,7 +157,8 @@
         "textOverflow",
         "href",
         "target",
-        "as"
+        "as",
+        "background"
       ]
     },
     "DisplayMedium": {
@@ -232,7 +233,8 @@
         "textOverflow",
         "href",
         "target",
-        "as"
+        "as",
+        "background"
       ]
     },
     "DisplaySmall": {
@@ -307,7 +309,8 @@
         "textOverflow",
         "href",
         "target",
-        "as"
+        "as",
+        "background"
       ]
     },
     "DisplayXSmall": {
@@ -382,7 +385,8 @@
         "textOverflow",
         "href",
         "target",
-        "as"
+        "as",
+        "background"
       ]
     },
     "HeadingXXLarge": {
@@ -457,7 +461,8 @@
         "textOverflow",
         "href",
         "target",
-        "as"
+        "as",
+        "background"
       ]
     },
     "HeadingXLarge": {
@@ -532,7 +537,8 @@
         "textOverflow",
         "href",
         "target",
-        "as"
+        "as",
+        "background"
       ]
     },
     "HeadingLarge": {
@@ -607,7 +613,8 @@
         "textOverflow",
         "href",
         "target",
-        "as"
+        "as",
+        "background"
       ]
     },
     "HeadingMedium": {
@@ -682,7 +689,8 @@
         "textOverflow",
         "href",
         "target",
-        "as"
+        "as",
+        "background"
       ]
     },
     "HeadingSmall": {
@@ -757,7 +765,8 @@
         "textOverflow",
         "href",
         "target",
-        "as"
+        "as",
+        "background"
       ]
     },
     "HeadingXSmall": {
@@ -832,7 +841,8 @@
         "textOverflow",
         "href",
         "target",
-        "as"
+        "as",
+        "background"
       ]
     },
     "LabelLarge": {
@@ -907,7 +917,8 @@
         "textOverflow",
         "href",
         "target",
-        "as"
+        "as",
+        "background"
       ]
     },
     "ParagraphLarge": {
@@ -982,7 +993,8 @@
         "textOverflow",
         "href",
         "target",
-        "as"
+        "as",
+        "background"
       ]
     },
     "LabelMedium": {
@@ -1057,7 +1069,8 @@
         "textOverflow",
         "href",
         "target",
-        "as"
+        "as",
+        "background"
       ]
     },
     "ParagraphMedium": {
@@ -1132,7 +1145,8 @@
         "textOverflow",
         "href",
         "target",
-        "as"
+        "as",
+        "background"
       ]
     },
     "LabelSmall": {
@@ -1207,7 +1221,8 @@
         "textOverflow",
         "href",
         "target",
-        "as"
+        "as",
+        "background"
       ]
     },
     "ParagraphSmall": {
@@ -1282,7 +1297,8 @@
         "textOverflow",
         "href",
         "target",
-        "as"
+        "as",
+        "background"
       ]
     },
     "LabelXSmall": {
@@ -1357,7 +1373,8 @@
         "textOverflow",
         "href",
         "target",
-        "as"
+        "as",
+        "background"
       ]
     },
     "ParagraphXSmall": {
@@ -1432,7 +1449,8 @@
         "textOverflow",
         "href",
         "target",
-        "as"
+        "as",
+        "background"
       ]
     }
   }
