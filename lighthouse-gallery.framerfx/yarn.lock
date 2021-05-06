@@ -33,10 +33,10 @@
   resolved "https://registry.framer.com/@framer/maximedegreve.tinyfaces/-/@framer/maximedegreve.tinyfaces-1.4.0.tgz#1dc72e2f5f564f77f95f22cf1a586b2a060b0590"
   integrity sha512-hchdqzkQjDvHFP7H0WN7wHfFufxM7XBLIWvG+22mNc4GawL/CSRYwssk1ao8ivniXmlqP076KRaooBpIUXfe7A==
 
-"@framer/ruucm-h.enhanced-lottie@1.51.0":
-  version "1.51.0"
-  resolved "https://registry.framer.com/@framer/ruucm-h.enhanced-lottie/-/@framer/ruucm-h.enhanced-lottie-1.51.0.tgz#2517f000f4282f5a872d7ac07ea16ccec32371aa"
-  integrity sha512-33iR4eujERKmakSBBYcI73nV1JfciVEiP4vvMOt2a9NVGg+uKOmUN6YAMs/nwREgSG5jZcS68izc5NDx/ZrjRg==
+"@framer/ruucm-h.enhanced-lottie@1.56.0":
+  version "1.56.0"
+  resolved "https://registry.framer.com/@framer/ruucm-h.enhanced-lottie/-/@framer/ruucm-h.enhanced-lottie-1.56.0.tgz#2470eb188a35d2e6dea5c6e0c979e25b50747ad4"
+  integrity sha512-+G/af6Ked6dKnJP/rJV5KqzuuChHxUK0r1HctvzmDvsZ82L1Y/e2871B0i3OCEtc14p7fHg1ta2pSGZ9ftzdJQ==
   dependencies:
     "@framer/framer.default" "^1.77.0"
     lottie-web "^5.5.3"
@@ -135,6 +135,13 @@ react-feather@^2.0.3:
   version "2.0.8"
   resolved "https://registry.yarnpkg.com/react-feather/-/react-feather-2.0.8.tgz#455baf1470f756a57e2ad6c72545444ce5925781"
   integrity sha512-J0dCEOvOxpovHeOVj3+8mAhN3/UERTfX6rSxnV6x4E+0s+STY536jhSjRfpSvTQA0SSFjYr4KrpPfdsLmK+zZg==
+  dependencies:
+    prop-types "^15.7.2"
+
+react-feather@^2.0.9:
+  version "2.0.9"
+  resolved "https://registry.yarnpkg.com/react-feather/-/react-feather-2.0.9.tgz#6e42072130d2fa9a09d4476b0e61b0ed17814480"
+  integrity sha512-yMfCGRkZdXwIs23Zw/zIWCJO3m3tlaUvtHiXlW+3FH7cIT6fiK1iJ7RJWugXq7Fso8ZaQyUm92/GOOHXvkiVUw==
   dependencies:
     prop-types "^15.7.2"
 
