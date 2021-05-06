@@ -8642,7 +8642,7 @@
                     "__class" : "CodeComponentNode",
                     "$control__theme" : {
                       "type" : "enum",
-                      "value" : "dark"
+                      "value" : "light"
                     },
                     "$control__themeFile" : {
                       "type" : "file",
@@ -41313,8 +41313,8 @@
                   "value" : "Reset"
                 },
                 "$control__endEnhancer" : {
-                  "type" : "string",
-                  "value" : ""
+                  "type" : "enum",
+                  "value" : "-"
                 },
                 "$control__href" : {
                   "type" : "string",
@@ -41336,8 +41336,8 @@
                   "value" : "default"
                 },
                 "$control__startEnhancer" : {
-                  "type" : "string",
-                  "value" : ""
+                  "type" : "enum",
+                  "value" : "Activity"
                 },
                 "$control__target" : {
                   "type" : "string",
@@ -41411,8 +41411,8 @@
                   "value" : "Submit"
                 },
                 "$control__endEnhancer" : {
-                  "type" : "string",
-                  "value" : ""
+                  "type" : "enum",
+                  "value" : "-"
                 },
                 "$control__href" : {
                   "type" : "string",
@@ -41434,8 +41434,8 @@
                   "value" : "default"
                 },
                 "$control__startEnhancer" : {
-                  "type" : "string",
-                  "value" : ""
+                  "type" : "enum",
+                  "value" : "Activity"
                 },
                 "$control__target" : {
                   "type" : "string",
@@ -41654,8 +41654,8 @@
                           "value" : "Button Label"
                         },
                         "$control__endEnhancer" : {
-                          "type" : "string",
-                          "value" : ""
+                          "type" : "enum",
+                          "value" : "-"
                         },
                         "$control__href" : {
                           "type" : "string",
@@ -41677,8 +41677,8 @@
                           "value" : "default"
                         },
                         "$control__startEnhancer" : {
-                          "type" : "string",
-                          "value" : ""
+                          "type" : "enum",
+                          "value" : "-"
                         },
                         "$control__target" : {
                           "type" : "string",
@@ -41756,8 +41756,8 @@
                           "value" : "Button Label"
                         },
                         "$control__endEnhancer" : {
-                          "type" : "string",
-                          "value" : ""
+                          "type" : "enum",
+                          "value" : "-"
                         },
                         "$control__href" : {
                           "type" : "string",
@@ -41779,8 +41779,8 @@
                           "value" : "default"
                         },
                         "$control__startEnhancer" : {
-                          "type" : "string",
-                          "value" : ""
+                          "type" : "enum",
+                          "value" : "-"
                         },
                         "$control__target" : {
                           "type" : "string",
@@ -41856,8 +41856,8 @@
                           "value" : "Button Label"
                         },
                         "$control__endEnhancer" : {
-                          "type" : "string",
-                          "value" : ""
+                          "type" : "enum",
+                          "value" : "-"
                         },
                         "$control__href" : {
                           "type" : "string",
@@ -41879,8 +41879,8 @@
                           "value" : "default"
                         },
                         "$control__startEnhancer" : {
-                          "type" : "string",
-                          "value" : ""
+                          "type" : "enum",
+                          "value" : "-"
                         },
                         "$control__target" : {
                           "type" : "string",
@@ -42030,8 +42030,8 @@
                           "value" : "Button Label"
                         },
                         "$control__endEnhancer" : {
-                          "type" : "string",
-                          "value" : ""
+                          "type" : "enum",
+                          "value" : "-"
                         },
                         "$control__href" : {
                           "type" : "string",
@@ -42053,8 +42053,8 @@
                           "value" : "default"
                         },
                         "$control__startEnhancer" : {
-                          "type" : "string",
-                          "value" : ""
+                          "type" : "enum",
+                          "value" : "-"
                         },
                         "$control__target" : {
                           "type" : "string",
@@ -42131,8 +42131,8 @@
                           "value" : "Button Label"
                         },
                         "$control__endEnhancer" : {
-                          "type" : "string",
-                          "value" : ""
+                          "type" : "enum",
+                          "value" : "-"
                         },
                         "$control__href" : {
                           "type" : "string",
@@ -42154,8 +42154,8 @@
                           "value" : "pill"
                         },
                         "$control__startEnhancer" : {
-                          "type" : "string",
-                          "value" : ""
+                          "type" : "enum",
+                          "value" : "-"
                         },
                         "$control__target" : {
                           "type" : "string",
@@ -42233,8 +42233,8 @@
                           "value" : "Button Label"
                         },
                         "$control__endEnhancer" : {
-                          "type" : "string",
-                          "value" : ""
+                          "type" : "enum",
+                          "value" : "-"
                         },
                         "$control__href" : {
                           "type" : "string",
@@ -42256,8 +42256,8 @@
                           "value" : "circle"
                         },
                         "$control__startEnhancer" : {
-                          "type" : "string",
-                          "value" : ""
+                          "type" : "enum",
+                          "value" : "-"
                         },
                         "$control__target" : {
                           "type" : "string",
@@ -42399,7 +42399,7 @@
                         "__class" : "CodeComponentNode",
                         "$control__animate" : {
                           "type" : "boolean",
-                          "value" : true
+                          "value" : false
                         },
                         "$control__as" : {
                           "type" : "enum",
@@ -42410,8 +42410,8 @@
                           "value" : "Button Label"
                         },
                         "$control__endEnhancer" : {
-                          "type" : "string",
-                          "value" : ""
+                          "type" : "enum",
+                          "value" : "-"
                         },
                         "$control__href" : {
                           "type" : "string",
@@ -42433,8 +42433,8 @@
                           "value" : "pill"
                         },
                         "$control__startEnhancer" : {
-                          "type" : "string",
-                          "value" : "🤢"
+                          "type" : "enum",
+                          "value" : "ArrowUpRight"
                         },
                         "$control__target" : {
                           "type" : "string",
@@ -42446,8 +42446,8 @@
                         },
                         "aspectRatio" : null,
                         "bottom" : null,
-                        "centerAnchorX" : 0.54905660377358489,
-                        "centerAnchorY" : 0.25,
+                        "centerAnchorX" : 0.49696969696969717,
+                        "centerAnchorY" : 0.16666666666666688,
                         "clip" : true,
                         "codeComponentIdentifier" : ".\/Button.tsx_Button",
                         "codeComponentPackageVersion" : "1.71.0",
@@ -42489,18 +42489,18 @@
                         "radiusPerCorner" : false,
                         "radiusTopLeft" : 0,
                         "radiusTopRight" : 0,
-                        "right" : 37,
+                        "right" : null,
                         "rotation" : 0,
-                        "top" : 55,
+                        "top" : null,
                         "visible" : true,
-                        "width" : 165,
+                        "width" : 164,
                         "widthType" : 0
                       },
                       {
                         "__class" : "CodeComponentNode",
                         "$control__animate" : {
                           "type" : "boolean",
-                          "value" : false
+                          "value" : true
                         },
                         "$control__as" : {
                           "type" : "enum",
@@ -42511,8 +42511,8 @@
                           "value" : "Button Label"
                         },
                         "$control__endEnhancer" : {
-                          "type" : "string",
-                          "value" : ""
+                          "type" : "enum",
+                          "value" : "-"
                         },
                         "$control__href" : {
                           "type" : "string",
@@ -42534,8 +42534,8 @@
                           "value" : "circle"
                         },
                         "$control__startEnhancer" : {
-                          "type" : "string",
-                          "value" : "😑"
+                          "type" : "enum",
+                          "value" : "CheckCircle"
                         },
                         "$control__target" : {
                           "type" : "string",
@@ -42546,9 +42546,9 @@
                           "value" : "button"
                         },
                         "aspectRatio" : null,
-                        "bottom" : 0,
-                        "centerAnchorX" : 0.57878787878787874,
-                        "centerAnchorY" : 0.83333333333333337,
+                        "bottom" : null,
+                        "centerAnchorX" : 0.49696969696969717,
+                        "centerAnchorY" : 0.83333333333333359,
                         "clip" : true,
                         "codeComponentIdentifier" : ".\/Button.tsx_Button",
                         "codeComponentPackageVersion" : "1.71.0",
@@ -42577,7 +42577,7 @@
                         "id" : "ar9ITpr5U",
                         "intrinsicHeight" : 50,
                         "intrinsicWidth" : 150,
-                        "left" : 23,
+                        "left" : null,
                         "locked" : false,
                         "name" : null,
                         "opacity" : 1,
@@ -42591,7 +42591,7 @@
                         "radiusPerCorner" : false,
                         "radiusTopLeft" : 0,
                         "radiusTopRight" : 0,
-                        "right" : -3,
+                        "right" : null,
                         "rotation" : 0,
                         "top" : null,
                         "visible" : true,
@@ -42688,8 +42688,8 @@
                           "value" : "Button Label"
                         },
                         "$control__endEnhancer" : {
-                          "type" : "string",
-                          "value" : ""
+                          "type" : "enum",
+                          "value" : "-"
                         },
                         "$control__href" : {
                           "type" : "string",
@@ -42711,8 +42711,8 @@
                           "value" : "default"
                         },
                         "$control__startEnhancer" : {
-                          "type" : "string",
-                          "value" : ""
+                          "type" : "enum",
+                          "value" : "-"
                         },
                         "$control__target" : {
                           "type" : "string",
@@ -42787,8 +42787,8 @@
                           "value" : "Button Label"
                         },
                         "$control__endEnhancer" : {
-                          "type" : "string",
-                          "value" : ""
+                          "type" : "enum",
+                          "value" : "-"
                         },
                         "$control__href" : {
                           "type" : "string",
@@ -42810,8 +42810,8 @@
                           "value" : "circle"
                         },
                         "$control__startEnhancer" : {
-                          "type" : "string",
-                          "value" : ""
+                          "type" : "enum",
+                          "value" : "-"
                         },
                         "$control__target" : {
                           "type" : "string",
@@ -45614,8 +45614,8 @@
                   "value" : "Learn More"
                 },
                 "$control__endEnhancer" : {
-                  "type" : "string",
-                  "value" : ""
+                  "type" : "enum",
+                  "value" : "-"
                 },
                 "$control__href" : {
                   "type" : "string",
@@ -45637,8 +45637,8 @@
                   "value" : "default"
                 },
                 "$control__startEnhancer" : {
-                  "type" : "string",
-                  "value" : ""
+                  "type" : "enum",
+                  "value" : "Activity"
                 },
                 "$control__target" : {
                   "type" : "string",
@@ -47061,6 +47061,9 @@
               "type" : "file",
               "value" : "data:framer\/asset-reference,2eHaTuK9lOCuKBfvfRy4YGNLfHE.json?originalFilename=2eHaTuK9lOCuKBfvfRy4YGNLfHE.json"
             },
+            "$control__onComplete" : {
+              "type" : "eventhandler"
+            },
             "$control__percentage" : {
               "type" : "number",
               "value" : 0
@@ -47084,6 +47087,14 @@
             "$control__speed" : {
               "type" : "number",
               "value" : 1
+            },
+            "$control__srcType" : {
+              "type" : "segmentedenum",
+              "value" : "URL"
+            },
+            "$control__url" : {
+              "type" : "string",
+              "value" : "https:\/\/firebasestorage.googleapis.com\/v0\/b\/moko-app-bee21.appspot.com\/o\/json%2Fbbde0708-f331-4a0a-8825-b9a3cd7228ea.json?alt=media&token=fff86100-902d-49d1-8fbf-3ba504775b50"
             },
             "aspectRatio" : null,
             "bottom" : null,
@@ -47617,8 +47628,8 @@
                       "value" : "Open"
                     },
                     "$control__endEnhancer" : {
-                      "type" : "string",
-                      "value" : ""
+                      "type" : "enum",
+                      "value" : "-"
                     },
                     "$control__href" : {
                       "type" : "string",
@@ -47640,8 +47651,8 @@
                       "value" : "default"
                     },
                     "$control__startEnhancer" : {
-                      "type" : "string",
-                      "value" : ""
+                      "type" : "enum",
+                      "value" : "Activity"
                     },
                     "$control__target" : {
                       "type" : "string",
@@ -54404,8 +54415,8 @@
                               "value" : "Update"
                             },
                             "$control__endEnhancer" : {
-                              "type" : "string",
-                              "value" : ""
+                              "type" : "enum",
+                              "value" : "-"
                             },
                             "$control__href" : {
                               "type" : "string",
@@ -54423,8 +54434,8 @@
                               "value" : "default"
                             },
                             "$control__startEnhancer" : {
-                              "type" : "string",
-                              "value" : ""
+                              "type" : "enum",
+                              "value" : "Activity"
                             },
                             "$control__target" : {
                               "type" : "string",
@@ -55782,8 +55793,8 @@
                                   "value" : "KO"
                                 },
                                 "$control__endEnhancer" : {
-                                  "type" : "string",
-                                  "value" : ""
+                                  "type" : "enum",
+                                  "value" : "-"
                                 },
                                 "$control__href" : {
                                   "type" : "string",
@@ -55801,8 +55812,8 @@
                                   "value" : "default"
                                 },
                                 "$control__startEnhancer" : {
-                                  "type" : "string",
-                                  "value" : ""
+                                  "type" : "enum",
+                                  "value" : "Activity"
                                 },
                                 "$control__target" : {
                                   "type" : "string",
@@ -63047,8 +63058,8 @@
                   "value" : "Learn More"
                 },
                 "$control__endEnhancer" : {
-                  "type" : "string",
-                  "value" : ""
+                  "type" : "enum",
+                  "value" : "-"
                 },
                 "$control__href" : {
                   "type" : "string",
@@ -63066,8 +63077,8 @@
                   "value" : "default"
                 },
                 "$control__startEnhancer" : {
-                  "type" : "string",
-                  "value" : ""
+                  "type" : "enum",
+                  "value" : "Activity"
                 },
                 "$control__target" : {
                   "type" : "string",
@@ -63343,8 +63354,8 @@
                   "value" : "Learn More"
                 },
                 "$control__endEnhancer" : {
-                  "type" : "string",
-                  "value" : ""
+                  "type" : "enum",
+                  "value" : "-"
                 },
                 "$control__href" : {
                   "type" : "string",
@@ -63362,8 +63373,8 @@
                   "value" : "default"
                 },
                 "$control__startEnhancer" : {
-                  "type" : "string",
-                  "value" : ""
+                  "type" : "enum",
+                  "value" : "Activity"
                 },
                 "$control__target" : {
                   "type" : "string",
@@ -63642,8 +63653,8 @@
                   "value" : "Learn More"
                 },
                 "$control__endEnhancer" : {
-                  "type" : "string",
-                  "value" : ""
+                  "type" : "enum",
+                  "value" : "-"
                 },
                 "$control__href" : {
                   "type" : "string",
@@ -63661,8 +63672,8 @@
                   "value" : "default"
                 },
                 "$control__startEnhancer" : {
-                  "type" : "string",
-                  "value" : ""
+                  "type" : "enum",
+                  "value" : "Activity"
                 },
                 "$control__target" : {
                   "type" : "string",
@@ -63943,8 +63954,8 @@
                   "value" : "Learn More"
                 },
                 "$control__endEnhancer" : {
-                  "type" : "string",
-                  "value" : ""
+                  "type" : "enum",
+                  "value" : "-"
                 },
                 "$control__href" : {
                   "type" : "string",
@@ -63962,8 +63973,8 @@
                   "value" : "default"
                 },
                 "$control__startEnhancer" : {
-                  "type" : "string",
-                  "value" : ""
+                  "type" : "enum",
+                  "value" : "Activity"
                 },
                 "$control__target" : {
                   "type" : "string",
@@ -64655,8 +64666,8 @@
                       "value" : "Watch Video"
                     },
                     "$control__endEnhancer" : {
-                      "type" : "string",
-                      "value" : ""
+                      "type" : "enum",
+                      "value" : "-"
                     },
                     "$control__href" : {
                       "type" : "string",
@@ -64674,8 +64685,8 @@
                       "value" : "pill"
                     },
                     "$control__startEnhancer" : {
-                      "type" : "string",
-                      "value" : ""
+                      "type" : "enum",
+                      "value" : "Activity"
                     },
                     "$control__target" : {
                       "type" : "string",
