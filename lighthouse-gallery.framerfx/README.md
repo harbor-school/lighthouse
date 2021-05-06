@@ -28,3 +28,19 @@ Lighthouse Design System provides components overview gallery using Framer Web. 
 Tweet [@ruucm](http://twitter.com/ruucm)
 
 Issues [Here](https://github.com/harbor-school/lighthouse/issues)
+
+## Latest Release
+
+### **1.181.0 - 05/07/2021**
+
+- Add Release notes.
+
+## Previous Releases
+
+### **1.180.0 - 05/07/2021**
+
+- Support [Feather icons](https://feathericons.com) as the Button component's startEnhancer & endEnhancer properties.
+
+### **1.79.0 - 05/05/2021**
+
+- Fix typography component's margins.
