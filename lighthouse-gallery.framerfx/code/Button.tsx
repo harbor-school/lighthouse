@@ -2,9 +2,24 @@ import * as React from "react"
 import * as System from "../../../lighthouse"
 import { ControlType, addPropertyControls } from "framer"
 import { withHOC } from "./utils/withHOC"
+import * as Icons from "react-feather"
+import { useTheme } from "../../../lighthouse"
 
-const InnerButton = (props) => {
-  return <System.Button {...props}>{props.content}</System.Button>
+const InnerButton = ({ startEnhancer, endEnhancer, ...props }) => {
+  const theme = useTheme()
+  const StartEnhancerComp = Icons[startEnhancer]
+  const EndEnhancerComp = Icons[endEnhancer]
+  const enhancerProps = { style: { display: "block" }, size: theme.sizing.scale600 }
+
+  return (
+    <System.Button
+      startEnhancer={StartEnhancerComp && <StartEnhancerComp {...enhancerProps} />}
+      endEnhancer={EndEnhancerComp && <EndEnhancerComp {...enhancerProps} />}
+      {...props}
+    >
+      {props.content}
+    </System.Button>
+  )
 }
 
 export const Button = withHOC(InnerButton)
@@ -41,11 +56,15 @@ addPropertyControls(Button, {
   },
   startEnhancer: {
     title: "Start enhancer",
-    type: ControlType.String,
+    type: ControlType.Enum,
+    options: ["-", ...Object.keys(Icons)],
+    defaultValue: "-",
   },
   endEnhancer: {
     title: "End enhancer",
-    type: ControlType.String,
+    type: ControlType.Enum,
+    options: ["-", ...Object.keys(Icons)],
+    defaultValue: "-",
   },
   onClick: {
     type: ControlType.EventHandler,

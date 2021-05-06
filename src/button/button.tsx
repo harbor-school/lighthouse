@@ -3,14 +3,7 @@ import * as React from "react"
 import { useContext } from "react"
 import { ThemeContext } from "../helpers/lighthouse-provider"
 import { useHover } from "../hooks"
-import {
-  BaseButton,
-  ButtonText,
-  FlexWrap,
-  getBorderRadiusStyles,
-  StartEnhancer,
-  EndEnhancer,
-} from "./styled-components"
+import { BaseButton, ButtonText, FlexWrap, StartEnhancer, EndEnhancer } from "./styled-components"
 import { ButtonPropsT } from "./types"
 
 export const Button: React.FC<ButtonPropsT> = ({
@@ -20,7 +13,7 @@ export const Button: React.FC<ButtonPropsT> = ({
   startEnhancer,
   endEnhancer,
   onClick,
-  animate,
+  animate = false,
   as = motion.button,
   forwardedRef,
   overrides = {},
@@ -30,9 +23,8 @@ export const Button: React.FC<ButtonPropsT> = ({
   const [hoverRef = forwardedRef, isHover] = useHover({
     thresholdTime: theme.animation.timing300,
   })
-  const isMotion = animate || shape !== "default" // to apply radius
   const sharedProps = { $theme: theme, $kind: kind, $shape: shape }
-  const motionProps = isMotion && {
+  const motionProps = animate && {
     layout: true,
     transition: {
       duration: theme.animation.timing300,
@@ -41,16 +33,13 @@ export const Button: React.FC<ButtonPropsT> = ({
         duration: theme.animation.timing200,
       },
     },
-    initial: {
-      ...getBorderRadiusStyles({ $shape: shape }),
-    },
   }
 
   return (
     <BaseButton
       ref={hoverRef}
       onClick={onClick}
-      $as={isMotion && typeof as === "string" ? motion[as] : as}
+      $as={animate && typeof as === "string" ? motion[as] : as}
       {...sharedProps}
       $style={overrides.BaseButton}
       {...motionProps}
@@ -59,9 +48,9 @@ export const Button: React.FC<ButtonPropsT> = ({
       <FlexWrap>
         {startEnhancer && (
           <StartEnhancer
-            $hide={isHover && isMotion}
+            $hide={isHover && animate}
             animate={{
-              opacity: isHover && isMotion ? 0 : 1,
+              opacity: isHover && animate ? 0 : 1,
             }}
             $style={overrides.StartEnhancer}
             {...sharedProps}
@@ -75,9 +64,9 @@ export const Button: React.FC<ButtonPropsT> = ({
         </ButtonText>
         {endEnhancer && (
           <EndEnhancer
-            $hide={isHover && isMotion}
+            $hide={isHover && animate}
             animate={{
-              opacity: isHover && isMotion ? 0 : 1,
+              opacity: isHover && animate ? 0 : 1,
             }}
             $style={overrides.EndEnhancer}
             {...sharedProps}
