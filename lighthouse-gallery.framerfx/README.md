@@ -31,6 +31,14 @@ Issues [Here](https://github.com/harbor-school/lighthouse/issues)
 
 ## Latest Release
 
+### **1.183.0 - 05/07/2021**
+
+- Update readme.
+
+### **1.182.0 - 05/07/2021**
+
+- Fix graphics on framer canvas.
+
 ### **1.181.0 - 05/07/2021**
 
 - Add Release notes.
