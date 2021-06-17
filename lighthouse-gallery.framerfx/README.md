@@ -31,6 +31,10 @@ Issues [Here](https://github.com/harbor-school/lighthouse/issues)
 
 ## Latest Release
 
+### **1.185.0 - 06/18/2021**
+
+- Add `track`, `color` properties to the ProgressBar component.
+
 ### **1.183.0 - 05/07/2021**
 
 - Update readme.
