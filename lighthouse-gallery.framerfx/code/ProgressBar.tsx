@@ -24,4 +24,12 @@ addPropertyControls(ProgressBar, {
     title: "Infinite",
     type: ControlType.Boolean,
   },
+  color: {
+    title: "Color",
+    type: ControlType.String,
+  },
+  track: {
+    title: "Track",
+    type: ControlType.String,
+  },
 })

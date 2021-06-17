@@ -9,8 +9,8 @@ export const ProgressBar: React.FC<ProgressBarPropsT> = ({
   value = 30,
   infinite,
   overrides = {},
-  track = "backgroundSecondary",
-  color = "contentSecondary",
+  track = "",
+  color = "",
 }) => {
   const theme = useContext(ThemeContext)
   const sharedProps = { $theme: theme, $value: value }
@@ -49,6 +49,8 @@ ProgressBar.defaultProps = {
   overrides: {},
   value: 30,
   infinite: false,
+  track: "backgroundSecondary",
+  color: "contentSecondary",
 }
 
 function getMotionProps({ $theme, $value, $infinite }) {
