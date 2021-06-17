@@ -14,6 +14,8 @@
  * @param value - number
  * @param infinite - boolean
  * @param overrides - \{ Wrap?: StyletronReact.StyleObject; Bar?: StyletronReact.StyleObject }
+ * @param track - string | Array\<string\>
+ * @param color - string | Array\<string\>
  */
 export const ProgressBar: React.FC<ProgressBarPropsT> = ProgressBarComp
 export * from "./types"

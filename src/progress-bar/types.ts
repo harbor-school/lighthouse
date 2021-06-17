@@ -1,5 +1,4 @@
 import { StyleObject } from "styletron-react"
-import { ResponsiveT } from "../block"
 
 export type ProgressBarOverridesT = {
   Wrap?: StyleObject
