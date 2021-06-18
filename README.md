@@ -7,7 +7,6 @@
 
 <p align="center">
   <img alt="NPM Version" src="https://badgen.net/npm/v/@harborschool/lighthouse"/>
-  <img alt="Bundle Size" src="https://badgen.net/bundlephobia/minzip/@harborschool/lighthouse"/>
   <img alt="NPM Downloads" src="https://img.shields.io/npm/dm/@harborschool/lighthouse.svg?style=flat"/>
   <img alt="MIT License" src="https://img.shields.io/github/license/harbor-school/lighthouse"/>
 </p>
