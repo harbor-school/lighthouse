@@ -5,20 +5,14 @@ import { withHOC } from "./utils/withHOC"
 import * as Icons from "react-feather"
 import { useTheme } from "../../../lighthouse"
 
-console.log("System", System)
+const buttonOverrideKeys = Object.keys(System.BUTTON_OVERRIDE_TYPE)
 
 const InnerButton = ({ startEnhancer, endEnhancer, canvasOverrides, ...props }) => {
   const theme = useTheme()
   const StartEnhancerComp = Icons[startEnhancer]
   const EndEnhancerComp = Icons[endEnhancer]
   const enhancerProps = { style: { display: "block" }, size: theme.sizing.scale600 }
-
-  console.log("canvasOverrides", canvasOverrides)
-  const buttonOverrideKeys = Object.keys(System.BUTTON_OVERRIDE_TYPE)
-  console.log("buttonOverrideKeys", buttonOverrideKeys)
   const overrides = getOverrides({ buttonOverrideKeys, canvasOverrides })
-  console.log("overrides (generated from canvasOverrides)", overrides)
-  console.log("props", props)
 
   return (
     <System.Button
@@ -45,7 +39,6 @@ function trimStyles(styleObj) {
   const obj = {}
   for (const key in styleObj) {
     if (styleObj.hasOwnProperty(key)) {
-      console.log(key + " -> " + styleObj[key])
       if (key === "color") {
         obj["color"] = styleObj[key]
         obj["WebkitTextFillColor"] = styleObj[key]
@@ -54,7 +47,6 @@ function trimStyles(styleObj) {
       } else obj[key] = styleObj[key]
     }
   }
-  console.log("obj - trimStyles", obj)
   return obj
 }
 
@@ -489,7 +481,7 @@ addPropertyControls(Button, {
   },
   canvasOverrides: {
     type: ControlType.Array,
-    title: 'Overrides ["BaseButton", "StartEnhancer", "ButtonText", "EndEnhancer"]',
+    title: `Overrides [${buttonOverrideKeys.join(", ")}]`,
     control: {
       type: ControlType.Object,
       controls: {
