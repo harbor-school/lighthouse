@@ -7,30 +7,29 @@ import { useTheme } from "../../../lighthouse"
 
 const buttonOverrideKeys = Object.keys(System.BUTTON_OVERRIDE_TYPE)
 
-const InnerButton = ({ startEnhancer, endEnhancer, canvasOverrides, ...props }) => {
+const InnerButton = ({ startEnhancer, endEnhancer, overrides, ...props }) => {
   const theme = useTheme()
   const StartEnhancerComp = Icons[startEnhancer]
   const EndEnhancerComp = Icons[endEnhancer]
   const enhancerProps = { style: { display: "block" }, size: theme.sizing.scale600 }
-  const overrides = getOverrides({ buttonOverrideKeys, canvasOverrides })
 
   return (
     <System.Button
       startEnhancer={StartEnhancerComp && <StartEnhancerComp {...enhancerProps} />}
       endEnhancer={EndEnhancerComp && <EndEnhancerComp {...enhancerProps} />}
+      overrides={trimOverrides({ buttonOverrideKeys, overrides })}
       {...props}
-      overrides={overrides}
     >
       {props.content}
     </System.Button>
   )
 }
 
-function getOverrides({ buttonOverrideKeys, canvasOverrides }) {
+function trimOverrides({ buttonOverrideKeys, overrides }) {
   const obj = {}
   for (let i = 0; i < buttonOverrideKeys.length; i++) {
     const objKey = buttonOverrideKeys[i]
-    if (canvasOverrides[i]) obj[objKey] = trimStyles(canvasOverrides[i])
+    if (overrides[i]) obj[objKey] = trimStyles(overrides[i])
   }
   return obj
 }
@@ -479,9 +478,9 @@ addPropertyControls(Button, {
       return !props.startEnhancer
     },
   },
-  canvasOverrides: {
-    type: ControlType.Array,
+  overrides: {
     title: `Overrides [${buttonOverrideKeys.join(", ")}]`,
+    type: ControlType.Array,
     control: {
       type: ControlType.Object,
       controls: {
