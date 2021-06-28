@@ -5,21 +5,39 @@ import { withHOC } from "./utils/withHOC"
 import * as Icons from "react-feather"
 import { useTheme } from "../../../lighthouse"
 
-const InnerButton = ({ startEnhancer, endEnhancer, ...props }) => {
+console.log("System", System)
+
+const InnerButton = ({ startEnhancer, endEnhancer, canvasOverrides, ...props }) => {
   const theme = useTheme()
   const StartEnhancerComp = Icons[startEnhancer]
   const EndEnhancerComp = Icons[endEnhancer]
   const enhancerProps = { style: { display: "block" }, size: theme.sizing.scale600 }
 
+  console.log("canvasOverrides", canvasOverrides)
+  const buttonOverrideKeys = Object.keys(System.BUTTON_OVERRIDE_TYPE)
+  console.log("buttonOverrideKeys", buttonOverrideKeys)
+  const overrides = getOverrides({ buttonOverrideKeys, canvasOverrides })
+  console.log("overrides (generated from canvasOverrides)", overrides)
+
   return (
     <System.Button
       startEnhancer={StartEnhancerComp && <StartEnhancerComp {...enhancerProps} />}
       endEnhancer={EndEnhancerComp && <EndEnhancerComp {...enhancerProps} />}
+      overrides={overrides}
       {...props}
     >
       {props.content}
     </System.Button>
   )
+}
+
+function getOverrides({ buttonOverrideKeys, canvasOverrides }) {
+  const obj = {}
+  for (let i = 0; i < buttonOverrideKeys.length; i++) {
+    const objKey = buttonOverrideKeys[i]
+    if (canvasOverrides[i]) obj[objKey] = canvasOverrides[i]
+  }
+  return obj
 }
 
 export const Button = withHOC(InnerButton)
@@ -449,6 +467,20 @@ addPropertyControls(Button, {
     defaultValue: false,
     hidden(props) {
       return !props.startEnhancer
+    },
+  },
+  canvasOverrides: {
+    type: ControlType.Array,
+    title: 'Overrides ["BaseButton", "StartEnhancer", "ButtonText", "EndEnhancer"]',
+    control: {
+      type: ControlType.Object,
+      controls: {
+        background: { type: ControlType.Color },
+        color: { type: ControlType.Color },
+        borderRadius: {
+          type: ControlType.Number,
+        },
+      },
     },
   },
 })
