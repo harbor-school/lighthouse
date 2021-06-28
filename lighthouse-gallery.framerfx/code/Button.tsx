@@ -36,15 +36,25 @@ function getOverrides({ buttonOverrideKeys, canvasOverrides }) {
   const obj = {}
   for (let i = 0; i < buttonOverrideKeys.length; i++) {
     const objKey = buttonOverrideKeys[i]
-    if (canvasOverrides[i]) {
-      if (objKey === "color") {
-        obj["color"] = canvasOverrides[i]
-        obj["WebkitTextFillColor"] = canvasOverrides[i]
-      } else if (objKey === "borderRadius") {
-        obj["borderRadius"] = canvasOverrides[i] + "px"
-      } else obj[objKey] = canvasOverrides[i]
+    if (canvasOverrides[i]) obj[objKey] = trimStyles(canvasOverrides[i])
+  }
+  return obj
+}
+
+function trimStyles(styleObj) {
+  const obj = {}
+  for (const key in styleObj) {
+    if (styleObj.hasOwnProperty(key)) {
+      console.log(key + " -> " + styleObj[key])
+      if (key === "color") {
+        obj["color"] = styleObj[key]
+        obj["WebkitTextFillColor"] = styleObj[key]
+      } else if (key === "borderRadius") {
+        obj["borderRadius"] = styleObj[key] + "px"
+      } else obj[key] = styleObj[key]
     }
   }
+  console.log("obj - trimStyles", obj)
   return obj
 }
 
