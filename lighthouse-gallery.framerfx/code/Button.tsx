@@ -485,7 +485,6 @@ addPropertyControls(Button, {
       controls: {
         background: { type: ControlType.Color },
         color: { type: ControlType.Color },
-        WebkitTextFillColor: { type: ControlType.Color },
         borderRadius: {
           type: ControlType.Number,
         },
