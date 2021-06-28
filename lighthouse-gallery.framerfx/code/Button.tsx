@@ -18,13 +18,14 @@ const InnerButton = ({ startEnhancer, endEnhancer, canvasOverrides, ...props }) 
   console.log("buttonOverrideKeys", buttonOverrideKeys)
   const overrides = getOverrides({ buttonOverrideKeys, canvasOverrides })
   console.log("overrides (generated from canvasOverrides)", overrides)
+  console.log("props", props)
 
   return (
     <System.Button
       startEnhancer={StartEnhancerComp && <StartEnhancerComp {...enhancerProps} />}
       endEnhancer={EndEnhancerComp && <EndEnhancerComp {...enhancerProps} />}
-      overrides={overrides}
       {...props}
+      overrides={overrides}
     >
       {props.content}
     </System.Button>
@@ -35,7 +36,14 @@ function getOverrides({ buttonOverrideKeys, canvasOverrides }) {
   const obj = {}
   for (let i = 0; i < buttonOverrideKeys.length; i++) {
     const objKey = buttonOverrideKeys[i]
-    if (canvasOverrides[i]) obj[objKey] = canvasOverrides[i]
+    if (canvasOverrides[i]) {
+      if (objKey === "color") {
+        obj["color"] = canvasOverrides[i]
+        obj["WebkitTextFillColor"] = canvasOverrides[i]
+      } else if (objKey === "borderRadius") {
+        obj["borderRadius"] = canvasOverrides[i] + "px"
+      } else obj[objKey] = canvasOverrides[i]
+    }
   }
   return obj
 }
@@ -477,6 +485,7 @@ addPropertyControls(Button, {
       controls: {
         background: { type: ControlType.Color },
         color: { type: ControlType.Color },
+        WebkitTextFillColor: { type: ControlType.Color },
         borderRadius: {
           type: ControlType.Number,
         },
