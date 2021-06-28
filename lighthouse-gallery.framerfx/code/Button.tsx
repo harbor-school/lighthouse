@@ -487,6 +487,8 @@ addPropertyControls(Button, {
         color: { type: ControlType.Color },
         borderRadius: {
           type: ControlType.Number,
+          unit: "px",
+          displayStepper: true,
         },
       },
     },
