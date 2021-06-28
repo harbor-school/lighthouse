@@ -1,18 +1,17 @@
 import { StyleObject } from "styletron-react"
 import { ElementType } from "react"
-import { KIND, SHAPE, TYPE } from "./constants"
+import { BUTTON_KIND, BUTTON_SHAPE, BUTTON_TYPE, BUTTON_OVERRIDE_TYPE } from "./constants"
+
+type ButtonOverridesKeyT = keyof typeof BUTTON_OVERRIDE_TYPE
 
 export type ButtonOverridesT = {
-  BaseButton?: StyleObject
-  StartEnhancer?: StyleObject
-  EndEnhancer?: StyleObject
-  ButtonText?: StyleObject
+  [overrideKey in ButtonOverridesKeyT]?: StyleObject
 }
 
 export type ButtonPropsT = {
-  kind?: keyof typeof KIND
-  shape?: keyof typeof SHAPE
-  type?: keyof typeof TYPE
+  kind?: keyof typeof BUTTON_KIND
+  shape?: keyof typeof BUTTON_SHAPE
+  type?: keyof typeof BUTTON_TYPE
   children?: React.ReactNode
   startEnhancer?: React.ReactNode
   endEnhancer?: React.ReactNode

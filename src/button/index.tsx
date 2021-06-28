@@ -41,6 +41,7 @@ export const Button: React.FC<ButtonPropsT> = React.forwardRef(function Button(
   return <ButtonComp forwardedRef={ref} {...props} />
 })
 export * from "./types"
+export * from "./constants"
 
 import * as React from "react"
 import { Button as ButtonComp } from "./button"

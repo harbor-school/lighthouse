@@ -1,5 +1,5 @@
 import { styled } from "styletron-react"
-import { KIND, SHAPE } from "./constants"
+import { BUTTON_KIND, BUTTON_SHAPE } from "./constants"
 import { motion } from "framer-motion"
 import { ThemeT } from "../themes"
 import { Extendtable } from "../utils/extendable"
@@ -8,7 +8,14 @@ type Props<U = Record<string, unknown>> = { $theme: ThemeT } & Extendtable<U>
 
 export const BaseButton = styled(
   motion.button,
-  ({ $theme, $kind, $shape }: Props<{ $kind: keyof typeof KIND; $shape: keyof typeof SHAPE }>) => {
+  ({
+    $theme,
+    $kind,
+    $shape,
+  }: Props<{
+    $kind: keyof typeof BUTTON_KIND
+    $shape: keyof typeof BUTTON_SHAPE
+  }>) => {
     return {
       // remove button styles
       fontSize: "unset",
@@ -75,7 +82,7 @@ export const ButtonText = styled(motion.div, ({ $theme }: Props) => {
 
 function getKindStyles({ $theme, $kind }) {
   switch ($kind) {
-    case KIND.primary:
+    case BUTTON_KIND.primary:
       return {
         color: $theme.colors.contentInversePrimary,
         WebkitTextFillColor: $theme.colors.contentInversePrimary,
@@ -84,7 +91,7 @@ function getKindStyles({ $theme, $kind }) {
           backgroundColor: $theme.colors.buttonPrimaryActive,
         },
       }
-    case KIND.secondary:
+    case BUTTON_KIND.secondary:
       return {
         color: $theme.colors.contentSecondary,
         WebkitTextFillColor: $theme.colors.contentSecondary,
@@ -93,7 +100,7 @@ function getKindStyles({ $theme, $kind }) {
           backgroundColor: $theme.colors.buttonSecondaryActive,
         },
       }
-    case KIND.tertiary:
+    case BUTTON_KIND.tertiary:
       return {
         color: $theme.colors.primary,
         WebkitTextFillColor: $theme.colors.primary,
@@ -106,7 +113,7 @@ function getKindStyles({ $theme, $kind }) {
 
 export function getBorderRadiusStyles({ $shape }) {
   let value = 0
-  if ($shape === SHAPE.pill || $shape === SHAPE.circle) value = 1000 // a large amount of radius
+  if ($shape === BUTTON_SHAPE.pill || $shape === BUTTON_SHAPE.circle) value = 1000 // a large amount of radius
   return {
     borderTopRightRadius: value + "px",
     borderBottomRightRadius: value + "px",
@@ -117,7 +124,7 @@ export function getBorderRadiusStyles({ $shape }) {
 
 function getPaddingStyles({ $theme, $shape }) {
   switch ($shape) {
-    case SHAPE.circle:
+    case BUTTON_SHAPE.circle:
       return {
         paddingTop: $theme.sizing.scale400,
         paddingBottom: $theme.sizing.scale400,
