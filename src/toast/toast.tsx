@@ -5,9 +5,9 @@ import { ThemeContext } from "../helpers/lighthouse-provider"
 import { ToastPropsT } from "./types"
 import { Wrap } from "./styled-components"
 
-export const Toast: React.FC<ToastPropsT> = ({ overrides = {} }) => {
+export const Toast: React.FC<ToastPropsT> = ({ overrides = {}, kind = "primary" }) => {
   const theme: System.ThemeT = useContext(ThemeContext)
-  const sharedProps = { $theme: theme }
+  const sharedProps = { $theme: theme, $kind: kind }
 
   return (
     <Wrap {...sharedProps} $style={overrides.Wrap}>
