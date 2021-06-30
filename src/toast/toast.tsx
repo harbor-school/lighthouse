@@ -5,13 +5,20 @@ import { ThemeContext } from "../helpers/lighthouse-provider"
 import { ToastPropsT } from "./types"
 import { Wrap } from "./styled-components"
 
-export const Toast: React.FC<ToastPropsT> = ({ overrides = {}, kind = "primary" }) => {
+export const Toast: React.FC<ToastPropsT> = ({
+  overrides = {},
+  kind = "primary",
+  message = "Message sent",
+  buttonText = "Close",
+}) => {
   const theme: System.ThemeT = useContext(ThemeContext)
   const sharedProps = { $theme: theme, $kind: kind }
 
   return (
     <Wrap {...sharedProps} $style={overrides.Wrap}>
-      Toast
+      {message}
+      <System.Spacing width="scale400" />
+      <System.Button shape="pill">{buttonText}</System.Button>
     </Wrap>
   )
 }

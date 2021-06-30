@@ -7,4 +7,7 @@ export type ToastOverridesT = {
 export type ToastPropsT = {
   overrides?: ToastOverridesT
   kind?: keyof typeof TOAST_KIND
+  message?: string
+  buttonText?: string
+  onButtonClick?: (event: React.MouseEvent<HTMLButtonElement>) => void
 }
