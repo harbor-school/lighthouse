@@ -31,6 +31,10 @@ Issues [Here](https://github.com/harbor-school/lighthouse/issues)
 
 ## Latest Release
 
+### **1.197.0 - 06/28/2021**
+
+- Add Toast Component.
+
 ### **1.193.0 - 06/28/2021**
 
 - Support overrides of the Button component on Property Controls.
