@@ -34,6 +34,5 @@ addPropertyControls(Toast, {
   buttonText: {
     title: "Button text",
     type: ControlType.String,
-    defaultValue: "buttonText",
   },
 })
