@@ -10,4 +10,5 @@ export type ToastPropsT = {
   message?: string
   buttonText?: string
   onButtonClick?: (event: React.MouseEvent<HTMLButtonElement>) => void
+  show?: boolean
 }

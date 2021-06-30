@@ -25,12 +25,12 @@ function getKindStyles({ $theme, $kind }) {
     case TOAST_KIND.primary:
       return {
         color: $theme.colors.primary,
-        backgroundColor: $theme.colors.backgroundSecondary,
+        backgroundColor: $theme.colors.backgroundTertiary,
       }
     case TOAST_KIND.secondary:
       return {
         color: $theme.colors.contentSecondary,
-        backgroundColor: $theme.colors.backgroundPrimary,
+        backgroundColor: $theme.colors.backgroundSecondary,
       }
 
     default:
