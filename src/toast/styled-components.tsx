@@ -15,6 +15,7 @@ export const Wrap = styled(motion.div, ({ $theme, $kind }: any) => {
     bottom: $theme.sizing.scale800,
     left: "50%",
     transform: "translateX(-50%)",
+    zIndex: $theme.zIndex.toast,
     ...$theme.typography.LabelMedium,
     ...getKindStyles({ $theme, $kind }),
   }

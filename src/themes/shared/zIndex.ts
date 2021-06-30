@@ -7,6 +7,7 @@ const zIndex: ZIndexT = {
   modal: 200,
   select: 200,
   alert: 300,
+  toast: 300,
 }
 
 export default zIndex
