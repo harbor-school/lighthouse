@@ -10,11 +10,10 @@
  *
  *   return (
  *     <>
- *       <System.Button onClick={() => setToastShow(!toastShow)} />
+ *       <System.Button onClick={() => setToastShow(!toastShow)}>Show Toast</System.Button>
  *
  *       <System.Toast
  *         show={toastShow}
- *         kind="secondary"
  *         onButtonClick={() => setToastShow(false)}
  *       />
  *     </>
