@@ -8,11 +8,11 @@ import { AnimatePresence } from "framer-motion"
 
 export const Toast: React.FC<ToastPropsT> = ({
   overrides = {},
+  show = "false",
   kind = "primary",
   message = "Message sent",
   buttonText = "Close",
   onButtonClick = () => void 0,
-  show = "false",
 }) => {
   const theme: System.ThemeT = useContext(ThemeContext)
   const sharedProps = { $theme: theme, $kind: kind }

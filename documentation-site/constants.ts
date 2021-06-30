@@ -5,7 +5,7 @@ export const TARGE_FILE_LIST = {
   surfaces: ["card", "modal", "alert", "drawer"],
   pickers: ["select"],
   navigation: ["link", "header-navigation", "breadcrumbs"],
-  progress: ["progress-bar", "spinner"],
+  feedback: ["progress-bar", "spinner", "toast"],
 }
 
 export const framerNewProjectWithLighthouseUrl =

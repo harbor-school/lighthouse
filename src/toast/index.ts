@@ -6,12 +6,27 @@
  * import * as System from "@harborschool/lighthouse"
  *
  * export default () => {
- *     return (
- *         <System.Toast />
- *     )
+ *   const [toastShow, setToastShow] = React.useState(false)
+ *
+ *   return (
+ *     <>
+ *       <System.Button onClick={() => setToastShow(!toastShow)} />
+ *
+ *       <System.Toast
+ *         show={toastShow}
+ *         kind="secondary"
+ *         onButtonClick={() => setToastShow(false)}
+ *       />
+ *     </>
+ *   )
  * }
  * ```
+ * @param show - boolean
  * @param kind - "primary" | "secondary"
+ * @param message - string
+ * @param buttonText - string
+ * @param onButtonClick - (event: React.MouseEvent<HTMLButtonElement>) => void
+ * @param overrides - \{ Wrap?: StyletronReact.StyleObject; Loading?: StyletronReact.StyleObject; ModalHeader?: StyletronReact.StyleObject; Title?: StyletronReact.StyleObject; ModalBody?: StyletronReact.StyleObject; Description?: StyletronReact.StyleObject; ModalFooter?: StyletronReact.StyleObject }
  */
 export const Toast: React.FC<ToastPropsT> = ToastComp
 export * from "./types"
