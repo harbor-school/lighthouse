@@ -11,7 +11,7 @@
  *     )
  * }
  * ```
- * @param placement - "center" | "topRight" | "bottomRight"
+ * @param kind - "primary" | "secondary"
  */
 export const Toast: React.FC<ToastPropsT> = ToastComp
 export * from "./types"

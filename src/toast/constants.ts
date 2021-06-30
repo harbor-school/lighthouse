@@ -1,5 +1,4 @@
-export const PLACEMENT = {
-  center: "center" as const,
-  topRight: "topRight" as const,
-  bottomRight: "bottomRight" as const,
+export const TOAST_KIND = {
+  primary: "primary",
+  secondary: "secondary",
 }
