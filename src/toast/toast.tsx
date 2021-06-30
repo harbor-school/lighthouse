@@ -11,6 +11,7 @@ export const Toast: React.FC<ToastPropsT> = ({
   kind = "primary",
   message = "Message sent",
   buttonText = "Close",
+  onButtonClick = () => void 0,
   show = "false",
 }) => {
   const theme: System.ThemeT = useContext(ThemeContext)
@@ -40,7 +41,7 @@ export const Toast: React.FC<ToastPropsT> = ({
         <Wrap {...sharedProps} {...motionProps} $style={overrides.Wrap}>
           {message}
           <System.Spacing width="scale400" />
-          <System.Button shape="pill" kind={kind}>
+          <System.Button shape="pill" kind={kind} onClick={onButtonClick}>
             {buttonText}
           </System.Button>
         </Wrap>
