@@ -74,7 +74,7 @@
     },
     "StyledLink": {
       "ignore": false,
-      "ignoredProps": ["children"]
+      "ignoredProps": ["children", "to"]
     },
     "ColorChip": {
       "ignore": true
