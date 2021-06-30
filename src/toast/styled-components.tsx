@@ -12,7 +12,9 @@ export const Wrap = styled(motion.div, ({ $theme, $kind }: any) => {
     display: "flex",
     alignItems: "center",
     position: "fixed",
-    bottom: "0px",
+    bottom: $theme.sizing.scale800,
+    left: "50%",
+    transform: "translateX(-50%)",
     ...$theme.typography.LabelMedium,
     ...getKindStyles({ $theme, $kind }),
   }
