@@ -8,10 +8,10 @@ import { AnimatePresence } from "framer-motion"
 
 export const Toast: React.FC<ToastPropsT> = ({
   overrides = {},
-  show = "false",
-  kind = "primary",
-  message = "Message sent",
-  buttonText = "Close",
+  show,
+  kind,
+  message,
+  buttonText,
   onButtonClick = () => void 0,
 }) => {
   const theme: System.ThemeT = useContext(ThemeContext)
@@ -41,7 +41,7 @@ export const Toast: React.FC<ToastPropsT> = ({
         <Wrap {...sharedProps} {...motionProps} $style={overrides.Wrap}>
           {message}
           <System.Spacing width="scale400" />
-          <System.Button shape="pill" kind={kind} onClick={onButtonClick}>
+          <System.Button shape="circle" kind={kind} onClick={onButtonClick}>
             {buttonText}
           </System.Button>
         </Wrap>
@@ -51,5 +51,8 @@ export const Toast: React.FC<ToastPropsT> = ({
 }
 
 Toast.defaultProps = {
-  overrides: {},
+  show: false,
+  kind: "primary",
+  message: "Message sent",
+  buttonText: "Close",
 }

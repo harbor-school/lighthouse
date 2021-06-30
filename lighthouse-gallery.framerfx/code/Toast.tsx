@@ -10,15 +10,16 @@ const InnerToast = (props) => {
 export const Toast = withHOC(InnerToast)
 
 Toast.defaultProps = {
-  width: 150,
-  height: 50,
+  width: 470,
+  height: 48,
+  ...System.Toast.defaultProps,
 }
 
 addPropertyControls(Toast, {
   show: {
     title: "Show",
     type: ControlType.Boolean,
-    defaultValue: false,
+    defaultValue: true,
   },
   kind: {
     title: "Kind",
