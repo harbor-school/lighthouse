@@ -8,6 +8,7 @@ export type InputOverridesT = {
 
 export type StyledLinkPropsT = {
   href?: string
+  to?: string
   target?: keyof typeof TARGET
   children?: React.ReactNode
   highlight?: boolean
