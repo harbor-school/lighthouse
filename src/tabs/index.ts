@@ -1,5 +1,5 @@
 /**
- * The Tabs component for actions and events
+ * The Tabs component.
  *
  *```tsx
  * import * as React from "react"

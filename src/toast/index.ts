@@ -1,5 +1,5 @@
 /**
- * The Toast component for actions and events
+ * The Toast component.
  *
  *```tsx
  * import * as React from "react"

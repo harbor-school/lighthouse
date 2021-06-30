@@ -1,6 +1,6 @@
 export const TARGE_FILE_LIST = {
   layout: ["spacing", "block", "flex-box"],
-  content: ["typography", "list", "table", "icon"],
+  content: ["typography", "list", "table", "icon", "tabs"],
   inputs: ["button", "input", "radio", "form"],
   surfaces: ["card", "modal", "alert", "drawer"],
   pickers: ["select"],
