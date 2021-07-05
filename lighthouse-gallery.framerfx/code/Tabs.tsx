@@ -23,8 +23,8 @@ const InnerTabs = ({ tabs, panels, current }) => {
       </System.TabPanels>
       {panels.length === 0 &&
         React.createElement(placeholderState, {
-          title: "Add Contents",
-          label: "Add formBody or formFooter Frame.",
+          title: "Add TabPanels",
+          label: "Add TabPanels Frame",
           height: "140px",
         })}
     </System.Tabs>
