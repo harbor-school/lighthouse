@@ -22,9 +22,14 @@ export const Toast: React.FC<ToastPropsT> = ({
     duration: theme.animation.timing200,
   }
   const toast = {
-    hidden: { bottom: `-${theme.sizing.scale800}`, transition: defaultTransition },
+    hidden: {
+      x: "-50%", // centering position
+      y: `calc(100% + ${theme.sizing.scale800})`,
+      transition: defaultTransition,
+    },
     visible: {
-      bottom: theme.sizing.scale800,
+      x: "-50%", // centering position
+      y: `-${theme.sizing.scale800}`,
       transition: defaultTransition,
     },
   }
