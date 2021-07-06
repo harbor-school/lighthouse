@@ -31,6 +31,10 @@ Issues [Here](https://github.com/harbor-school/lighthouse/issues)
 
 ## Latest Release
 
+### **1.199.0 - 06/28/2021**
+
+- Fix Toast Component's transitions.
+
 ### **1.197.0 - 06/28/2021**
 
 - Add Toast Component.
