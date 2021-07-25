@@ -1,6 +1,7 @@
 :root,
 .__lh-light-theme {
   --lh-guide-spacing: hsl(100, 37%, 79%);
+  --lh-guide-opacity: 1;
 }
 
 .__lh-dark-theme {
