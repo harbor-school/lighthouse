@@ -20,6 +20,8 @@ Spacing.defaultProps = {
   // Control width / height (the purple border area)
   width: 150,
   height: 20,
+  // show guide and control with CSS Variables in Framer
+  guide: true,
 }
 
 // Component width / height (the green border area)
@@ -125,5 +127,9 @@ addPropertyControls(Spacing, {
       "scale4800",
     ],
     defaultValue: "scale700",
+  },
+  guide: {
+    title: "Guide",
+    type: ControlType.Boolean,
   },
 })

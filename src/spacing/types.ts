@@ -6,4 +6,5 @@ export type SpacingPropsT = {
   height?: keyof typeof sizing
   backgroundColor?: string
   display?: System.BlockPropsT["display"]
+  guide?: boolean
 }

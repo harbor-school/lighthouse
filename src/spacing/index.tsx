@@ -15,6 +15,8 @@
  * @param width - "scale0" | "scale100" | "scale200" | "scale300" | "scale400" | "scale500" | "scale550" | "scale600" | "scale650" | "scale700" | "scale750" | "scale800" | "scale900" | "scale1000" | "scale1200" | "scale1400" | "scale1600" | "scale2400" | "scale3200" | "scale4800"
  * @param height - "scale0" | "scale100" | "scale200" | "scale300" | "scale400" | "scale500" | "scale550" | "scale600" | "scale650" | "scale700" | "scale750" | "scale800" | "scale900" | "scale1000" | "scale1200" | "scale1400" | "scale1600" | "scale2400" | "scale3200" | "scale4800"
  * @param backgroundColor - string
+ * @param display - System.BlockPropsT["display"]
+ * @param guide - boolean
  */
 export const Spacing: React.FC<SpacingPropsT> = SpacingComp
 export * from "./types"
