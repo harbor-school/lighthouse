@@ -10,7 +10,7 @@ const InnerSpacing = (props) => {
       width={props.widthAmount}
       height={props.heightAmount}
       backgroundColor={"var(--lh-guide-spacing)"}
-      overrides={{ Block: { opacity: "var(--lh-guide-spacing-opacity)" } }}
+      overrides={{ Block: { opacity: "var(--lh-guide-opacity)" } }}
     ></System.Spacing>
   )
 }
