@@ -10,7 +10,7 @@ export const Spacing: React.FC<SpacingPropsT> = ({ guide, ...props }) => (
       left="50%"
       transform="translate(-50%, -50%)"
       whiteSpace="nowrap"
-      overrides={{ Block: { fontSize: "8px", opacity: 0.8 } }}
+      overrides={{ Block: { fontSize: "8px", opacity: 0.6 } }}
     >
       {guide && (
         <>
