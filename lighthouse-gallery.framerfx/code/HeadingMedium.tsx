@@ -3,14 +3,16 @@ import * as React from "react"
 import * as System from "../../../lighthouse"
 import { withHOC } from "./utils/withHOC"
 
-const InnerHeadingMedium = (props) => {
+const InnerHeadingMedium = ({
+  content,
+  children, // eject children prop, cause it show not passed with dangerouslySetInnerHTML
+  ...props
+}: any) => {
   let styles: React.CSSProperties = { textAlign: props.textAlign }
   if (props.as === "span") styles = { ...styles, display: "inline-block" }
 
   return (
-    <System.HeadingMedium {...props} style={styles}>
-      {props.content}
-    </System.HeadingMedium>
+    <System.HeadingMedium {...props} style={styles} dangerouslySetInnerHTML={{ __html: content }} />
   )
 }
 

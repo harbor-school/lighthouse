@@ -3,14 +3,16 @@ import * as System from "../../../lighthouse"
 import { ControlType, addPropertyControls } from "framer"
 import { withHOC } from "./utils/withHOC"
 
-const InnerDisplayLarge = (props) => {
+const InnerDisplayLarge = ({
+  content,
+  children, // eject children prop, cause it show not passed with dangerouslySetInnerHTML
+  ...props
+}: any) => {
   let styles: React.CSSProperties = { textAlign: props.textAlign }
   if (props.as === "span") styles = { ...styles, display: "inline-block" }
 
   return (
-    <System.DisplayLarge {...props} style={styles}>
-      {props.content}
-    </System.DisplayLarge>
+    <System.DisplayLarge {...props} style={styles} dangerouslySetInnerHTML={{ __html: content }} />
   )
 }
 

@@ -3,14 +3,16 @@ import * as React from "react"
 import * as System from "../../../lighthouse"
 import { withHOC } from "./utils/withHOC"
 
-const InnerHeadingXLarge = (props) => {
+const InnerHeadingXLarge = ({
+  content,
+  children, // eject children prop, cause it show not passed with dangerouslySetInnerHTML
+  ...props
+}: any) => {
   let styles: React.CSSProperties = { textAlign: props.textAlign }
   if (props.as === "span") styles = { ...styles, display: "inline-block" }
 
   return (
-    <System.HeadingXLarge {...props} style={styles}>
-      {props.content}
-    </System.HeadingXLarge>
+    <System.HeadingXLarge {...props} style={styles} dangerouslySetInnerHTML={{ __html: content }} />
   )
 }
 

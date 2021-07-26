@@ -3,8 +3,12 @@ import * as System from "../../../lighthouse"
 import { ControlType, addPropertyControls } from "framer"
 import { withHOC } from "./utils/withHOC"
 
-const InnerStyledLink = (props) => {
-  return <System.StyledLink {...props}>{props.content}</System.StyledLink>
+const InnerStyledLink = ({
+  content,
+  children, // eject children prop, cause it show not passed with dangerouslySetInnerHTML
+  ...props
+}: any) => {
+  return <System.StyledLink {...props} dangerouslySetInnerHTML={{ __html: content }} />
 }
 
 export const StyledLink = withHOC(InnerStyledLink)
