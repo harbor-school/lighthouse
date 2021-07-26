@@ -31,7 +31,12 @@ Issues [Here](https://github.com/harbor-school/lighthouse/issues)
 
 ## Latest Release
 
-### **1.215.0 - 07/06/2021**
+### **1.221.0 - 07/27/2021**
+
+- Add object property controls to the HeaderNavigation component.
+- Support HTML strings on the HeaderNavigation component.
+
+### **1.215.0 - 07/26/2021**
 
 - Support HTML strings on typography components.
 
