@@ -4,9 +4,9 @@ import * as System from "../../../lighthouse"
 import { withHOC } from "./utils/withHOC"
 
 const defaultValue = [
-  { text: "Menu 0", highlight: false },
-  { text: "Menu 1", highlight: false },
-  { text: "Menu 2", highlight: true },
+  { text: "Menu 0", href: "https://harbor.school/en", target: "_blank", highlight: false },
+  { text: "Menu 1", href: "https://harbor.school/en", target: "_blank", highlight: false },
+  { text: "Menu 2", href: "https://harbor.school/en", target: "_blank", highlight: true },
 ]
 
 const InnerHeaderNavigation = ({ logo, items = defaultValue, ...props }) => {
@@ -19,9 +19,11 @@ const InnerHeaderNavigation = ({ logo, items = defaultValue, ...props }) => {
       <System.Block>
         {items.map((item, i) => (
           <System.HeaderNavigationItem key={i}>
-            <System.StyledLink highlight={item.highlight}>
-              <div dangerouslySetInnerHTML={{ __html: item.text }} />
-            </System.StyledLink>
+            <System.StyledLink
+              highlight={item.highlight}
+              // @ts-ignore
+              dangerouslySetInnerHTML={{ __html: item.text }}
+            />
           </System.HeaderNavigationItem>
         ))}
       </System.Block>
@@ -47,6 +49,8 @@ addPropertyControls(HeaderNavigation, {
       type: ControlType.Object,
       controls: {
         text: { type: ControlType.String },
+        href: { type: ControlType.String },
+        target: { type: ControlType.Enum, options: ["_blank", "_self", "_parent", "_top"] },
         highlight: { type: ControlType.Boolean },
       },
     },
