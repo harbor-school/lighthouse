@@ -31,6 +31,10 @@ Issues [Here](https://github.com/harbor-school/lighthouse/issues)
 
 ## Latest Release
 
+### **1.215.0 - 07/06/2021**
+
+- Support HTML strings on typography components.
+
 ### **1.200.0 - 07/06/2021**
 
 - Fix Toast Component's transitions.
