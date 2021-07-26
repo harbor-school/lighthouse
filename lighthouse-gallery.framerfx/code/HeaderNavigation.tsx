@@ -3,7 +3,11 @@ import * as React from "react"
 import * as System from "../../../lighthouse"
 import { withHOC } from "./utils/withHOC"
 
-const defaultValue = ["Menu 0", "Menu 1", "Menu 2"]
+const defaultValue = [
+  { text: "Menu 0", highlight: false },
+  { text: "Menu 1", highlight: false },
+  { text: "Menu 2", highlight: true },
+]
 
 const InnerHeaderNavigation = ({ logo, items = defaultValue, ...props }) => {
   return (
@@ -15,7 +19,9 @@ const InnerHeaderNavigation = ({ logo, items = defaultValue, ...props }) => {
       <System.Block>
         {items.map((item, i) => (
           <System.HeaderNavigationItem key={i}>
-            <System.StyledLink>{item}</System.StyledLink>
+            <System.StyledLink highlight={item.highlight}>
+              <div dangerouslySetInnerHTML={{ __html: item.text }} />
+            </System.StyledLink>
           </System.HeaderNavigationItem>
         ))}
       </System.Block>
@@ -37,10 +43,12 @@ addPropertyControls(HeaderNavigation, {
   items: {
     title: "Items",
     type: ControlType.Array,
-    defaultValue,
-    propertyControl: {
-      type: ControlType.String,
-      defaultValue: "Menu Item",
+    control: {
+      type: ControlType.Object,
+      controls: {
+        text: { type: ControlType.String },
+        highlight: { type: ControlType.Boolean },
+      },
     },
   },
 })
