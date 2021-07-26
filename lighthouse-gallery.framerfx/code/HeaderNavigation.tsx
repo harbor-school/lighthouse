@@ -20,9 +20,12 @@ const InnerHeaderNavigation = ({ logo, items = defaultValue, ...props }) => {
         {items.map((item, i) => (
           <System.HeaderNavigationItem key={i}>
             <System.StyledLink
-              highlight={item.highlight}
               // @ts-ignore
               dangerouslySetInnerHTML={{ __html: item.text }}
+              href={item.href}
+              // @ts-ignore
+              target={item.target}
+              highlight={item.highlight}
             />
           </System.HeaderNavigationItem>
         ))}
