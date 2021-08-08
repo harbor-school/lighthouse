@@ -8,6 +8,7 @@ export const FlexItem: React.FC<FlexItemPropsT> = ({
   $columnGap = "0px",
   $rowGap,
   $widthRatio = [],
+  noShrink = false,
   ...props
 }) => {
   const paddingProps = {
@@ -23,6 +24,7 @@ export const FlexItem: React.FC<FlexItemPropsT> = ({
       {...paddingProps}
       {...getWidthProp({ $id, $columnGap, $widthRatio })}
       {...props}
+      overrides={{ Block: { flexShrink: noShrink ? 0 : "initial", ...props.overrides?.Block } }}
     >
       {children}
     </System.Block>
@@ -34,7 +36,7 @@ FlexItem.defaultProps = {}
 function getWidthProp({ $id, $columnGap, $widthRatio }) {
   if ($widthRatio.length) {
     return {
-      width: `calc((100% - ${$columnGap} * ${$widthRatio.length - 1}) 
+      width: `calc((100% - ${$columnGap} * ${$widthRatio.length - 1})
       * ${$widthRatio[$id]} + ${$columnGap})`,
     }
   }

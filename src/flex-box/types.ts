@@ -13,5 +13,6 @@ export interface FlexItemPropsT extends System.BlockPropsT {
   $columnGap?: string
   $rowGap?: string
   $widthRatio?: number[]
+  noShrink?: boolean
   children: React.ReactNode
 }
