@@ -28,9 +28,11 @@
  *   )
  * }
  * ```
+ * @param rowGap - keyof typeof sizing | string
  * @param formBody - React.ReactNode
  * @param formFooter - React.ReactNode
  * @param onSubmit - SubmitHandler<Record<string, any>>
+ * @param onReset - (event: any) => void
  * @param overrides - \{ FormWrap?: StyletronReact.StyleObject }
  */
 export const Form: React.FC<FormPropsT> = FormComp

@@ -13,6 +13,7 @@ export const Form: React.FC<FormPropsT> = ({
   formBody,
   formFooter,
   onSubmit = (values) => console.log("values from default onSubmit", values),
+  onReset,
   overrides = {},
   ...props
 }) => {
@@ -30,6 +31,7 @@ export const Form: React.FC<FormPropsT> = ({
         onSubmit={formProps.handleSubmit((values, event) =>
           onSubmit({ ...values, reset: formProps.reset }, event)
         )}
+        onReset={onReset}
         $style={overrides.FormWrap}
         {...props}
       >
