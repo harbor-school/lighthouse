@@ -28,6 +28,8 @@ export const Input: React.FC<InputPropsT> = ({
   onChange,
   onFocus,
   onBlur,
+  onKeyDown,
+  onKeyUp,
   overrides = {},
 }) => {
   const theme = useContext(ThemeContext)
@@ -89,6 +91,8 @@ export const Input: React.FC<InputPropsT> = ({
           onChange={onChange}
           onFocus={onFocus}
           onBlur={onBlur}
+          onKeyDown={onKeyDown}
+          onKeyUp={onKeyUp}
           $style={overrides.BaseInput}
           type={type}
           autoFocus={autoFocus}

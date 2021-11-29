@@ -24,6 +24,8 @@
  * @param autoFocus - boolean
  * @param onChange - (event: React.FocusEvent<HTMLInputElement>) => void
  * @param onBlur - (event: React.FocusEvent<HTMLInputElement>) => void
+ * @param onKeyDown - React.KeyboardEventHandler<HTMLInputElement>
+ * @param onKeyUp - React.KeyboardEventHandler<HTMLInputElement>
  * @param overrides - \{ Wrap?: StyletronReact.StyleObject; LabelText?: StyletronReact.StyleObject; Caption?: StyletronReact.StyleObject; FocusBar?: StyletronReact.StyleObject; BaseInput?: StyletronReact.StyleObject }
  */
 export const Input: React.FC<InputPropsT> = InputComp
