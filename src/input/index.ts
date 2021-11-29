@@ -20,6 +20,8 @@
  * @param name - string
  * @param required - boolean
  * @param pattern - string
+ * @param type - string
+ * @param autoFocus - boolean
  * @param onChange - (event: React.FocusEvent<HTMLInputElement>) => void
  * @param onBlur - (event: React.FocusEvent<HTMLInputElement>) => void
  * @param overrides - \{ Wrap?: StyletronReact.StyleObject; LabelText?: StyletronReact.StyleObject; Caption?: StyletronReact.StyleObject; FocusBar?: StyletronReact.StyleObject; BaseInput?: StyletronReact.StyleObject }

@@ -56,6 +56,19 @@ export const BaseInput = styled("input", ({ $theme }: Props) => {
     ":focus": {
       outline: "none",
     },
+    /* clears the 'X' from Chrome */
+    "::-webkit-search-decoration": {
+      "-webkit-appearance": "none",
+    },
+    "::-webkit-search-cancel-button": {
+      "-webkit-appearance": "none",
+    },
+    "::-webkit-search-results-button": {
+      "-webkit-appearance": "none",
+    },
+    "::-webkit-search-results-decoration": {
+      "-webkit-appearance": "none",
+    },
   }
 })
 
@@ -86,4 +99,15 @@ export const FocusBar = styled(
 
 export const StyledInput = styled("input", {
   display: "none",
+})
+
+export const ClearButton = styled("div", ({ $theme }: Props) => {
+  return {
+    color: $theme.colors.contentSecondary,
+    position: "absolute",
+    right: $theme.sizing.scale600,
+    top: "50%",
+    transform: "translateY(-50%)",
+    cursor: "pointer",
+  }
 })

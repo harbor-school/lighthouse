@@ -11,6 +11,7 @@ import {
   LabelText,
   LableWrap,
   Wrap,
+  ClearButton,
 } from "./styled-components"
 import { InputPropsT } from "./types"
 
@@ -23,6 +24,7 @@ export const Input: React.FC<InputPropsT> = ({
   required,
   pattern = "",
   type = "",
+  autoFocus,
   onChange,
   onFocus,
   onBlur,
@@ -30,7 +32,7 @@ export const Input: React.FC<InputPropsT> = ({
 }) => {
   const theme = useContext(ThemeContext)
   const ctx = useContext(FormContext) // States from Form
-  let error, ref // get props from form-context
+  let error, ref, value // get props from form-context
   if (!isEmpty(ctx)) {
     error = ctx.errors[name]
     ref = ctx.register({
@@ -40,7 +42,9 @@ export const Input: React.FC<InputPropsT> = ({
         message: "pattern error",
       },
     })
+    value = ctx.watch(name)
   }
+
   const [focus, setFocus] = useState(false)
   const sharedProps = { $theme: theme, $error: error }
   const motionProps = {
@@ -87,8 +91,28 @@ export const Input: React.FC<InputPropsT> = ({
           onBlur={onBlur}
           $style={overrides.BaseInput}
           type={type}
+          autoFocus={autoFocus}
           {...sharedProps}
         />
+        {type === "search" && value && (
+          <ClearButton onClick={() => ctx.reset()} {...sharedProps}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              style={{ display: "block" }}
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </ClearButton>
+        )}
       </InputWrapper>
     </Wrap>
   )
