@@ -8,5 +8,6 @@ export type FormPropsT = {
   formFooter?: React.ReactNode
   onSubmit?: SubmitHandler<Record<string, any>>
   onReset?: (event: any) => void
+  autoComplete?: string
   overrides?: { FormWrap?: StyleObject; FormFooter?: StyleObject }
 }

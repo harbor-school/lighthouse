@@ -31,6 +31,7 @@
  * @param rowGap - keyof typeof sizing | string
  * @param formBody - React.ReactNode
  * @param formFooter - React.ReactNode
+ * @param autoComplete - string
  * @param onSubmit - SubmitHandler<Record<string, any>>
  * @param onReset - (event: any) => void
  * @param overrides - \{ FormWrap?: StyletronReact.StyleObject }

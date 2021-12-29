@@ -14,6 +14,7 @@ export const Form: React.FC<FormPropsT> = ({
   formFooter,
   onSubmit = (values) => console.log("values from default onSubmit", values),
   onReset,
+  autoComplete,
   overrides = {},
   ...props
 }) => {
@@ -33,6 +34,7 @@ export const Form: React.FC<FormPropsT> = ({
         )}
         onReset={onReset}
         $style={overrides.FormWrap}
+        autoComplete={autoComplete}
         {...props}
       >
         {/* FormBody */}
