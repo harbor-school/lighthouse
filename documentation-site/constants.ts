@@ -9,7 +9,7 @@ export const TARGE_FILE_LIST = {
 }
 
 export const framerNewProjectWithLighthouseUrl =
-  "https://framer.com/projects/new?install=%40framer%2Fruucm-h.lighthouse"
+  "https://framer.com/projects/new?duplicate=deobv9hzpryZWvmVfUwE"
 export const codeSandboxNewProjectWithLighthouseUrl =
   "https://codesandbox.io/s/lighthouse-typescript-31wjs"
 export const githubUrl = "https://github.com/harbor-school/lighthouse"
