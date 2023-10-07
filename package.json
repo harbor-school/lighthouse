@@ -26,7 +26,7 @@
     "lint": "eslint '{src,documentation-site,examples,lighthouse-gallery.framerfx/code}/**/*.{js,ts,tsx}' --quiet --fix",
     "prebuild": "rimraf dist",
     "build": "tsc --module commonjs && rollup -=c rollup.config.mjs",
-    "start": "rollup -c rollup.config.mjs --w",
+    "dev": "rollup -c rollup.config.mjs --w",
     "framer": "cd lighthouse-gallery.framerfx && component-importer generate --force && rm code/withHOC.tsx && cd .. && eslint '{src,lighthouse-gallery.framerfx/code}/**/*.{js,ts,tsx}' --quiet --fix",
     "precommit": "lint-staged",
     "docs:dev": "next documentation-site",
