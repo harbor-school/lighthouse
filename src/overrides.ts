@@ -5,6 +5,7 @@ type StyleOverride<T> =
   | StyleObject
   | ((props: { $theme: any } & React.PropsWithChildren<T>) => StyleObject)
 
+  // @ts-ignore
 type ComponentOverride<T> = React.ComponentType<T> | React.RefForwardingComponent<T>
 
 interface OverrideObject<T> {

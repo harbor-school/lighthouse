@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
     "moduleResolution": "node",
     "target": "es5",
@@ -15,7 +16,8 @@
     "typeRoots": ["node_modules/@types"],
     "jsx": "react",
     "noImplicitAny": false,
-    "resolveJsonModule": true,
+    "resolveJsonModule": true
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["node_modules"]
 }

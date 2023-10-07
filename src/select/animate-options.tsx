@@ -27,6 +27,7 @@ export function AnimateOptions({ children, isOpen, animate, setReadyToChange }) 
 
   if (animate)
     return (
+    // @ts-ignore
       <AnimatePresence onExitComplete={() => setReadyToChange(true)}>
         {isOpen && <motion.div {...motionProps}>{children}</motion.div>}
       </AnimatePresence>

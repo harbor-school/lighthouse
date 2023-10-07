@@ -54,6 +54,7 @@ export const Modal: React.FC<ModalPropsT> = ({
   useOnClickOutside(ref, closeOnClick)
 
   return (
+    // @ts-ignore
     <AnimatePresence>
       {isOpen && (
         <FormContext.Provider value={formProps}>

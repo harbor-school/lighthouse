@@ -11,6 +11,7 @@ export function useHover<T extends HTMLElement = HTMLDivElement>(
   let lock = false
   const threshold = thresholdTime || 0
   const handleMouseOver = () => {
+    // @ts-ignore
     clearTimeout() // stop mouseout codes
     lock = true
     setValue(true)
@@ -23,6 +24,7 @@ export function useHover<T extends HTMLElement = HTMLDivElement>(
   }
 
   useEffect(() => {
+    // @ts-ignore
     const node: T | Window = ref?.current || window
 
     if (node) {

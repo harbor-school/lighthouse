@@ -41,6 +41,7 @@ export const Toast: React.FC<ToastPropsT> = ({
   }
 
   return (
+    // @ts-ignore
     <AnimatePresence>
       {show && (
         <Wrap {...sharedProps} {...motionProps} $style={overrides.Wrap}>

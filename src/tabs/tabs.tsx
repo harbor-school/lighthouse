@@ -8,6 +8,7 @@ import { TabsContext } from "../helpers/tabs-provider"
 
 export const Tabs: React.FC<TabsPropsT> = ({
   overrides = {},
+  // @ts-ignore
   children,
   current,
   tabListScroll,

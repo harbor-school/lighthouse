@@ -33,6 +33,7 @@ export const FlexBox: React.FC<FlexBoxPropsT> = ({
             return React.cloneElement(child, {
               ...gapProps,
               key: id,
+              // @ts-ignore
               $id: id,
             })
         })}

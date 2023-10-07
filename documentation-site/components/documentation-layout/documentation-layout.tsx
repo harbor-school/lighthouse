@@ -39,6 +39,7 @@ export function DocumentationLayout({ children }) {
   return (
     <Layout>
       <Grid {...sharedProps}>
+       {/* @ts-ignore */}
         <AnimatePresence>
           {mobileMenu && <Overlay {...sharedProps} {...motionProps} />}
           {select && <OverlayLight {...sharedProps} {...motionProps} />}

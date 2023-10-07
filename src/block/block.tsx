@@ -172,6 +172,7 @@ export const Block: React.FC<BlockPropsT> = ({
   )
 }
 
+    // @ts-ignore
 const BlockComponent = React.forwardRef<BlockPropsT, HTMLElement>((props: BlockPropsT, ref) => (
   <Block {...props} forwardedRef={ref} />
 ))

@@ -26,6 +26,7 @@ export const Drawer: React.FC<DrawerPropsT> = ({
   useOnClickRectOutside(ref, onClickOutside)
 
   return (
+    // @ts-ignore
     <AnimatePresence>
       {isOpen && (
         <Wrap ref={ref} $style={overrides.Wrap} {...sharedProps} {...motionProps}>

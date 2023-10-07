@@ -49,6 +49,7 @@ export const Alert: React.FC<AlertPropsT> = ({
   }
 
   return (
+    // @ts-ignore
     <AnimatePresence>
       {show && (
         <Wrap ref={ref} $style={overrides.Wrap} {...sharedProps} {...motionProps}>

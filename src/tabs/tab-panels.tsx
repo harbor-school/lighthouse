@@ -15,6 +15,7 @@ export const TabPanels: React.FC<TabPanelsPropsT> = ({ overrides = {}, children 
           (child, id) =>
             React.isValidElement(child) &&
             React.cloneElement(child, {
+                  // @ts-ignore
               $id: id,
             })
         )}

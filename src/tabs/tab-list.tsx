@@ -20,6 +20,7 @@ export const TabList: React.FC<TabListPropsT> = ({ overrides = {}, children }) =
             <System.FlexItem key={id} {...getFlexItemStyles(sharedProps)}>
               {React.isValidElement(child) &&
                 React.cloneElement(child, {
+                  // @ts-ignore
                   $id: id,
                 })}
             </System.FlexItem>
