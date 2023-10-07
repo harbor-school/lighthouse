@@ -39,7 +39,7 @@ export const Select: React.FC<SelectPropsT> = ({
   return (
     <Wrap ref={ref} $style={overrides.Wrap} {...sharedProps}>
       <Placeholder onClick={onClick} {...sharedProps}>
-        {typeof active === "number" && (placeholder || options[active].label)}
+        {typeof active === "number" && (placeholder || options[active]?.label)}
       </Placeholder>
       <OptionList $style={overrides.OptionList} {...sharedProps}>
         <AnimateOptions isOpen={isOpen} animate={animate} setReadyToChange={setReadyToChange}>
