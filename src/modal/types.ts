@@ -1,4 +1,4 @@
-import { FieldErrors, SubmitHandler } from "react-hook-form"
+import { FieldError, SubmitHandler } from "react-hook-form"
 import { StyleObject } from "styletron-react"
 import { ROLE } from "./constants"
 
@@ -13,7 +13,8 @@ export type ModalOverridesT = {
 }
 
 export interface ModalContentPropsT extends ModalPropsT {
-  $errors?: FieldErrors
+  // $errors?: FieldError
+  $errors?: any
 }
 
 export interface ModalPropsT {

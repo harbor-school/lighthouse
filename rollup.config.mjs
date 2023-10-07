@@ -5,15 +5,15 @@ import camelCase from "lodash.camelcase"
 import typescript from "rollup-plugin-typescript2"
 import json from "rollup-plugin-json"
 import visualizer from "rollup-plugin-visualizer"
-import pkg from "./package.json"
+// import pkg from "./package.json"
 
 const libraryName = "lighthouse"
 
 export default {
   input: `src/${libraryName}.ts`,
   output: [
-    { file: pkg.main, name: camelCase(libraryName), format: "umd", sourcemap: true },
-    { file: pkg.module, format: "es", sourcemap: true },
+    { file: "dist/lighthouse.umd.js", name: camelCase(libraryName), format: "umd", sourcemap: true },
+    { file: "dist/lighthouse.es5.js", format: "es", sourcemap: true },
   ],
   // Indicate here external modules you don't wanna include in your bundle (i.e.: 'lodash')
   external: ["react", "styletron-engine-atomic", "styletron-react", "framer-motion"],
